@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="">
+  <MemorySize MemorySizeBss="0x400000" MemorySizeData="0x200000" MemorySizePersistentData="0x10000" MemorySizeRoData="0x10000" MemorySizeText="0x100000" MemorySizePersistentBss="0x10000"/>
+  <Ports>
+    <SamplingPort Name="A653_FCS_2_O_ADA20" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="284" RefreshRate="100000000"/>
+    <SamplingPort Name="A653_FCS_1_O_ADA20" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="284" RefreshRate="100000000"/>
+    <SamplingPort Name="A653_FCS_3_O_ADA20" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="284" RefreshRate="100000000"/>
+  </Ports>
+</ApplicationDescription>

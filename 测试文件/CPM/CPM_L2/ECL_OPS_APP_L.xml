@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0x576B0704">
+  <MemorySize MemorySizeBss="0x1800000" MemorySizeData="0x600000" MemorySizePersistentData="0x200000" MemorySizeRoData="0x200000" MemorySizeText="0x400000" MemorySizePersistentBss="0x200000"/>
+  <Ports>
+    <QueuingPort Name="ECL_2_HFQ_IN_01_Port_ADA20" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_ECL_IDU_LIB_A661_BLOCK" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1056" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="OP_ECL_SYNCHRONIZATION" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8172" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="IP_ECL_SYNCHRONIZATION" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8204" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="HFQ_OUT_03_Port_PF20_2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="396" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="OP_QP_ECL_IDU_LIB_A661_BLOCK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8164" MaxNbMessage="4" ProtocolType="1"/>
+    <QueuingPort Name="ECL_1_HFQ_IN_01_Port_ADA20" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="ECL_pi_04_Port_FCM2_AF20" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="156" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_FROM_FDAS_2_ALERTS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1040" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="ECL_pi_04_Port_FCM1_AF20" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="156" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_ECL_IDU_C_A661_BLOCK" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1056" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="ECL_pi_04_Port_FCM3_AF20" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="156" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="OP_QP_ECL_IDU_LOB_A661_BLOCK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8164" MaxNbMessage="4" ProtocolType="1"/>
+    <QueuingPort Name="OP_QP_ECL_IDU_C_A661_BLOCK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8164" MaxNbMessage="4" ProtocolType="1"/>
+    <QueuingPort Name="ECL_HFQ_IN_02_Port_SP20_FCM3" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="196" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_FROM_FDAS_3_ALERTS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1040" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_ECL_IDU_LOB_A661_BLOCK" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1056" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="ECL_HFQ_IN_02_Port_SP20_FCM1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="196" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="OP_QP_ECL_IDU_RIB_A661_BLOCK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8164" MaxNbMessage="4" ProtocolType="1"/>
+    <QueuingPort Name="IP_QP_ECL_IDU_ROB_A661_BLOCK" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1056" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="OP_QP_ECL_IDU_ROB_A661_BLOCK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8164" MaxNbMessage="4" ProtocolType="1"/>
+    <QueuingPort Name="IP_QP_ECL_IDU_RIB_A661_BLOCK" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1056" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_FROM_FDAS_1_ALERTS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1040" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="ECL_3_HFQ_IN_01_Port_ADA20" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="ECL_HFQ_IN_02_Port_SP20_FCM2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="196" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="HFQ_OUT_03_Port_PF20_3" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="396" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="HFQ_OUT_03_Port_PF20_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="396" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="HFQ_OUT_17_Port_OHMS_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="796" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="HFQ_OUT_17_Port_OHMS_2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="796" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="HFQ_OUT_17_Port_OHMS_3" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="796" MaxNbMessage="3" ProtocolType="2"/>
+    <SamplingPort Name="piHFS_DISPLAY_ECL_Msg2_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="piHFQ_EEC_Msg1_EICAS_B2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="248" RefreshRate="300000000"/>
+    <SamplingPort Name="P124_TIF_STATUS_AURAL_SV1_L" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="300000000"/>
+    <SamplingPort Name="DISPLAY_SYNOPTIC_Msg2_1_02" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="48" RefreshRate="300000000"/>
+    <SamplingPort Name="piHFS_DISPLAY_IDU_Msg1_1_03" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="104" RefreshRate="300000000"/>
+    <SamplingPort Name="piHFS_DISPLAY_FDAS_Msg1_1_05" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_pi429_CMD_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="68" RefreshRate="300000000"/>
+    <SamplingPort Name="P136_STATUS_DISCRETES_SV1_L" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="60" RefreshRate="300000000"/>
+    <SamplingPort Name="Tx_LBPCU_EPS_Data_100ms_A664B4" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="272" RefreshRate="300000000"/>
+    <SamplingPort Name="piHFS_DISPLAY_FDAS_Msg1_1_08" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="piHFS_IS_Msg3_1_03" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_Rx_LBPCU_EPS_Data_2A" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="272" RefreshRate="300000000"/>
+    <SamplingPort Name="piHFS_IS_Msg3_1_01" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="OP_SP_IDU_CAS_FDAS_R" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_pi_EEC_R_CHB_Msg2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_pi_EEC_L_CHA_Msg3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="88" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_A653_CORE_2_INPUT" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="200" RefreshRate="300000000"/>
+    <SamplingPort Name="P128_TIF_STATUS_AURAL_SV3_L" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="300000000"/>
+    <SamplingPort Name="OP_SP_IDU_CROSSSIDE_MM_D4" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_pi_EEC_R_CHA_Msg2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="300000000"/>
+    <SamplingPort Name="OP_SP_CPA_LAMP_33" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="128" RefreshRate="300000000"/>
+    <SamplingPort Name="OP_SP_CPA_LAMP_32" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="128" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_APR_REDUNDANCY_REPORT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="300000000"/>
+    <SamplingPort Name="P107_TIF_STATUS_AURAL_SV3_R" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="300000000"/>
+    <SamplingPort Name="IP_SP_IRS_VERTICAL_SPEED_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_pi429_MON_FSECU_SLAT_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="300000000"/>
+    <SamplingPort Name="HFQ_OUT_06_Port_PF80_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_APP_FMS_NAV_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="300000000"/>
+    <SamplingPort Name="IP_SP_FCS_5" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="96" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_Rx_RBPCU_EPS_Data_2B" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="300" RefreshRate="300000000"/>
+    <SamplingPort Name="OP_SP_ECL_PEER_XTALK" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="100000000"/>
+    <SamplingPort Name="ECL_2_pi429_LGCU_ConCh_Rx1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="300000000"/>
+    <SamplingPort Name="piHFS_DISPLAY_FDAS_Msg1_1_11" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="72" RefreshRate="300000000"/>
+    <SamplingPort Name="Tx_SGCU_CAN_Data_2_A664_A1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="180" RefreshRate="300000000"/>
+    <SamplingPort Name="OP_SP_IDU_CROSSSIDE_MM_D2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="300000000"/>
+    <SamplingPort Name="OP_SP_IDU_CAS_FDAS_D3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="OP_SP_IDU_CAS_FDAS_D1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="IP_SP_FCS_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="96" RefreshRate="300000000"/>
+    <SamplingPort Name="piHFS_DISPLAY_ECL_Msg2_1_14" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="300000000"/>
+    <SamplingPort Name="piHFQ_EEC_Msg1_EICAS_A1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="248" RefreshRate="300000000"/>
+    <SamplingPort Name="OP_SP_IDU_CAS_FDAS_D4" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="IP_SP_ECL_PEER_XTALK" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="300000000"/>
+    <SamplingPort Name="IP_SP_FCS_3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="96" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_pi429_MON_FSECU_SLAT_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="288" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_A653_CORE_1_INPUT" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="200" RefreshRate="300000000"/>
+    <SamplingPort Name="P103_TIF_STATUS_AURAL_SV1_R" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_Rx_RBPCU_EPS_Data_2A" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="300" RefreshRate="300000000"/>
+    <SamplingPort Name="piHFS_DISPLAY_FDAS_Msg1_1_10" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_Rx_RBPCU_EPS_Data_1A" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="300" RefreshRate="300000000"/>
+    <SamplingPort Name="IP_SP_FCS_4" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="96" RefreshRate="300000000"/>
+    <SamplingPort Name="IP_SP_IRS_VERTICAL_SPEED_3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="300000000"/>
+    <SamplingPort Name="Tx_SGCU_CAN_Data_2_A664_B2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="180" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_Rx_RBPCU_EPS_Data_1B" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="300" RefreshRate="300000000"/>
+    <SamplingPort Name="IP_SP_FROM_DMI_3_TO_ECL" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_pi_EEC_L_CHB_Msg3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="88" RefreshRate="300000000"/>
+    <SamplingPort Name="Tx_LBPCU_EPS_Data_100ms_A664A1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="272" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_pi_EEC_R_CHB_Msg3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="88" RefreshRate="300000000"/>
+    <SamplingPort Name="OP_SP_ECL_STATUS_DATA" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_FROM_DMI_1_TO_ECL" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_L_pi429_Altitude_Bus_2_25" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_pi_EEC_L_CHB_Msg2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="300000000"/>
+    <SamplingPort Name="Tx_SGCU_CAN_Data_2_A664_B4" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="180" RefreshRate="300000000"/>
+    <SamplingPort Name="P109_STATUS_DISCRETES_SV1_R" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="60" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_pi_EEC_R_CHA_Msg3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="88" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_pi_EEC_L_CHA_Msg2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_R_pi429_Altitude_Bus_2_25" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="pi429_Rx2_ABCU_WheelSpeed_L" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="228" RefreshRate="300000000"/>
+    <SamplingPort Name="pi429_TX1_GEN_1000_03" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="48" RefreshRate="300000000"/>
+    <SamplingPort Name="IP_SP_FCS_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="96" RefreshRate="300000000"/>
+    <SamplingPort Name="piHFS_DISPLAY_FDAS_Msg1_1_04" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="64" RefreshRate="300000000"/>
+    <SamplingPort Name="IP_SP_FROM_DMI_2_TO_ECL" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_Rx_LBPCU_EPS_Data_1B" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="272" RefreshRate="300000000"/>
+    <SamplingPort Name="OP_SP_IDU_CROSSSIDE_MM_D1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="300000000"/>
+    <SamplingPort Name="OP_SP_IDU_CROSSSIDE_MM_R" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="300000000"/>
+    <SamplingPort Name="OP_SP_IDU_CAS_FDAS_D2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_APP_FMS_NAV_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="300000000"/>
+    <SamplingPort Name="Tx_RAT_Status_100ms_A664_A" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="Tx_SGCU_CAN_Data_2_A664_A3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="180" RefreshRate="300000000"/>
+    <SamplingPort Name="IP_SP_IRS_VERTICAL_SPEED_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="300000000"/>
+    <SamplingPort Name="piHFS_IS_Msg3_1_06" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="OP_SP_CPA_LAMP_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="128" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_pi429_CMD_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="168" RefreshRate="300000000"/>
+    <SamplingPort Name="Tx_RAT_Status_100ms_A664_B" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="OP_SP_IDU_CROSSSIDE_MM_D5" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="300000000"/>
+    <SamplingPort Name="piHFS_DISPLAY_ECL_Msg1_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="72" RefreshRate="300000000"/>
+    <SamplingPort Name="piHFQ_EEC_Msg1_EICAS_A2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="248" RefreshRate="300000000"/>
+    <SamplingPort Name="piHFQ_EEC_Msg1_EICAS_B1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="248" RefreshRate="300000000"/>
+    <SamplingPort Name="HFQ_OUT_06_Port_PF80_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="300000000"/>
+    <SamplingPort Name="HFQ_OUT_06_Port_PF80_3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_APP_FMS_NAV_2_FMBA" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_A653_CORE_2_INPUT_FMBA" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="200" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_A653_CORE_2_INPUT2_FMBA" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_TO_OHMS_FAULT_REPORT" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="Tx_RGCU_EPS_Data_100ms_A664_B2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="96" RefreshRate="300000000"/>
+    <SamplingPort Name="Tx_LGCU_EPS_Data_100ms_A664_A3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="96" RefreshRate="300000000"/>
+    <SamplingPort Name="Tx_LGCU_EPS_Data_100ms_A664_B4" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="96" RefreshRate="300000000"/>
+    <SamplingPort Name="Tx_RGCU_EPS_Data_100ms_A664_B4" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="96" RefreshRate="300000000"/>
+    <SamplingPort Name="Tx_RGCU_EPS_Data_100ms_A664_A3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="96" RefreshRate="300000000"/>
+    <SamplingPort Name="Tx_LGCU_EPS_Data_100ms_A664_A1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="96" RefreshRate="300000000"/>
+    <SamplingPort Name="Tx_LGCU_EPS_Data_100ms_A664_B2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="96" RefreshRate="300000000"/>
+    <SamplingPort Name="Tx_RGCU_EPS_Data_100ms_A664_A1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="96" RefreshRate="300000000"/>
+    <SamplingPort Name="piHFS_DISPLAY_FDAS_Msg2_1_04" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="128" RefreshRate="300000000"/>
+    <SamplingPort Name="piHFS_DISPLAY_FDAS_Msg1_1_06" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="300000000"/>
+    <SamplingPort Name="ECL_1_pi429_LGCU_ConCh_Rx1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="148" RefreshRate="300000000"/>
+    <SamplingPort Name="HFS_RGW05_IN" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="156" RefreshRate="300000000"/>
+    <SamplingPort Name="HFS_RGW06_IN" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="380" RefreshRate="300000000"/>
+  </Ports>
+</ApplicationDescription>

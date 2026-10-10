@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0x54F4EFC1">
+  <MemorySize MemorySizeBss="0x135000" MemorySizeData="0x3000" MemorySizePersistentData="0x1000" MemorySizeRoData="0x12000" MemorySizeText="0x64000" MemorySizePersistentBss="0x1000"/>
+  <Ports>
+    <QueuingPort Name="DLP_STATUS_CLIENT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1488" MaxNbMessage="1" ProtocolType="2"/>
+    <QueuingPort Name="DLP_SESSION_MANAGER_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="288" MaxNbMessage="1" ProtocolType="2"/>
+    <QueuingPort Name="DLP_STATUS_CLIENT_TX" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="true" MaxMessageSize="1456" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="DLP_MANAGED_SERVER_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8212" MaxNbMessage="1" ProtocolType="2"/>
+    <QueuingPort Name="DLP_MANAGED_SERVER_TX" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="true" MaxMessageSize="8180" MaxNbMessage="1" ProtocolType="1"/>
+    <SamplingPort Name="DLP_TO_DLS_STATUS_TX" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="256" RefreshRate="500000000"/>
+    <SamplingPort Name="DLS_TO_DLP_CONTROL_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="288" RefreshRate="1500000000"/>
+  </Ports>
+</ApplicationDescription>

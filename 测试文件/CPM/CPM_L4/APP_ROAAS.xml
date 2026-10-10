@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0x3B5FC2F1">
+  <MemorySize MemorySizeBss="0x800000" MemorySizeData="0x800000" MemorySizePersistentData="0x200000" MemorySizeRoData="0x200000" MemorySizeText="0x200000" MemorySizePersistentBss="0x200000"/>
+  <Ports>
+    <QueuingPort Name="HFQ_O_Port_1_ROAAS_CAS" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="12" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="APP_ROAAS_EEC_R_CHB_MSG_CAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="248" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_EEC_R_CHA_MSG_CAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="248" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_EEC_L_CHA_MSG_CAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="248" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_EEC_L_CHB_MSG_CAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="248" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_OHMS_COMMAND" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="44" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_OUT_OHMS_IBIT_RESPONSE" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8180" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="FCM3_ADS_Data" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_FCM1_ADS_Data" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_FCM2_ADS_Data" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_FCM2_IRS_SP20" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="196" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_FCM1_IRS_SP20" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="196" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_FCM3_IRS_SP20" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="196" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_FMBA_AIRPORT_INFO" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="204" MaxNbMessage="1" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_FMS2_AIRPORT_INFO" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="204" MaxNbMessage="1" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_FMS1_AIRPORT_INFO" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="204" MaxNbMessage="1" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_Port_3_TMP_C" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="44" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_TMP_3_CONTROL" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="44" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_Port_1_RDCU_GNSS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="168" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_TMP_2_CONTROL" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="44" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_Port_2_RDCU_LRRA" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="52" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_Port_1_RDCU_LRRA" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="52" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_Port_1_TMP_L" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="44" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_Port_1_RDCU_XLS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="56" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_TMP_1_CONTROL" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="44" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_Port_2_TMP_R" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="44" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_Port_2_RDCU_GNSS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="168" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_Port_2_RDCU_XLS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="56" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_IRU_3_A429_3" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="148" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_IRU_2_A429_2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="148" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="APP_ROAAS_I_IRU_1_A429_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="148" MaxNbMessage="3" ProtocolType="2"/>
+    <SamplingPort Name="APP_ROAAS_I_FMS1_429_GUIDANCE" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="100" RefreshRate="100000000"/>
+    <SamplingPort Name="APP_ROAAS_I_FMS1_429_CORE" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="200" RefreshRate="200000000"/>
+    <SamplingPort Name="APP_ROAAS_I_FMS2_429_GUIDANCE" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="100" RefreshRate="100000000"/>
+    <SamplingPort Name="APP_ROAAS_I_FMS2_429_CORE" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="200" RefreshRate="200000000"/>
+    <SamplingPort Name="APP_ROAAS_I_IRU_1_A429_4" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="10000000"/>
+    <SamplingPort Name="APP_ROAAS_I_FCM1_IRS_SP80" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="12500000"/>
+    <SamplingPort Name="APP_ROAAS_I_FCM2_IRS_SP80" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="12500000"/>
+    <SamplingPort Name="APP_ROAAS_I_FCM3_IRS_SP80" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="12500000"/>
+    <SamplingPort Name="APP_ROAAS_I_IRU_1_A429_5" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="10000000"/>
+    <SamplingPort Name="APP_ROAAS_I_IRU_1_A429_6" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="10000000"/>
+    <SamplingPort Name="APP_ROAAS_I_FMS1_429_NAV" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="200000000"/>
+    <SamplingPort Name="APP_ROAAS_I_FMS2_429_NAV" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="200000000"/>
+    <SamplingPort Name="APP_ROAAS_I_FMBA_429_CORE" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="200" RefreshRate="200000000"/>
+    <SamplingPort Name="APP_ROAAS_I_FMBA_429_NAV" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="200000000"/>
+    <SamplingPort Name="APP_ROAAS_l_EEC_L_CHB_Msg2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="15000000"/>
+    <SamplingPort Name="APP_ROAAS_l_EEC_R_CHA_Msg2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="15000000"/>
+    <SamplingPort Name="APP_ROAAS_l_EEC_R_CHB_Msg2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="15000000"/>
+    <SamplingPort Name="APP_ROAAS_l_EEC_L_CHA_Msg2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="15000000"/>
+    <SamplingPort Name="EEC_L_CHA_Msg3_Discrete" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="88" RefreshRate="15000000"/>
+    <SamplingPort Name="EEC_R_CHA_Msg3_Discrete" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="88" RefreshRate="15000000"/>
+    <SamplingPort Name="EEC_L_CHB_Msg3_Discrete" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="88" RefreshRate="15000000"/>
+    <SamplingPort Name="EEC_R_CHB_Msg3_Discrete" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="88" RefreshRate="15000000"/>
+    <SamplingPort Name="APP_ROAAS_I_LGCU2_LG" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="88" RefreshRate="10000000"/>
+    <SamplingPort Name="APP_ROAAS_I_LGCU1_LG" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="88" RefreshRate="10000000"/>
+    <SamplingPort Name="A653_OUT_ROAAS_OHMS_STAT" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="24" RefreshRate="2000000000"/>
+    <SamplingPort Name="APP_ROAAS_BCMU_Msg_IN" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="200000000"/>
+    <SamplingPort Name="BCMU_1_AUTO_BRK" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="200000000"/>
+    <SamplingPort Name="FSECU_1_Flap_IN_LANDING_CFG" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="100000000"/>
+    <SamplingPort Name="FSECU_2_Flap_IN_LANDING_CFG" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="100000000"/>
+  </Ports>
+</ApplicationDescription>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="">
+  <MemorySize MemorySizeBss="0x380000" MemorySizeData="0x12000" MemorySizePersistentData="0x1000" MemorySizeRoData="0x24000" MemorySizeText="0x122000" MemorySizePersistentBss="0x1000"/>
+  <Ports>
+    <QueuingPort Name="SM_ES_MIB_RESPONSE_TX" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="188" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="HM_1_IBIT_REQUEST_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="64" MaxNbMessage="8" ProtocolType="2"/>
+    <QueuingPort Name="SM_ECHO_RESPONSE_TX" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="72" MaxNbMessage="5" ProtocolType="1"/>
+    <QueuingPort Name="SM_ICMP_REQUEST_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="72" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="SM_LOOPBACK_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="13" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="CPM_CONFIG_RPT_TX" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4235" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="SM_LOOPBACK_TX" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="13" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="CPM_IBIT_RESPONSE_TX" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="64" MaxNbMessage="5" ProtocolType="1"/>
+    <QueuingPort Name="SM_MIB_REQUEST_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="188" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="HM_2_IBIT_REQUEST_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="64" MaxNbMessage="8" ProtocolType="2"/>
+    <SamplingPort Name="DLP_TO_DLS_STATUS_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="256" RefreshRate="1500000000"/>
+    <SamplingPort Name="TM_2_REQUEST_B_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="2" RefreshRate="1000000000"/>
+    <SamplingPort Name="DLS_TO_DLP_CONTROL_TX" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="256" RefreshRate="500000000"/>
+    <SamplingPort Name="TS_1_RESPONSE_B_TX" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="32" RefreshRate="100000000"/>
+    <SamplingPort Name="TS_2_RESPONSE_A_TX" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="32" RefreshRate="100000000"/>
+    <SamplingPort Name="CPM_MONITOR_TX" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="32" RefreshRate="1000000000"/>
+    <SamplingPort Name="TM_1_OFFSET1_A_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="576" RefreshRate="1500000000"/>
+    <SamplingPort Name="SM_APR_1_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="1970000000"/>
+    <SamplingPort Name="TS_3_RESPONSE_A_TX" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="32" RefreshRate="100000000"/>
+    <SamplingPort Name="PMF_1_POWER_WARN_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="250000000"/>
+    <SamplingPort Name="TM_3_TIMESTAMP_A_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="460" RefreshRate="1000000000"/>
+    <SamplingPort Name="FADEC_R_CHB_ENGINE_STATUS_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="170000000"/>
+    <SamplingPort Name="OMS_1_FLIGHT_INFO_SET_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="68" RefreshRate="2000000000"/>
+    <SamplingPort Name="TM_1_REQUEST_A_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="2" RefreshRate="1000000000"/>
+    <SamplingPort Name="BCMU_CH2_PARKING_BREAK_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="250000000"/>
+    <SamplingPort Name="CMMFC_LOCAL_MANIFEST_TX" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="440" RefreshRate="200000000"/>
+    <SamplingPort Name="TM_1_TIMESTAMP_B_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="460" RefreshRate="1000000000"/>
+    <SamplingPort Name="TS_3_RESPONSE_B_TX" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="32" RefreshRate="100000000"/>
+    <SamplingPort Name="TM_3_OFFSET1_B_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="576" RefreshRate="1500000000"/>
+    <SamplingPort Name="FUEL_CHB_L273_STATUS_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1970000000"/>
+    <SamplingPort Name="TS_2_RESPONSE_B_TX" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="32" RefreshRate="100000000"/>
+    <SamplingPort Name="DISTRIBUTED_MANIFEST_L4_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="444" RefreshRate="1200000000"/>
+    <SamplingPort Name="DISTRIBUTED_MANIFEST_L1_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="444" RefreshRate="1200000000"/>
+    <SamplingPort Name="PMF_2_POWER_WARN_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="250000000"/>
+    <SamplingPort Name="TM_3_TIMESTAMP_B_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="460" RefreshRate="1000000000"/>
+    <SamplingPort Name="TM_3_OFFSET2_A_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="576" RefreshRate="1500000000"/>
+    <SamplingPort Name="TM_2_OFFSET2_A_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="576" RefreshRate="1500000000"/>
+    <SamplingPort Name="TM_2_OFFSET1_A_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="576" RefreshRate="1500000000"/>
+    <SamplingPort Name="SM_CPM_TEMP_STATUS_TX" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="200000000"/>
+    <SamplingPort Name="BCMU_CH1_PARKING_BREAK_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="250000000"/>
+    <SamplingPort Name="IMA_STATE_1_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="970000000"/>
+    <SamplingPort Name="TM_2_TIMESTAMP_B_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="460" RefreshRate="1000000000"/>
+    <SamplingPort Name="DISTRIBUTED_MANIFEST_R4_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="444" RefreshRate="1200000000"/>
+    <SamplingPort Name="TS_1_RESPONSE_A_TX" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="32" RefreshRate="100000000"/>
+    <SamplingPort Name="TM_1_OFFSET1_B_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="576" RefreshRate="1500000000"/>
+    <SamplingPort Name="FADEC_L_CHA_ENGINE_STATUS_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="170000000"/>
+    <SamplingPort Name="FADEC_L_CHB_ENGINE_STATUS_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="170000000"/>
+    <SamplingPort Name="DISTRIBUTED_MANIFEST_R1_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="444" RefreshRate="1200000000"/>
+    <SamplingPort Name="SM_APR_2_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="1970000000"/>
+    <SamplingPort Name="TM_1_TIMESTAMP_A_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="460" RefreshRate="1000000000"/>
+    <SamplingPort Name="TM_3_OFFSET2_B_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="576" RefreshRate="1500000000"/>
+    <SamplingPort Name="TM_2_OFFSET1_B_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="576" RefreshRate="1500000000"/>
+    <SamplingPort Name="TM_2_OFFSET2_B_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="576" RefreshRate="1500000000"/>
+    <SamplingPort Name="TM_3_REQUEST_B_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="2" RefreshRate="1000000000"/>
+    <SamplingPort Name="FUEL_CHA_L273_STATUS_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1970000000"/>
+    <SamplingPort Name="TM_2_TIMESTAMP_A_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="460" RefreshRate="1000000000"/>
+    <SamplingPort Name="TM_1_OFFSET2_A_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="576" RefreshRate="1500000000"/>
+    <SamplingPort Name="TM_3_REQUEST_A_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="2" RefreshRate="1000000000"/>
+    <SamplingPort Name="FADEC_R_CHA_ENGINE_STATUS_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="170000000"/>
+    <SamplingPort Name="IMA_STATE_2_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="970000000"/>
+    <SamplingPort Name="COCKPIT_MAINT_SWITCH_1_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="2500000000"/>
+    <SamplingPort Name="COCKPIT_MAINT_SWITCH_2_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="2500000000"/>
+    <SamplingPort Name="TM_1_OFFSET2_B_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="576" RefreshRate="1500000000"/>
+    <SamplingPort Name="TM_3_OFFSET1_A_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="576" RefreshRate="1500000000"/>
+    <SamplingPort Name="TM_1_REQUEST_B_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="2" RefreshRate="1000000000"/>
+    <SamplingPort Name="TM_2_REQUEST_A_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="2" RefreshRate="1000000000"/>
+    <SamplingPort Name="APR_REDUNDANCY_RPT_TX" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="100000000"/>
+  </Ports>
+</ApplicationDescription>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0x8A6F02F8">
+  <MemorySize MemorySizeBss="0x4000" MemorySizeData="0x3000" MemorySizePersistentData="0x1000" MemorySizeRoData="0x4000" MemorySizeText="0x1d000" MemorySizePersistentBss="0x1000"/>
+  <Ports>
+    <QueuingPort Name="piFMS_CORE1_APERIODIC_2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="76" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="piFMS_CORE1_APERIODIC" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="56" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="piISS_L_MT41" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="52" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="poHFS_AHMU_5Hz" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="piISS_R_MS57" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="52" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="poHFS_AHMU_20Hz" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="piISS_R_MS75" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="60" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="piISS_L_MA51" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="76" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="A653_OUT_PAA_5_Status_AHMU" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4090" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="piISS_L_MW33" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="132" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="piISS_L_MS57" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="52" MaxNbMessage="8" ProtocolType="2"/>
+    <QueuingPort Name="poHFS_AHMU_1_25Hz" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="poHFS_AHMU_10Hz" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="poHFS_AHMU_0_625Hz" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="poHFS_AHMU_2_5Hz" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="piISS_R_MA53" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="48" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="piISS_R_MA51" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="76" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_AHMU_Status_PAA_5" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4122" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piFMS_GUIDANCE1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="100" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="piISS_R_MW33" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="132" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="piISS_L_MS75" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="60" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="piA653_OUT_CORE_OUTPUT_APER" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="56" MaxNbMessage="1" ProtocolType="2"/>
+    <QueuingPort Name="piA653_OUT_CORE_OUTPUT_APE" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="56" MaxNbMessage="1" ProtocolType="2"/>
+    <QueuingPort Name="piA653_OUT_CORE_APERIODIC_2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="76" MaxNbMessage="1" ProtocolType="2"/>
+    <QueuingPort Name="piA653_OUT_CORE_APERIODIC_2_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="76" MaxNbMessage="1" ProtocolType="2"/>
+    <QueuingPort Name="piISS_R_MT41" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="52" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="piHFQ_O_Tx_Port_100_Stat_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="56" MaxNbMessage="1" ProtocolType="2"/>
+    <QueuingPort Name="piHFQ_O_Tx_Port_134_OHMS_Stat" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="56" MaxNbMessage="1" ProtocolType="2"/>
+    <SamplingPort Name="piNAV_GLU_R_msg1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="100000000"/>
+    <SamplingPort Name="piFMS_Core2_MIX_MSG_CORE" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="200" RefreshRate="400000000"/>
+    <SamplingPort Name="piNAV_RAL_Altitude_Bus2_25" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="100000000"/>
+    <SamplingPort Name="piFMS_Nav2_MIX_MSG_NAV" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="400000000"/>
+    <SamplingPort Name="piNAV_GLU_msg2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="68" RefreshRate="100000000"/>
+    <SamplingPort Name="piIRS_msg2" Direction="DESTINATION" Attribute="NULL_PORT" MaxMessageSize="352" RefreshRate="100000000"/>
+    <SamplingPort Name="piNAV_GLUL_429_GNSS_3_Msg_200" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="400000000"/>
+    <SamplingPort Name="piIRS_msg3" Direction="DESTINATION" Attribute="NULL_PORT" MaxMessageSize="144" RefreshRate="100000000"/>
+    <SamplingPort Name="piFMS_Core1_MIX_MSG_CORE" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="200" RefreshRate="400000000"/>
+    <SamplingPort Name="piISS_R_MT43" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="92" RefreshRate="200000000"/>
+    <SamplingPort Name="piIRS_PSEU_msg1" Direction="DESTINATION" Attribute="NULL_PORT" MaxMessageSize="48" RefreshRate="700000000"/>
+    <SamplingPort Name="piNAV_GLU_msg1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="192" RefreshRate="400000000"/>
+    <SamplingPort Name="piISS_TSARELAY_TSARelay_s2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="4000000000"/>
+    <SamplingPort Name="piISS_TSARELAY_TSARelay_s1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="4000000000"/>
+    <SamplingPort Name="piLRA_Altitude_Bus_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="1000000000"/>
+    <SamplingPort Name="piIMA_DISTRIBUTED_AOT_RX_3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="544" RefreshRate="2000000000"/>
+    <SamplingPort Name="piFMS_Nav1_MIX_MSG_NAV" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="400000000"/>
+    <SamplingPort Name="piA653_OUT_CORE_OUTPUT" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="200" RefreshRate="200000000"/>
+    <SamplingPort Name="piA653_OUT_NAV_OUTPUT" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="200000000"/>
+    <SamplingPort Name="piA653_OUT_GUIDANCE_OUTPUT" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="100" RefreshRate="100000000"/>
+    <SamplingPort Name="piA653_OUT_GUIDANCE_OUTPUT_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="100" RefreshRate="100000000"/>
+    <SamplingPort Name="pipo429_01_320_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="64" RefreshRate="400000000"/>
+    <SamplingPort Name="pipo429_01_320_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="64" RefreshRate="400000000"/>
+    <SamplingPort Name="pi429_GNSS_3_1000" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="48" RefreshRate="1000000000"/>
+    <SamplingPort Name="pipo429_01_320" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="64" RefreshRate="400000000"/>
+  </Ports>
+</ApplicationDescription>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0xFE0E3ECD">
+  <MemorySize MemorySizeBss="0x500000" MemorySizeData="0x200000" MemorySizePersistentData="0x200000" MemorySizeRoData="0x200000" MemorySizeText="0x200000" MemorySizePersistentBss="0x200000"/>
+  <Ports>
+    <QueuingPort Name="IP_QP_IDU_RIB_A661_BLOCK" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1056" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_IDU_LOB_A661_BLOCK" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1056" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="OP_QP_IDU_ROB_A661_BLOCK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="DMI_OHMS_Cmd" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="44" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="OP_QP_IDU_LIB_A661_BLOCK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="OP_QP_IDU_RIB_A661_BLOCK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="IP_QP_IDU_ROB_A661_BLOCK" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1056" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_IDU_C_A661_BLOCK" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1056" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_FCM_3_ADA20_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_FCM_1_ADA20_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="OP_QP_IDU_LOB_A661_BLOCK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="IP_QP_FCM_2_ADA20_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_IDU_LIB_A661_BLOCK" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1056" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="OP_QP_IDU_C_A661_BLOCK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="DMI_OHMS_Stat" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="28" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="DMI_OHMS_Resp" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="128" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="IP_QP_FROM_FDAS_R3_TO_DIM" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1040" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_FROM_FDAS_L3_TO_DIM" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1040" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_FROM_FDAS_L1_TO_DIM" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1040" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_RGW02_DMI_R02" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="116" MaxNbMessage="8" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_RGW01_DMI_R01" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="116" MaxNbMessage="8" ProtocolType="2"/>
+    <SamplingPort Name="IP_QP_FMBA_CORE_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="200" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_RIB_ND_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_QP_LGCU2_TX1_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_OHMS_Aircraft_Status" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="100" RefreshRate="2000000000"/>
+    <SamplingPort Name="IP_SP_IDU_C_PFD_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="136" RefreshRate="100000000"/>
+    <SamplingPort Name="APR_REDUNDANCY_REPORT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="300000000"/>
+    <SamplingPort Name="IP_QP_FMS_NAV_2_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_DMH_IDU_RIB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_DMH_IDU_ROB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_LOB_HSI_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_ROB_CLK_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="88" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_C_ND_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="100000000"/>
+    <SamplingPort Name="OP_SP_MCAST_XTALK" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="24" RefreshRate="50000000"/>
+    <SamplingPort Name="IP_SP_IDU_RIB_PFD_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="136" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_DMI_PeerA_Personality" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_ROB_HSI_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_FDAS_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_DMI_PeerA" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_LIB_ND_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_DMH_IDU_LIB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_DMI_PeerB_Personality" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="100000000"/>
+    <SamplingPort Name="OP_SP_RCP" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="50000000"/>
+    <SamplingPort Name="IP_SP_IDU_RIB_CLK_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="88" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_LIB_PFD_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="136" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_QP_FMS_NAV_1_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_DMH_IDU_LOB_" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_LOB_ND_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_ROB_ND_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_LIB_HSI_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_LOB_PFD_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="136" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_DMI_PeerB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="100000000"/>
+    <SamplingPort Name="OP_SP_DCP" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="50000000"/>
+    <SamplingPort Name="IP_SP_IDU_C_HSI_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_DMH_IDU_C" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_QP_LGCU1_TX1_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_FDAS_3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_RIB_HSI_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_LOB_CLK_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="88" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_LIB_CLK_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="88" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_C_CLK_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="88" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_ROB_PFD_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="136" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_FDAS_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="100000000"/>
+    <SamplingPort Name="OP_SP_MCAST_DU_STATUS" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="50000000"/>
+    <SamplingPort Name="IP_QP_FMS_NAV_1_TO_DMI_FMBA" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_ROB_EI_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="80" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_RIB_EI_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="80" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_LOB_EI_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="80" RefreshRate="100000000"/>
+    <SamplingPort Name="OP_SP_IDU_Reversion" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="340" RefreshRate="50000000"/>
+    <SamplingPort Name="IP_SP_DMI_A_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="372" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_DMI_B_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="372" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_LIB_EI_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="80" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_C_EI_Rev_TO_DMI" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="80" RefreshRate="100000000"/>
+  </Ports>
+</ApplicationDescription>

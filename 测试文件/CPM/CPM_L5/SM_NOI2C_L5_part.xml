@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<PartitionDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0x56DE0F71">
+  <SharedDataRegion Name="PLM" Size="20480" AccessRights="READ_ONLY"/>
+  <SharedDataRegion Name="MANIFEST" Size="8192" AccessRights="READ_WRITE"/>
+  <SharedDataRegion Name="SM_CONFIG" Size="8388608" AccessRights="READ_WRITE"/>
+  <Application NameRef="SM_NOI2C_L5"/>
+  <SharedLibraryRegion NameRef="pos"/>
+  <Settings RequiredMemorySize="8355840" setModuleSchedule="true" allocDisable="true"/>
+</PartitionDescription>

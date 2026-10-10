@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- edited with XMLSpy v2007 sp1 (http://www.altova.com) by zmin1 (EMBRACE) -->
+<xs:schema xmlns:vp="http://www.actri.avic/XMLSchema/VP/1.0" xmlns="http://www.actri.avic/ConfigRecord" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.actri.avic/ConfigRecord" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="TypeLib.xsd"/>
+	<xs:element name="CoreOSDescription" type="CoreOSDescriptionType"/>
+	<xs:complexType name="KERNEL_MEM_POOL">
+		<xs:attribute name="Size" type="UnsignedLongValueType" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="KERNEL_CONFIG_RECORD_POOL">
+		<xs:attribute name="Size" type="UnsignedLongValueType" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="KERNEL_PG_POOL">
+		<xs:attribute name="Size" type="UnsignedLongValueType" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="KERNEL_POOL">
+		<xs:attribute name="PoolName" type="NameType" use="required"/>
+		<xs:attribute name="Size" type="UnsignedLongValueType" use="required"/>
+		<xs:attribute name="WriteProtected" type="booleanType" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="PORT_POOL">
+		<xs:attribute name="Size" type="UnsignedLongValueType" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="HMLOG_POOL">
+		<xs:attribute name="Size" type="UnsignedLongValueType" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="RAM_PAYLOAD_POOL">
+		<xs:attribute name="Base_Address" type="UnsignedLongLongValueType" use="required"/>
+		<xs:attribute name="Size" type="UnsignedLongValueType" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="ACE_MEM_POOL">
+		<xs:attribute name="Base_Address" type="UnsignedLongLongValueType" use="required"/>
+		<xs:attribute name="Size" type="UnsignedLongValueType" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="KERNEL_IO_REGION_TYPE">
+		<xs:attribute name="PoolName" type="NameType" use="required"/>
+		<xs:attribute name="Base_Address" type="UnsignedLongLongValueType" use="required"/>
+		<xs:attribute name="VirtualAddress" type="UnsignedLongValueType" use="required"/>
+		<xs:attribute name="Size" type="UnsignedLongValueType" use="required"/>
+		<xs:attribute name="CachePolicy" type="CachePolicyType" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="SHARED_IO_REGION_TYPE">
+		<xs:attribute name="PoolName" type="NameType" use="required"/>
+		<xs:attribute name="Base_Address" type="UnsignedLongLongValueType" use="required"/>
+		<xs:attribute name="Size" type="UnsignedLongValueType" use="required"/>
+		<xs:attribute name="VirtualAddress" type="UnsignedLongValueType" use="required"/>
+		<xs:attribute name="CachePolicy" type="SharedIOCachePolicyType" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="MEMORY_POOL">
+		<xs:attribute name="Name" type="NameType" use="required"/>
+		<xs:attribute name="Base_Address" type="UnsignedLongLongValueType" use="required"/>
+		<xs:attribute name="Size" type="UnsignedLongValueType" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="USER_MEMORY_POOL">
+		<xs:attribute name="Base_Address" type="UnsignedLongLongValueType" use="required"/>
+		<xs:attribute name="Size" type="UnsignedLongValueType" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="LIB_POOL">
+		<xs:attribute name="Base_Address" type="UnsignedLongLongValueType" use="required"/>
+		<xs:attribute name="Size" type="UnsignedLongValueType" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="RAM_REGION_TYPE">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="kernelMemoryRegion" type="KERNEL_MEM_POOL"/>
+			<xs:element name="kernelConfigRecordRegion" type="KERNEL_CONFIG_RECORD_POOL"/>
+			<xs:element name="kernelPgPool" type="KERNEL_PG_POOL"/>
+			<xs:element name="portRegion" type="PORT_POOL">
+				<xs:annotation>
+					<xs:appinfo/>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="hmLogRegion" type="HMLOG_POOL"/>
+			<xs:element name="kernelRegion" type="KERNEL_POOL"/>
+			<xs:element name="ramPayloadRegion" type="RAM_PAYLOAD_POOL"/>
+			<xs:element name="libRegion" type="LIB_POOL"/>
+			<xs:element name="userConfigRecordRegion" type="MEMORY_POOL"/>
+		</xs:choice>
+		<xs:attribute name="Base_Address" type="UnsignedLongLongValueType" use="required"/>
+		<xs:attribute name="Size" type="UnsignedLongValueType" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="FLASH_REGION_TYPE">
+		<xs:attribute name="Base_Address" type="UnsignedLongLongValueType" use="required"/>
+		<xs:attribute name="Size" type="UnsignedLongValueType" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="HARDWARE_REGION_TYPE">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="PhysicalMemory" type="RAM_REGION_TYPE"/>
+			<xs:element name="userMemoryRegion" type="USER_MEMORY_POOL" />
+			<xs:element name="kernelIO" type="KERNEL_IO_REGION_TYPE"/>
+			<xs:element name="sharedIO" type="SHARED_IO_REGION_TYPE"/>
+			<xs:element name="payloadMemory" type="FLASH_REGION_TYPE"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="CoreOSDescriptionType">
+		<xs:annotation>
+			<xs:documentation>Information used to rebuild and configure the CoreOS. this includes the Kernel, BSP and Drivers.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="KernelConfiguration">
+				<xs:annotation>
+					<xs:documentation>Kernel configuration parameters</xs:documentation>
+					<xs:appinfo/>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:attribute name="partitionSpaceSize" type="UnsignedIntValueType" use="optional"/>
+					<xs:attribute name="payloadMapSize" type="UnsignedLongValueType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Default=0x20000</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="sysClkRateHz" type="UnsignedIntValueType" use="required">
+						<xs:annotation>
+							<xs:documentation>Default=0xFFFFFFFF</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="unsafeMethodTimeout" type="UnsignedLongLongValueType" use="required">
+						<xs:annotation>
+							<xs:documentation>Default=0</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="memoryAllocationDisabled" type="booleanType" use="required">
+						<xs:annotation>
+							<xs:documentation>Default=false</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="watchDogTimerDuration" type="UnsignedLongLongValueType" use="required">
+						<xs:annotation>
+							<xs:documentation>Default=0</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="kernelVirtualAddress" type="UnsignedLongValueType" use="required">
+						<xs:annotation>
+							<xs:documentation>Default= 0x00100000 (base virtual address for kernel)</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="partitionVirtualAddress" type="UnsignedLongValueType" use="required">
+						<xs:annotation>
+							<xs:documentation>Default = 0x04000000 (base virtual address for all partitions)</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="addressSpaceSize" type="UnsignedIntValueType" use="required">
+						<xs:annotation>
+							<xs:documentation>Default = 0xFFFFFFFF (virtual address space size)</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="addressSpaceRegionAllocationUnit" type="UnsignedIntValueType" use="required">
+						<xs:annotation>
+							<xs:documentation>Default = 0x10000000 (max virtual adddress to be allocated)</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="user1" type="SignedIntValueType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Default=0</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="user2" type="SignedIntValueType" use="optional">
+						<xs:annotation>
+							<xs:documentation>Default=0</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:anyAttribute namespace="##any"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="MemorySize">
+				<xs:annotation>
+					<xs:appinfo/>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:attribute name="MemorySizeBss" type="UnsignedLongValueType" use="required"/>
+					<xs:attribute name="MemorySizeText" type="UnsignedLongValueType" use="required"/>
+					<xs:attribute name="MemorySizeData" type="UnsignedLongValueType" use="required"/>
+					<xs:attribute name="MemorySizeRoData" type="UnsignedLongValueType" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="HardwareConfiguration" type="HARDWARE_REGION_TYPE"/>
+		</xs:sequence>
+		<xs:attribute name="KernelName" type="NameType" use="required"/>
+		<xs:attribute name="CRC32" type="CRC32Type" use="optional"/>
+	</xs:complexType>
+</xs:schema>

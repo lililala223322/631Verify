@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="">
+  <MemorySize MemorySizeBss="0x2d8000" MemorySizeData="0x14000" MemorySizePersistentData="0x14000" MemorySizeRoData="0x20000" MemorySizeText="0xd6000" MemorySizePersistentBss="0x2d8000"/>
+  <Ports>
+    <QueuingPort Name="WWS_OMS_cmd" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="12" MaxNbMessage="1" ProtocolType="2"/>
+    <QueuingPort Name="po_A653Q_FTS_DATA_SESSION" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="12" MaxNbMessage="5" ProtocolType="1"/>
+    <QueuingPort Name="pi_A653Q_CCS_PRESEL_A" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="12" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="po_A653S_OMS_WW_CR" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1920" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="pi_A653Q_CCS_PRESEL_B" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="12" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="po_A653S_OMS_WW_Fault_Report" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="28" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="WWS_OMS_Resp" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8180" MaxNbMessage="1" ProtocolType="1"/>
+    <SamplingPort Name="pi_A653S_WWS_LRU_Data" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="160" RefreshRate="1000000000"/>
+    <SamplingPort Name="pi_A653S_Cab_Dif_Pressure_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1000000000"/>
+    <SamplingPort Name="pi_A653S_Water_TempSen1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="1000000000"/>
+    <SamplingPort Name="pi_A653S_WW_LRU_Power_FB2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="588" RefreshRate="1000000000"/>
+    <SamplingPort Name="po_A653S_VFMD_Power_Control" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="200000000"/>
+    <SamplingPort Name="pi_A653S_WWS_AFT2HTR_Power_FB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="636" RefreshRate="1000000000"/>
+    <SamplingPort Name="pi_A653S_Water_TempSen2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1000000000"/>
+    <SamplingPort Name="pi_A653S_Water_AFTTempSen_s2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="1000000000"/>
+    <SamplingPort Name="pi_A653S_Water_AFTTempSen_s1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="1000000000"/>
+    <SamplingPort Name="pi_A653S_VFMD_ID_Health" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="96" RefreshRate="1920000000"/>
+    <SamplingPort Name="po_A653S_WWS_CCS_Ouput" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="1000000000"/>
+    <SamplingPort Name="pi_A653S_WWS_AFT1HTR_Power_FB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="636" RefreshRate="1000000000"/>
+    <SamplingPort Name="pi_A653S_Cab_Dif_Pressure_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1000000000"/>
+    <SamplingPort Name="pi_A653S_WWS_FWDHTR_Power_FB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="588" RefreshRate="1000000000"/>
+    <SamplingPort Name="pi_A653S_Statistics_Basis" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="68" RefreshRate="1000000000"/>
+    <SamplingPort Name="po_A653S_WWS_AFT1_HTR_PC" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="24" RefreshRate="200000000"/>
+    <SamplingPort Name="pi_A653S_APR_Redundancy_Report" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="1000000000"/>
+    <SamplingPort Name="pi_A653S_Water_VLV_PFB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="636" RefreshRate="1000000000"/>
+    <SamplingPort Name="pi_A653S_Waste_AFTTempSen" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="1000000000"/>
+    <SamplingPort Name="pi_A653S_VLV_Partition_Command" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="1000000000"/>
+    <SamplingPort Name="po_A653S_WWS_FWD_HTR_PC" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="200000000"/>
+    <SamplingPort Name="pi_A653S_WWS_Status_System" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="480000000"/>
+    <SamplingPort Name="pi_A653S_ON_Ground_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1000000000"/>
+    <SamplingPort Name="po_A653S_WW_LRU_PC" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="200000000"/>
+    <SamplingPort Name="pi_A653S_AC_Status" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="1000000000"/>
+    <SamplingPort Name="pi_A653S_ON_Ground_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1000000000"/>
+    <SamplingPort Name="pi_A653S_Water_AFTTempSen_s3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="1000000000"/>
+    <SamplingPort Name="pi_A653S_Water_MIDTempSen" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="1000000000"/>
+    <SamplingPort Name="po_A653S_WWS_AFT2_HTR_PC" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="200000000"/>
+    <SamplingPort Name="po_A653S_VFMD_AC_Data" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="40" RefreshRate="500000000"/>
+    <SamplingPort Name="pi_A653S_AC_Status1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="1000000000"/>
+  </Ports>
+</ApplicationDescription>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<PartitionDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0xD504DA3F">
+  <Application NameRef="APP_FMS_NAV_1"/>
+  <SharedLibraryRegion NameRef="pos"/>
+  <Settings RequiredMemorySize="12992512" setModuleSchedule="false" allocDisable="true"/>
+</PartitionDescription>

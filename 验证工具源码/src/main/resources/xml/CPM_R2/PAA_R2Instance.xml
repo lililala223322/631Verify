@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="">
+  <MemorySize MemorySizeBss="0x3c000" MemorySizeData="0x8000" MemorySizePersistentData="0x1000" MemorySizeRoData="0x4e000" MemorySizeText="0x5a000" MemorySizePersistentBss="0x1000"/>
+  <Ports>
+    <QueuingPort Name="A653_OUT_PAA_2_Status_AHMU" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4090" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="poHFS_AHMU_20Hz" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="poHFS_AHMU_10Hz" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="poHFS_AHMU_2_5Hz" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="poHFS_AHMU_0_625Hz" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="A653_IN_AHMU_Status_PAA_2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4090" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="poHFS_AHMU_1_25Hz" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="poHFS_AHMU_5Hz" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1" ProtocolType="1"/>
+    <SamplingPort Name="piFADEC_LChB_FADEC_A429" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="100000000"/>
+    <SamplingPort Name="piFADEC_LChB_FADEC_Trend" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="452" RefreshRate="100000000"/>
+    <SamplingPort Name="piFADEC_LChB_FADEC_TrendFDR" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="304" RefreshRate="100000000"/>
+    <SamplingPort Name="piFADEC_LChB_FADEC_Discrete" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="100000000"/>
+    <SamplingPort Name="piFADEC_LChB_FADEC_Status" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="200" RefreshRate="200000000"/>
+    <SamplingPort Name="piFADEC_LChB_FADEC_EICAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="216" RefreshRate="100000000"/>
+    <SamplingPort Name="piACARS_Trigger_Status_LCHB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="piFADEC_LChB_FADEC_FCSFMS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="132" RefreshRate="100000000"/>
+    <SamplingPort Name="piOS_PRESS_OK" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="piOS_Status1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="piOS_Temp_Voltage" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="piOS_Press_Voltage" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="piOS_PRESS_LOW" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="piOS_Status2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+  </Ports>
+</ApplicationDescription>

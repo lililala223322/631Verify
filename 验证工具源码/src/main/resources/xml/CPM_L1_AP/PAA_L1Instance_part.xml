@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<PartitionDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="">
+  <Application NameRef="PAA_L1Instance"/>
+  	<SharedDataRegion AccessRights="READ_WRITE" Address="0xA000000" Name="sdr1" Size="0x1000" />
+	<SharedDataRegion AccessRights="READ_WRITE" Address="0xB000000" Name="sdr2" Size="0x1000" />
+  <SharedLibraryRegion NameRef="pos"/>
+  <Settings RequiredMemorySize="3506176" maxGlobalFDs="20" systemPartition="false" allocDisable="true" defaultAppName="PAA_L1Instance"
+  	appsIdleRelinquishEnabled="true"   appsPriority="36"  fpExcEnable="true" isrStackSize="0x3000"   maxEventQStallDuration="500000" 
+  	numDrivers="20"  numFiles="30"  numLogMsgs="40" numStackGuardPages="50" numWorkerTasks="60" scheduleChangeAction="IGNORE"/>
+</PartitionDescription>

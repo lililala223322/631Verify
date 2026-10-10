@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<PartitionDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="">
+  <Application NameRef="DLC_L1"/>
+  <SharedDataRegion AccessRights="READ_ONLY" Address="0xA000000" Name="sdr1" Size="0x1000" Type="DATABASE" />
+	<SharedDataRegion AccessRights="READ_WRITE" Address="0xB000000" Name="sdr3" Size="0x1000" Type="CONFIG_FILE" />
+  <SharedLibraryRegion NameRef="pos"/>
+  <Settings RequiredMemorySize="2146304" maxGlobalFDs="20" systemPartition="true"/>
+</PartitionDescription>

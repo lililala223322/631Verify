@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<xs:schema xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vp="http://www.actri.avic/XMLSchema/VP/1.0" targetNamespace="http://www.w3.org/2001/XInclude" finalDefault="extension">
+	<xs:element name="include" type="xi:includeType"/>
+	<xs:complexType name="includeType" mixed="true">
+		<xs:attribute name="href" type="xs:anyURI" use="optional"/>
+	</xs:complexType>
+</xs:schema>

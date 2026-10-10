@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CoreOSDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" KernelName="os" xsi:schemaLocation="http://www.actri.avic/ConfigRecord ../../XSD/CoreOS.xsd">
+	<KernelConfiguration addressSpaceRegionAllocationUnit="0x0" addressSpaceSize="0x0" kernelVirtualAddress="0x82000000" memoryAllocationDisabled="false" partitionVirtualAddress="0x70000000" sysClkRateHz="1000" unsafeMethodTimeout="500000000" watchDogTimerDuration="0"/>
+	<MemorySize MemorySizeBss="0x00100000" MemorySizeData="0x00010000" MemorySizeRoData="0x0018000" MemorySizeText="0x000b0000"/>
+	<HardwareConfiguration>
+		<PhysicalMemory Base_Address="0x82000000" Size="0x14000000">
+			<kernelMemoryRegion Size="0x2000000"/>
+			<kernelConfigRecordRegion Size="0x100000"/>
+			<kernelPgPool Size="0x400000"/>
+			<portRegion Size="0x900000"/>
+			<hmLogRegion Size="0x100000"/>
+			<ramPayloadRegion Base_Address="0x85000000" Size="0xFB00000"/>
+			<libRegion Base_Address="0x95F00000" Size="0x100000"/>
+		</PhysicalMemory>
+		<userMemoryRegion Base_Address="0x34000000" Size="0x40000000"/>
+		<kernelIO Base_Address="0x0" CachePolicy="IO" PoolName="SMC_MEM_1" Size="0x10000000" VirtualAddress="0x0"/>
+		<kernelIO Base_Address="0x20000000" CachePolicy="IO" PoolName="NVRAM" Size="0x80000" VirtualAddress="0x20000000"/>
+		<kernelIO Base_Address="0x20100000" CachePolicy="IO" PoolName="REG_SPACE" Size="0x200000" VirtualAddress="0x20100000"/>
+		<kernelIO Base_Address="0x21000000" CachePolicy="IO" PoolName="SRAM_MEM" Size="0x80000" VirtualAddress="0x21000000"/>
+		<kernelIO Base_Address="0x28000000" CachePolicy="IO" PoolName="CORE_PLIC" Size="0x8000000" VirtualAddress="0x28000000"/>
+		<kernelIO Base_Address="0x30000000" CachePolicy="IO" PoolName="A664_BUFFER" Size="0x4000000" VirtualAddress="0x30000000"/>
+		<kernelIO Base_Address="0x10000000" CachePolicy="IO" PoolName="SMC_MEM_2" Size="0x8000000" VirtualAddress="0x10000000"/>
+		<payloadMemory Base_Address="0x01032000" Size="0x9600000"/>
+	</HardwareConfiguration>
+</CoreOSDescription>

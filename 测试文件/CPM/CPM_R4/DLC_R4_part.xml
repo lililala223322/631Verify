@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<PartitionDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0x7D602084">
+  <SharedDataRegion Name="PLM" Size="20480" AccessRights="READ_ONLY"/>
+  <Application NameRef="DLC_R4"/>
+  <SharedLibraryRegion NameRef="pos"/>
+  <Settings RequiredMemorySize="39845888" setModuleSchedule="true" allocDisable="false"/>
+</PartitionDescription>

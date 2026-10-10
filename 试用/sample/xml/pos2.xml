@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharedLibraryDescription SystemSharedLibrary="false" VirtualAddress="0x60000000" xmlns="http://www.actri.avic/ConfigRecord" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.actri.avic/ConfigRecord ../../.xsd/Application.xsd" CRC32="0xEFA88310">
+	<MemorySize MemorySizeText="0x00020000" MemorySizeRoData="0x00020000" MemorySizeData="0x00001000" MemorySizeBss="0x00000000" MemorySizePersistentBss="0x0000" />
+</SharedLibraryDescription>

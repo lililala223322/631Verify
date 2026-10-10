@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<PartitionDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0xF879F369">
+  <SharedDataRegion Name="ParameterAcquisitionDBClass" Size="1048576" AccessRights="READ_ONLY"/>
+  <Application NameRef="PAA_L3Instance"/>
+  <SharedLibraryRegion NameRef="pos"/>
+  <Settings RequiredMemorySize="7340032" setModuleSchedule="false" allocDisable="true"/>
+</PartitionDescription>

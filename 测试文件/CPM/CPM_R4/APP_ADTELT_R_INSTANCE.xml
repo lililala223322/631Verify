@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0x3EC47D80">
+  <MemorySize MemorySizeBss="0x400000" MemorySizeData="0x200000" MemorySizePersistentData="0x10000" MemorySizeRoData="0x10000" MemorySizeText="0x100000" MemorySizePersistentBss="0x10000"/>
+  <Ports>
+    <QueuingPort Name="A653_FCS_3_AF20" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="156" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653_FCS_3_PF20" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="396" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653_FCS_2_PF20" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="396" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653_FCS_2_AF20" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="156" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653_FCS_1_AF20" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="156" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653_FCS_1_PF20" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="396" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653_ISS_L_MT41" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="52" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="A653_ISS_R_MT41" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="52" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="A653_FCS_1_ADA20_Q" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653_FCS_3_ADA20_Q" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653_FCS_2_ADA20_Q" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653_FCS_3_SP20" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="196" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="A653_FCS_2_SP20" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="196" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="A653_FCS_1_SP20" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="196" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="A653_FCS_1_ADA20_S" Direction="DESTINATION" Attribute="NULL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653_FCS_3_ADA20_S" Direction="DESTINATION" Attribute="NULL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653_FCS_2_ADA20_S" Direction="DESTINATION" Attribute="NULL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="5" ProtocolType="2"/>
+    <SamplingPort Name="A653_AOT_1_Distributed_Message" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="544" RefreshRate="3000000000"/>
+    <SamplingPort Name="A653_AOT_3_Distributed_Message" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="544" RefreshRate="3000000000"/>
+    <SamplingPort Name="A653_AOT_4_Distributed_Message" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="544" RefreshRate="3000000000"/>
+    <SamplingPort Name="A653_AOT_2_Distributed_Message" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="544" RefreshRate="3000000000"/>
+    <SamplingPort Name="A653_FMS_NAV_2_MIX_MSG" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_FMS_CORE_2_MIX_MSG" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="200" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_FMS_CORE_1_MIX_MSG" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="200" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_FMS_NAV_1_MIX_MSG" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_R_ID_DISC_ID_ICE_NAISW" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_IDUCENTER_OVERSPEED" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_IDUROB_OVERSPEED" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_IDULOB_OVERSPEED" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_IDULIB_OVERSPEED" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_IDURIB_OVERSPEED" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_FDAS_L3_GENERAL" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_FDAS_R3_GENERAL" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_FDAS_L1_GENERAL" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_FDAS_L3_MWC" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_L_ID_DISC_ID_ICE_NAISW" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_FDAS_L1_MWC" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_FDAS_R3_MWC" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_ISS_L_MA51" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_ISS_R_MA51" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_L_NAISW_ANTI_ICE_ONOFF1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="48" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_R_NAISW_ANTI_ICE_ONOFF2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="48" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_LGCU2_po429_ConCh1_GLU" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="48" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_LGCU1_IRU3_GLUR_po429" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_HF_ELT_DT_po429_M500" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="A653SAMP_TX1_ADTELT_TRIG_SIG" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="28" RefreshRate="500000000"/>
+    <SamplingPort Name="A653_FCS_2_Data_SP80" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_FCS_1_Data_SP80" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_FCS_3_Data_SP80" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_EEC_LA_EICAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="248" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_EEC_RB_Discrete" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="88" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_EEC_LA_Discrete" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="88" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_EEC_RB_EICAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="248" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_EEC_LB_A664_Msg2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="248" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_EEC_RA_A664_Msg1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="248" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_RA_R_Altitude2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_EEC_LB_Discrete" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="88" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_EEC_RA_Discrete" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="88" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_RA_L_Altitude2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_FPSC_po429_TxB_Msg" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_AMSC_2_po429_Msg" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_AMSC_1_po429_Msg" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_FSECU2_IRU1_po429_CMD" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_FSECU_1_po429_CMD_Msg" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="48" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_FSECU_1_po429_MON_Msg" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="48" RefreshRate="300000000"/>
+    <SamplingPort Name="A653_FSECU_2_po429_MON_Msg" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="48" RefreshRate="300000000"/>
+  </Ports>
+</ApplicationDescription>

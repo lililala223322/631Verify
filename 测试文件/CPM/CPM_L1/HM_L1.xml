@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0x8EFA071E">
+  <MemorySize MemorySizeBss="0x400000" MemorySizeData="0x10000" MemorySizePersistentData="0x1000" MemorySizeRoData="0x20000" MemorySizeText="0x80000" MemorySizePersistentBss="0x1000"/>
+  <Ports>
+    <QueuingPort Name="CPM_R3_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="96" MaxNbMessage="8" ProtocolType="2"/>
+    <QueuingPort Name="CPM_R1_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4268" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="CPM_L5_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4268" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="RDCU_10_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="40" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="RDCU_7_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="40" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="CPM_L5_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="96" MaxNbMessage="8" ProtocolType="2"/>
+    <QueuingPort Name="CPM_R2_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4268" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="RSU_1A_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="96" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="RDCU_11_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="40" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="NSM_RA_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="180" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="CPM_R4_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="96" MaxNbMessage="8" ProtocolType="2"/>
+    <QueuingPort Name="RSU_2A_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="180" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="RSU_1B_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="180" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="RDCU_16_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="40" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="HM_LRU_APERIODIC_CMD_ACTION_TX" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="true" MaxMessageSize="64" MaxNbMessage="5" ProtocolType="1"/>
+    <QueuingPort Name="CMRF_SYS_CONFIG_STATUS_TX" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8180" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="NSM_LB_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="96" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="RSU_1A_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="180" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="CPM_L6_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4268" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="CPM_R6_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4268" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="NSM_LA_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="96" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="RSU_2B_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="96" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="NSM_RB_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="96" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="CPM_R2_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="96" MaxNbMessage="8" ProtocolType="2"/>
+    <QueuingPort Name="CPM_R1_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="96" MaxNbMessage="8" ProtocolType="2"/>
+    <QueuingPort Name="CPM_R5_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="96" MaxNbMessage="8" ProtocolType="2"/>
+    <QueuingPort Name="RDCU_1_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="40" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="RDCU_6_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="40" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="RSU_2A_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="96" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="RSU_2B_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="180" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="RDCU_13_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="40" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="CPM_L3_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="96" MaxNbMessage="8" ProtocolType="2"/>
+    <QueuingPort Name="RDCU_8_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="40" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="RDCU_4_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="40" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="CPM_L2_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4268" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="CPM_L1_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4268" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="CPM_L4_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4268" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="NSM_LA_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="180" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="CPM_L2_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="96" MaxNbMessage="8" ProtocolType="2"/>
+    <QueuingPort Name="OHMS_A664_DIRECTED_COMMAND_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="44" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="NSM_RA_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="96" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="NSM_RB_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="180" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="NSM_LB_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="180" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="CPM_R6_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="96" MaxNbMessage="8" ProtocolType="2"/>
+    <QueuingPort Name="RDCU_14_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="40" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="CPM_L4_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="96" MaxNbMessage="8" ProtocolType="2"/>
+    <QueuingPort Name="CPM_R5_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4268" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="CPM_L3_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4268" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="CPM_L1_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="96" MaxNbMessage="8" ProtocolType="2"/>
+    <QueuingPort Name="RDCU_9_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="40" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="CPM_L6_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="96" MaxNbMessage="8" ProtocolType="2"/>
+    <QueuingPort Name="RSU_1B_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="96" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="RDCU_2_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="40" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="CPM_R3_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4268" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="RDCU_15_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="40" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="RDCU_12_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="40" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="RDCU_3_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="40" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="RDCU_5_IBIT_RESPONSE_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="40" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="CPM_R4_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4268" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="HM_OHMS_DIRECTED_RESPONSE_TX" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="24" MaxNbMessage="2" ProtocolType="1"/>
+    <SamplingPort Name="IMA_PLATFORM_PFR_TX" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="1164" RefreshRate="2000000000"/>
+    <SamplingPort Name="TM_3_CONNECTIVITY_RPT_A_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="152" RefreshRate="1000000000"/>
+    <SamplingPort Name="RDCU_02_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="252" RefreshRate="2970000000"/>
+    <SamplingPort Name="TM_1_CONNECTIVITY_RPT_A_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="152" RefreshRate="1000000000"/>
+    <SamplingPort Name="RDCU_05_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="168" RefreshRate="2500000000"/>
+    <SamplingPort Name="CMMF_L2_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="2970000000"/>
+    <SamplingPort Name="APR_R1_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="2970000000"/>
+    <SamplingPort Name="CPM_R2_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="64" RefreshRate="2970000000"/>
+    <SamplingPort Name="APR_L2_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="2970000000"/>
+    <SamplingPort Name="NSM_RB_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="68" RefreshRate="2970000000"/>
+    <SamplingPort Name="IMA_STATE_R1_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="970000000"/>
+    <SamplingPort Name="RDCU_13_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="252" RefreshRate="2970000000"/>
+    <SamplingPort Name="RDCU_14_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="252" RefreshRate="2970000000"/>
+    <SamplingPort Name="RDCU_07_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="252" RefreshRate="2970000000"/>
+    <SamplingPort Name="RDCU_10_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="252" RefreshRate="2970000000"/>
+    <SamplingPort Name="RDCU_03_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="252" RefreshRate="2970000000"/>
+    <SamplingPort Name="CPM_R6_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="64" RefreshRate="2970000000"/>
+    <SamplingPort Name="RSU_1B_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="68" RefreshRate="2970000000"/>
+    <SamplingPort Name="NSM_LB_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="68" RefreshRate="2970000000"/>
+    <SamplingPort Name="IMA_PLATFORM_FDAS_STATUS_TX" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="24" RefreshRate="1000000000"/>
+    <SamplingPort Name="TM_1_CONNECTIVITY_RPT_B_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="152" RefreshRate="1000000000"/>
+    <SamplingPort Name="CPM_R5_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="64" RefreshRate="2970000000"/>
+    <SamplingPort Name="RDCU_08_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="168" RefreshRate="2500000000"/>
+    <SamplingPort Name="APR_REDUNDANCY_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="500000000"/>
+    <SamplingPort Name="CPM_L2_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="64" RefreshRate="2970000000"/>
+    <SamplingPort Name="CPM_L1_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="64" RefreshRate="2970000000"/>
+    <SamplingPort Name="RDCU_15_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="252" RefreshRate="2970000000"/>
+    <SamplingPort Name="RDCU_04_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="168" RefreshRate="2500000000"/>
+    <SamplingPort Name="CMMF_R2_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="2970000000"/>
+    <SamplingPort Name="CMMF_L1_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="2970000000"/>
+    <SamplingPort Name="TM_3_CONNECTIVITY_RPT_B_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="152" RefreshRate="1000000000"/>
+    <SamplingPort Name="RDCU_15_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="168" RefreshRate="2500000000"/>
+    <SamplingPort Name="OHMS_1_FLIGHT_INFO_SET_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="100" RefreshRate="2000000000"/>
+    <SamplingPort Name="RDCU_08_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="252" RefreshRate="2970000000"/>
+    <SamplingPort Name="RDCU_11_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="168" RefreshRate="2500000000"/>
+    <SamplingPort Name="APR_R2_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="2970000000"/>
+    <SamplingPort Name="RDCU_07_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="168" RefreshRate="2500000000"/>
+    <SamplingPort Name="CPM_R1_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="64" RefreshRate="2970000000"/>
+    <SamplingPort Name="RDCU_02_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="168" RefreshRate="2500000000"/>
+    <SamplingPort Name="RDCU_11_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="252" RefreshRate="2970000000"/>
+    <SamplingPort Name="RDCU_01_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="168" RefreshRate="2500000000"/>
+    <SamplingPort Name="RDCU_06_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="168" RefreshRate="2500000000"/>
+    <SamplingPort Name="CPM_L6_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="64" RefreshRate="2970000000"/>
+    <SamplingPort Name="OS_PLATFORM_ADN_SUMM_TX" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="340" RefreshRate="1000000000"/>
+    <SamplingPort Name="OS_PLATFORM_ADN_SUMM_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="372" RefreshRate="1970000000"/>
+    <SamplingPort Name="RDCU_13_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="168" RefreshRate="2500000000"/>
+    <SamplingPort Name="CMMF_R1_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="2970000000"/>
+    <SamplingPort Name="RDCU_12_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="252" RefreshRate="2970000000"/>
+    <SamplingPort Name="APR_L1_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="2970000000"/>
+    <SamplingPort Name="CPM_L5_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="64" RefreshRate="2970000000"/>
+    <SamplingPort Name="RSU_2A_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="68" RefreshRate="2970000000"/>
+    <SamplingPort Name="IMA_STATE_L2_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="970000000"/>
+    <SamplingPort Name="CMRF_HM_MONITOR_TX" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1000000000"/>
+    <SamplingPort Name="COCKPIT_MAINT_SWITCH_1_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="2500000000"/>
+    <SamplingPort Name="RDCU_14_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="168" RefreshRate="2500000000"/>
+    <SamplingPort Name="RDCU_12_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="168" RefreshRate="2500000000"/>
+    <SamplingPort Name="RDCU_01_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="252" RefreshRate="2970000000"/>
+    <SamplingPort Name="RDCU_06_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="252" RefreshRate="2970000000"/>
+    <SamplingPort Name="RDCU_16_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="252" RefreshRate="2970000000"/>
+    <SamplingPort Name="CPM_L4_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="64" RefreshRate="2970000000"/>
+    <SamplingPort Name="CMRF_2_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="2970000000"/>
+    <SamplingPort Name="NSM_RA_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="68" RefreshRate="2970000000"/>
+    <SamplingPort Name="NSM_Temperature_TX_R" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1000000000"/>
+    <SamplingPort Name="RDCU_16_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="168" RefreshRate="2500000000"/>
+    <SamplingPort Name="RDCU_05_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="252" RefreshRate="2970000000"/>
+    <SamplingPort Name="CPM_L3_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="64" RefreshRate="2970000000"/>
+    <SamplingPort Name="RDCU_09_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="168" RefreshRate="2500000000"/>
+    <SamplingPort Name="TM_2_CONNECTIVITY_RPT_B_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="152" RefreshRate="1000000000"/>
+    <SamplingPort Name="NSM_LA_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="68" RefreshRate="2970000000"/>
+    <SamplingPort Name="IMA_STATE_L1_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="970000000"/>
+    <SamplingPort Name="RDCU_09_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="252" RefreshRate="2970000000"/>
+    <SamplingPort Name="RDCU_10_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="168" RefreshRate="2500000000"/>
+    <SamplingPort Name="RSU_1A_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="68" RefreshRate="2970000000"/>
+    <SamplingPort Name="TM_2_CONNECTIVITY_RPT_A_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="152" RefreshRate="1000000000"/>
+    <SamplingPort Name="COCKPIT_MAINT_SWITCH_2_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="2500000000"/>
+    <SamplingPort Name="RDCU_03_CONFIG_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="168" RefreshRate="2500000000"/>
+    <SamplingPort Name="CPM_R4_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="64" RefreshRate="2970000000"/>
+    <SamplingPort Name="CMRF_1_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="2970000000"/>
+    <SamplingPort Name="IMA_HM_HA_INHIBIT_INTERLOCK_TX" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1000000000"/>
+    <SamplingPort Name="RSU_2B_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="68" RefreshRate="2970000000"/>
+    <SamplingPort Name="IMA_STATE_R2_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="970000000"/>
+    <SamplingPort Name="RDCU_04_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="252" RefreshRate="2970000000"/>
+    <SamplingPort Name="CPM_R3_MONITOR_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="64" RefreshRate="2970000000"/>
+    <SamplingPort Name="NSM_Temperature_TX_L" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1000000000"/>
+  </Ports>
+</ApplicationDescription>

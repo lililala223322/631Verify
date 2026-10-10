@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="">
+  <MemorySize MemorySizeBss="0x7000" MemorySizeData="0x3000" MemorySizePersistentData="0x70000" MemorySizeRoData="0x4f000" MemorySizeText="0x2b0000" MemorySizePersistentBss="0x70000"/>
+  <Ports>
+    <QueuingPort Name="A653QUE_O_CSA_DU5" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="A653QUE_I_CSA_DU2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653QUE_I_CSA_DU3" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653QUE_I_CSA_CMF_FILE" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="908" MaxNbMessage="10" ProtocolType="2"/>
+    <QueuingPort Name="A653QUE_O_CSA_DU2" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="A653QUE_O_CSA_DU3" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="A653QUE_I_CSA_DU5" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653QUE_O_CSA_CMF_BOP" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="520" MaxNbMessage="2" ProtocolType="1"/>
+    <SamplingPort Name="A653SAMP_I_FMS_NAV_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="80" RefreshRate="1200000000"/>
+    <SamplingPort Name="A653SAMP_I_Printer_Status" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1200000000"/>
+    <SamplingPort Name="A653SAMP_I_CMF_STATUS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1200000000"/>
+    <SamplingPort Name="A653SAMP_O_CSA_STATUS" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1000000000"/>
+    <SamplingPort Name="A653SAMP_I_FMS_NAV_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="80" RefreshRate="1200000000"/>
+    <SamplingPort Name="A653SAMP_I_FMS_CORE_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="1200000000"/>
+    <SamplingPort Name="A653SAMP_I_FMS_CORE_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="1200000000"/>
+    <SamplingPort Name="A653SAMP_I_FMS_CORE_3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="1200000000"/>
+    <SamplingPort Name="A653SAMP_I_FMS_NAV_3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="80" RefreshRate="1200000000"/>
+  </Ports>
+</ApplicationDescription>

@@ -1,0 +1,1696 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<Module xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="">
+  <CoreOS>
+    <xi:include href="coreOS.xml"/>
+  </CoreOS>
+  <Applications>
+    <Application Name="FIDO_R4">
+      <xi:include href="FIDO_R4.xml"/>
+    </Application>
+    <Application Name="AOT_4">
+      <xi:include href="AOT_4.xml"/>
+    </Application>
+    <Application Name="APP_FMS_NAV_2">
+      <xi:include href="APP_FMS_NAV_2.xml"/>
+    </Application>
+    <Application Name="IMA_DM_R4">
+      <xi:include href="IMA_DM_R4.xml"/>
+    </Application>
+    <Application Name="VIRTUALCONTROLAPP_R">
+      <xi:include href="VIRTUALCONTROLAPP_R.xml"/>
+    </Application>
+    <Application Name="SM_I2C_R4">
+      <xi:include href="SM_I2C_R4.xml"/>
+    </Application>
+    <Application Name="DLC_R4">
+      <xi:include href="DLC_R4.xml"/>
+    </Application>
+    <Application Name="FSM_R4">
+      <xi:include href="FSM_R4.xml"/>
+    </Application>
+    <Application Name="PAA_R4Instance">
+      <xi:include href="PAA_R4Instance.xml"/>
+    </Application>
+    <Application Name="APP_FMS_TUNE_2">
+      <xi:include href="APP_FMS_TUNE_2.xml"/>
+    </Application>
+  </Applications>
+  <SharedDataRegions/>
+  <SharedLibraryRegions>
+    <SharedLibrary Name="pos">
+      <xi:include href="pos.xml"/>
+    </SharedLibrary>
+  </SharedLibraryRegions>
+  <Partitions>
+    <Partition Identifier="28" Name="FIDO_R4">
+      <xi:include href="FIDO_R4_part.xml"/>
+    </Partition>
+    <Partition Identifier="40" Name="AOT_4">
+      <xi:include href="AOT_4_part.xml"/>
+    </Partition>
+    <Partition Identifier="104" Name="APP_FMS_NAV_2">
+      <xi:include href="APP_FMS_NAV_2_part.xml"/>
+    </Partition>
+    <Partition Identifier="64" Name="IMA_DM_R4">
+      <xi:include href="IMA_DM_R4_part.xml"/>
+    </Partition>
+    <Partition Identifier="69" Name="VIRTUALCONTROLAPP_R">
+      <xi:include href="VIRTUALCONTROLAPP_R_part.xml"/>
+    </Partition>
+    <Partition Identifier="53" Name="SM_I2C_R4">
+      <xi:include href="SM_I2C_R4_part.xml"/>
+    </Partition>
+    <Partition Identifier="19" Name="DLC_R4">
+      <xi:include href="DLC_R4_part.xml"/>
+    </Partition>
+    <Partition Identifier="29" Name="FSM_R4">
+      <xi:include href="FSM_R4_part.xml"/>
+    </Partition>
+    <Partition Identifier="2" Name="PAA_R4Instance">
+      <xi:include href="PAA_R4Instance_part.xml"/>
+    </Partition>
+    <Partition Identifier="105" Name="APP_FMS_TUNE_2">
+      <xi:include href="APP_FMS_TUNE_2_part.xml"/>
+    </Partition>
+    <PseudoPartition Name="a664_driver" Identifier="255">
+      <PseudoPartitionDescription>
+        <Ports>
+          <QueuingPort Name="pseudoport_tx_30434" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="160" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_rx_33188" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="128" MaxNbMessage="3"/>
+          <QueuingPort Name="pseudoport_tx_30433" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="160" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_rx_33200" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="128" MaxNbMessage="3"/>
+          <QueuingPort Name="pseudoport_tx_30432" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="2"/>
+          <SamplingPort Name="pseudoport_rx_31845" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="68" RefreshRate="2000000000"/>
+          <SamplingPort Name="pseudoport_tx_30013" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="512" RefreshRate="1000000000"/>
+          <SamplingPort Name="pseudoport_rx_31087" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="16" RefreshRate="4000000000"/>
+          <SamplingPort Name="pseudoport_rx_30016" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="512" RefreshRate="4000000000"/>
+          <SamplingPort Name="pseudoport_rx_30017" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="512" RefreshRate="1000000000"/>
+          <SamplingPort Name="pseudoport_rx_30012" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="512" RefreshRate="4000000000"/>
+          <SamplingPort Name="pseudoport_rx_30006" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="512" RefreshRate="4000000000"/>
+          <SamplingPort Name="pseudoport_tx_30015" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="512" RefreshRate="250000000"/>
+          <SamplingPort Name="pseudoport_rx_31118" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="16" RefreshRate="4000000000"/>
+          <SamplingPort Name="pseudoport_tx_30014" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="32" RefreshRate="1000000000"/>
+          <SamplingPort Name="pseudoport_rx_31188" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="20" RefreshRate="1000000000"/>
+          <SamplingPort Name="pseudoport_rx_30013" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="512" RefreshRate="1000000000"/>
+          <SamplingPort Name="pseudoport_rx_30009" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="512" RefreshRate="1000000000"/>
+          <SamplingPort Name="pseudoport_rx_31148" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="16" RefreshRate="4000000000"/>
+          <SamplingPort Name="pseudoport_rx_31178" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="16" RefreshRate="4000000000"/>
+          <QueuingPort Name="pseudoport_rx_30516" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="500" MaxNbMessage="3"/>
+          <QueuingPort Name="pseudoport_tx_30251" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_rx_30550" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="1458" MaxNbMessage="3"/>
+          <QueuingPort Name="pseudoport_rx_32436" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="164" MaxNbMessage="4"/>
+          <QueuingPort Name="pseudoport_tx_30253" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="300" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_rx_30397" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="4"/>
+          <QueuingPort Name="pseudoport_rx_30383" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="512" MaxNbMessage="3"/>
+          <QueuingPort Name="pseudoport_tx_30250" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="8172" MaxNbMessage="4"/>
+          <QueuingPort Name="pseudoport_rx_30357" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="8172" MaxNbMessage="9"/>
+          <QueuingPort Name="pseudoport_rx_32333" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="164" MaxNbMessage="4"/>
+          <QueuingPort Name="pseudoport_rx_32561" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="164" MaxNbMessage="4"/>
+          <QueuingPort Name="pseudoport_tx_30252" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="500" MaxNbMessage="1"/>
+          <QueuingPort Name="pseudoport_rx_30191" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="500" MaxNbMessage="3"/>
+          <SamplingPort Name="pseudoport_rx_34438" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="80" RefreshRate="1100000000"/>
+          <SamplingPort Name="pseudoport_rx_32370" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="284" RefreshRate="300000000"/>
+          <SamplingPort Name="pseudoport_rx_31177" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="24" RefreshRate="1100000000"/>
+          <SamplingPort Name="pseudoport_rx_34984" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="192" RefreshRate="215000000"/>
+          <SamplingPort Name="pseudoport_rx_32283" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="84" RefreshRate="250000000"/>
+          <SamplingPort Name="pseudoport_rx_32535" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="84" RefreshRate="250000000"/>
+          <SamplingPort Name="pseudoport_rx_31147" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="24" RefreshRate="1100000000"/>
+          <SamplingPort Name="pseudoport_rx_35178" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="32" RefreshRate="180000000"/>
+          <SamplingPort Name="pseudoport_rx_35180" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="116" RefreshRate="200000000"/>
+          <SamplingPort Name="pseudoport_tx_30249" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="80" RefreshRate="200000000"/>
+          <SamplingPort Name="pseudoport_rx_34989" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="32" RefreshRate="180000000"/>
+          <SamplingPort Name="pseudoport_rx_31117" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="24" RefreshRate="1100000000"/>
+          <SamplingPort Name="pseudoport_rx_35090" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="32" RefreshRate="180000000"/>
+          <SamplingPort Name="pseudoport_rx_32240" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="284" RefreshRate="300000000"/>
+          <SamplingPort Name="pseudoport_rx_32476" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="284" RefreshRate="300000000"/>
+          <SamplingPort Name="pseudoport_rx_31085" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="24" RefreshRate="1100000000"/>
+          <SamplingPort Name="pseudoport_rx_32410" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="84" RefreshRate="250000000"/>
+          <SamplingPort Name="pseudoport_rx_35091" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="116" RefreshRate="200000000"/>
+          <SamplingPort Name="pseudoport_rx_35315" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="12" RefreshRate="25000000"/>
+          <SamplingPort Name="pseudoport_rx_35351" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="12" RefreshRate="25000000"/>
+          <QueuingPort Name="pseudoport_tx_30486" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="128" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_rx_32679" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="4"/>
+          <QueuingPort Name="pseudoport_rx_33092" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="4"/>
+          <QueuingPort Name="pseudoport_tx_30488" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_tx_30487" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_rx_32882" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="4"/>
+          <QueuingPort Name="pseudoport_rx_32484" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="284" MaxNbMessage="3"/>
+          <QueuingPort Name="pseudoport_rx_31886" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="12" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_tx_30489" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_rx_32780" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="4"/>
+          <QueuingPort Name="pseudoport_tx_30490" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_rx_32248" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="284" MaxNbMessage="3"/>
+          <QueuingPort Name="pseudoport_tx_30491" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_rx_34309" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="80" MaxNbMessage="8"/>
+          <QueuingPort Name="pseudoport_rx_32378" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="284" MaxNbMessage="3"/>
+          <QueuingPort Name="pseudoport_rx_32989" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="4"/>
+          <QueuingPort Name="pseudoport_rx_34346" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="80" MaxNbMessage="8"/>
+          <QueuingPort Name="pseudoport_tx_30492" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="28" MaxNbMessage="2"/>
+          <SamplingPort Name="pseudoport_tx_30482" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="24" RefreshRate="50000000"/>
+          <SamplingPort Name="pseudoport_rx_32706" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="40" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32833" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="44" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_33042" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="56" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32919" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="104" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_30890" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="24" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_30664" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="24" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32643" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="52" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_33040" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="44" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32709" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="104" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_30910" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="328" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_30895" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="328" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32726" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="52" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_30507" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="80" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32807" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="52" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32721" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="44" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32931" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="56" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32836" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="52" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_33028" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="104" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_30893" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="76" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_33021" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="40" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_tx_30481" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="12" RefreshRate="50000000"/>
+          <SamplingPort Name="pseudoport_rx_30738" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="24" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32700" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="52" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32640" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="56" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32831" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="56" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32817" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="104" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_30908" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="76" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_33045" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="52" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32933" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="44" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32812" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="40" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_30703" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="24" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32723" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="56" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32617" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="52" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_30519" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="80" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_30905" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="24" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_34960" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="12" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_tx_30484" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="12" RefreshRate="50000000"/>
+          <SamplingPort Name="pseudoport_rx_32638" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="44" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32909" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="52" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_34404" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="12" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32632" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="104" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32914" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="40" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32625" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="40" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_33017" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="52" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_tx_30483" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="76" RefreshRate="50000000"/>
+          <SamplingPort Name="pseudoport_rx_32936" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="52" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_30184" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="80" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_tx_30485" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="328" RefreshRate="50000000"/>
+          <QueuingPort Name="pseudoport_rx_32869" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="5"/>
+          <QueuingPort Name="pseudoport_tx_30906" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="8164" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_tx_30907" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="8164" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_tx_30909" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="8164" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_rx_32309" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="124" MaxNbMessage="6"/>
+          <QueuingPort Name="pseudoport_tx_30908" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="8164" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_rx_32672" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="5"/>
+          <QueuingPort Name="pseudoport_rx_32977" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="5"/>
+          <QueuingPort Name="pseudoport_tx_30911" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="164" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_rx_32768" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="5"/>
+          <QueuingPort Name="pseudoport_tx_30912" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="8164" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_tx_30914" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="28" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_tx_30913" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="28" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_rx_32455" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="124" MaxNbMessage="6"/>
+          <QueuingPort Name="pseudoport_rx_32580" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="124" MaxNbMessage="6"/>
+          <QueuingPort Name="pseudoport_rx_33077" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="5"/>
+          <QueuingPort Name="pseudoport_rx_31409" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="164" MaxNbMessage="4"/>
+          <QueuingPort Name="pseudoport_tx_30910" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="204" MaxNbMessage="2"/>
+          <SamplingPort Name="pseudoport_rx_30706" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="12" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_tx_30904" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="12" RefreshRate="50000000"/>
+          <SamplingPort Name="pseudoport_rx_30743" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="12" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_30336" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="52" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_31395" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="64" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_tx_30903" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="64" RefreshRate="50000000"/>
+          <SamplingPort Name="pseudoport_rx_30228" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="52" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_31398" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="12" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_tx_30905" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="12" RefreshRate="50000000"/>
+          <SamplingPort Name="pseudoport_rx_34412" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="12" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_34969" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="12" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_30669" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="12" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_30072" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="52" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_30675" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="1008" RefreshRate="66000000"/>
+          <SamplingPort Name="pseudoport_rx_30712" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="1008" RefreshRate="66000000"/>
+          <SamplingPort Name="pseudoport_rx_30749" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="1008" RefreshRate="66000000"/>
+          <QueuingPort Name="pseudoport_tx_30721" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="188" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_rx_30815" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="64" MaxNbMessage="8"/>
+          <QueuingPort Name="pseudoport_tx_30722" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="72" MaxNbMessage="5"/>
+          <QueuingPort Name="pseudoport_tx_30723" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="92" MaxNbMessage="1"/>
+          <QueuingPort Name="pseudoport_rx_33116" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="72" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_rx_31193" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="13" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_tx_30706" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="4235" MaxNbMessage="1"/>
+          <QueuingPort Name="pseudoport_tx_30724" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="13" MaxNbMessage="1"/>
+          <QueuingPort Name="pseudoport_tx_30725" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="64" MaxNbMessage="5"/>
+          <QueuingPort Name="pseudoport_rx_31161" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="92" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_rx_33160" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="188" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_rx_30862" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="64" MaxNbMessage="8"/>
+          <SamplingPort Name="pseudoport_rx_30612" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="256" RefreshRate="1500000000"/>
+          <SamplingPort Name="pseudoport_rx_31150" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="16" RefreshRate="800000000"/>
+          <SamplingPort Name="pseudoport_rx_30977" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="2" RefreshRate="1000000000"/>
+          <SamplingPort Name="pseudoport_tx_30700" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="256" RefreshRate="500000000"/>
+          <SamplingPort Name="pseudoport_tx_30703" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="32" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_tx_30704" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="32" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_tx_30705" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="32" RefreshRate="1000000000"/>
+          <SamplingPort Name="pseudoport_rx_31126" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="444" RefreshRate="1200000000"/>
+          <SamplingPort Name="pseudoport_tx_30709" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="24" RefreshRate="1000000000"/>
+          <SamplingPort Name="pseudoport_rx_30968" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="576" RefreshRate="1500000000"/>
+          <SamplingPort Name="pseudoport_rx_34365" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="84" RefreshRate="1200000000"/>
+          <SamplingPort Name="pseudoport_tx_30710" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="16" RefreshRate="1000000000"/>
+          <SamplingPort Name="pseudoport_rx_31145" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="52" RefreshRate="1970000000"/>
+          <SamplingPort Name="pseudoport_tx_30711" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="32" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_31157" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="16" RefreshRate="250000000"/>
+          <SamplingPort Name="pseudoport_rx_30981" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="460" RefreshRate="1000000000"/>
+          <SamplingPort Name="pseudoport_rx_32186" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="56" RefreshRate="170000000"/>
+          <SamplingPort Name="pseudoport_rx_34303" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="84" RefreshRate="1200000000"/>
+          <SamplingPort Name="pseudoport_rx_30972" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="2" RefreshRate="1000000000"/>
+          <SamplingPort Name="pseudoport_tx_30702" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="12" RefreshRate="500000000"/>
+          <SamplingPort Name="pseudoport_rx_34826" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="12" RefreshRate="250000000"/>
+          <SamplingPort Name="pseudoport_tx_30707" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="12" RefreshRate="1000000000"/>
+          <SamplingPort Name="pseudoport_rx_31317" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="16" RefreshRate="800000000"/>
+          <SamplingPort Name="pseudoport_rx_34827" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="24" RefreshRate="1970000000"/>
+          <SamplingPort Name="pseudoport_tx_30713" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="440" RefreshRate="200000000"/>
+          <SamplingPort Name="pseudoport_rx_30971" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="460" RefreshRate="1000000000"/>
+          <SamplingPort Name="pseudoport_tx_30714" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="32" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_30979" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="576" RefreshRate="1500000000"/>
+          <SamplingPort Name="pseudoport_tx_30701" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="444" RefreshRate="500000000"/>
+          <SamplingPort Name="pseudoport_rx_34817" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="12" RefreshRate="1970000000"/>
+          <SamplingPort Name="pseudoport_tx_30715" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="32" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_31108" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="444" RefreshRate="1200000000"/>
+          <SamplingPort Name="pseudoport_rx_31077" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="444" RefreshRate="1200000000"/>
+          <SamplingPort Name="pseudoport_rx_31187" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="16" RefreshRate="250000000"/>
+          <SamplingPort Name="pseudoport_rx_30978" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="576" RefreshRate="1500000000"/>
+          <SamplingPort Name="pseudoport_rx_30973" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="576" RefreshRate="1500000000"/>
+          <SamplingPort Name="pseudoport_rx_30975" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="576" RefreshRate="1500000000"/>
+          <SamplingPort Name="pseudoport_tx_30712" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="16" RefreshRate="200000000"/>
+          <SamplingPort Name="pseudoport_rx_34688" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="12" RefreshRate="250000000"/>
+          <SamplingPort Name="pseudoport_rx_31138" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="12" RefreshRate="970000000"/>
+          <SamplingPort Name="pseudoport_rx_31180" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="16" RefreshRate="800000000"/>
+          <SamplingPort Name="pseudoport_rx_30974" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="460" RefreshRate="1000000000"/>
+          <SamplingPort Name="pseudoport_rx_31318" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="440" RefreshRate="1200000000"/>
+          <SamplingPort Name="pseudoport_rx_35253" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="84" RefreshRate="1200000000"/>
+          <SamplingPort Name="pseudoport_rx_31167" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="444" RefreshRate="1200000000"/>
+          <SamplingPort Name="pseudoport_rx_31501" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="12" RefreshRate="2000000000"/>
+          <SamplingPort Name="pseudoport_tx_30716" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="32" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_31298" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="16" RefreshRate="800000000"/>
+          <SamplingPort Name="pseudoport_rx_31485" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="12" RefreshRate="2000000000"/>
+          <SamplingPort Name="pseudoport_tx_30718" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="444" RefreshRate="200000000"/>
+          <SamplingPort Name="pseudoport_rx_32091" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="56" RefreshRate="170000000"/>
+          <SamplingPort Name="pseudoport_rx_31280" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="16" RefreshRate="800000000"/>
+          <SamplingPort Name="pseudoport_tx_30717" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="444" RefreshRate="200000000"/>
+          <SamplingPort Name="pseudoport_rx_32121" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="56" RefreshRate="170000000"/>
+          <SamplingPort Name="pseudoport_rx_31137" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="444" RefreshRate="1200000000"/>
+          <SamplingPort Name="pseudoport_rx_31337" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="440" RefreshRate="1200000000"/>
+          <SamplingPort Name="pseudoport_rx_31176" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="52" RefreshRate="1970000000"/>
+          <SamplingPort Name="pseudoport_rx_30982" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="2" RefreshRate="1000000000"/>
+          <SamplingPort Name="pseudoport_rx_34819" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="12" RefreshRate="1970000000"/>
+          <SamplingPort Name="pseudoport_rx_30969" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="576" RefreshRate="1500000000"/>
+          <SamplingPort Name="pseudoport_tx_30708" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="52" RefreshRate="1000000000"/>
+          <SamplingPort Name="pseudoport_tx_30719" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="16" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32155" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="56" RefreshRate="170000000"/>
+          <SamplingPort Name="pseudoport_rx_31299" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="440" RefreshRate="1200000000"/>
+          <SamplingPort Name="pseudoport_rx_34366" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="64" RefreshRate="1200000000"/>
+          <SamplingPort Name="pseudoport_rx_35254" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="64" RefreshRate="1200000000"/>
+          <SamplingPort Name="pseudoport_rx_31168" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="12" RefreshRate="970000000"/>
+          <SamplingPort Name="pseudoport_rx_31181" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="440" RefreshRate="1200000000"/>
+          <SamplingPort Name="pseudoport_rx_34447" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="20" RefreshRate="2500000000"/>
+          <SamplingPort Name="pseudoport_rx_31096" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="444" RefreshRate="1200000000"/>
+          <SamplingPort Name="pseudoport_rx_34367" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="20" RefreshRate="2500000000"/>
+          <SamplingPort Name="pseudoport_rx_31156" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="444" RefreshRate="1200000000"/>
+          <SamplingPort Name="pseudoport_rx_31151" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="440" RefreshRate="1200000000"/>
+          <SamplingPort Name="pseudoport_rx_31279" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="440" RefreshRate="1200000000"/>
+          <SamplingPort Name="pseudoport_rx_31336" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="16" RefreshRate="800000000"/>
+          <SamplingPort Name="pseudoport_rx_34316" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="64" RefreshRate="1200000000"/>
+          <SamplingPort Name="pseudoport_rx_34686" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="24" RefreshRate="1970000000"/>
+          <SamplingPort Name="pseudoport_tx_30720" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="20" RefreshRate="100000000"/>
+          <QueuingPort Name="pseudoport_tx_30312" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="8180" MaxNbMessage="4"/>
+          <QueuingPort Name="pseudoport_rx_31912" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="8180" MaxNbMessage="4"/>
+          <QueuingPort Name="pseudoport_rx_31922" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="150" MaxNbMessage="4"/>
+          <QueuingPort Name="pseudoport_tx_30313" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="8180" MaxNbMessage="4"/>
+          <SamplingPort Name="pseudoport_tx_30311" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="256" RefreshRate="500000000"/>
+          <SamplingPort Name="pseudoport_rx_31166" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="256" RefreshRate="1500000000"/>
+          <QueuingPort Name="pseudoport_tx_30601" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="4090" MaxNbMessage="1"/>
+          <QueuingPort Name="pseudoport_rx_31863" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="4090" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_tx_30603" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1"/>
+          <QueuingPort Name="pseudoport_tx_30604" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1"/>
+          <QueuingPort Name="pseudoport_tx_30605" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1"/>
+          <QueuingPort Name="pseudoport_tx_30602" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1"/>
+          <QueuingPort Name="pseudoport_tx_30606" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1"/>
+          <QueuingPort Name="pseudoport_tx_30607" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1"/>
+          <SamplingPort Name="pseudoport_rx_32180" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="12" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32176" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="452" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32188" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="304" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32182" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="216" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32178" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="44" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_30921" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="76" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32168" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="132" RefreshRate="100000000"/>
+          <SamplingPort Name="pseudoport_rx_32174" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="200" RefreshRate="200000000"/>
+          <QueuingPort Name="pseudoport_tx_30262" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="8172" MaxNbMessage="4"/>
+          <QueuingPort Name="pseudoport_rx_30359" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="3"/>
+          <QueuingPort Name="pseudoport_tx_30263" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="1458" MaxNbMessage="1"/>
+          <QueuingPort Name="pseudoport_rx_30524" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="7"/>
+          <QueuingPort Name="pseudoport_rx_35220" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="908" MaxNbMessage="7"/>
+          <QueuingPort Name="pseudoport_rx_35124" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="908" MaxNbMessage="7"/>
+          <QueuingPort Name="pseudoport_tx_30265" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="1"/>
+          <QueuingPort Name="pseudoport_rx_30392" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="8172" MaxNbMessage="9"/>
+          <QueuingPort Name="pseudoport_rx_30541" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="3"/>
+          <QueuingPort Name="pseudoport_tx_30264" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" ProtocolType="2" ExtendedPort="false" MaxMessageSize="300" MaxNbMessage="2"/>
+          <QueuingPort Name="pseudoport_rx_30209" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" ProtocolType="1" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="3"/>
+          <SamplingPort Name="pseudoport_tx_30261" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="40" RefreshRate="200000000"/>
+          <SamplingPort Name="pseudoport_rx_34991" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="44" RefreshRate="200000000"/>
+          <SamplingPort Name="pseudoport_tx_30260" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="DESTINATION" MaxMessageSize="40" RefreshRate="200000000"/>
+          <SamplingPort Name="pseudoport_rx_34435" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="44" RefreshRate="200000000"/>
+          <SamplingPort Name="pseudoport_rx_35094" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="20" RefreshRate="200000000"/>
+          <SamplingPort Name="pseudoport_rx_35182" Attribute="PSEUDO_PORT" DriverName="a664_driver" Direction="SOURCE" MaxMessageSize="20" RefreshRate="200000000"/>
+        </Ports>
+      </PseudoPartitionDescription>
+    </PseudoPartition>
+  </Partitions>
+  <Schedules>
+    <Schedule ScheduleIdentifier="0" InitialModuleSchedule="true" ScheduleName="Schedule0">
+      <PartitionWindow Duration="10000000" PartitionNameRef="APP_FMS_NAV_2" PeriodicProcessingStart="true" Offset="0"/>
+      <PartitionWindow Duration="7000000" PartitionNameRef="APP_FMS_TUNE_2" PeriodicProcessingStart="true" Offset="10000000"/>
+      <PartitionWindow Duration="1000000" PartitionNameRef="FIDO_R4" PeriodicProcessingStart="true" Offset="17000000"/>
+      <PartitionWindow Duration="1500000" PartitionNameRef="FSM_R4" PeriodicProcessingStart="true" Offset="18000000"/>
+      <PartitionWindow Duration="6000000" PartitionNameRef="IMA_DM_R4" PeriodicProcessingStart="true" Offset="19500000"/>
+      <PartitionWindow Duration="5000000" PartitionNameRef="PAA_R4Instance" PeriodicProcessingStart="true" Offset="25500000"/>
+      <PartitionWindow Duration="4000000" PartitionNameRef="VIRTUALCONTROLAPP_R" PeriodicProcessingStart="true" Offset="30500000"/>
+      <PartitionWindow Duration="7750000" PartitionNameRef="SM_I2C_R4" PeriodicProcessingStart="true" Offset="34500000"/>
+      <PartitionWindow Duration="5000000" PartitionNameRef="AOT_4" PeriodicProcessingStart="true" Offset="42250000"/>
+      <PartitionWindow Duration="2750000" PartitionNameRef="SPARE" PeriodicProcessingStart="true" Offset="47250000"/>
+      <PartitionWindow Duration="10000000" PartitionNameRef="APP_FMS_NAV_2" PeriodicProcessingStart="true" Offset="50000000"/>
+      <PartitionWindow Duration="7000000" PartitionNameRef="APP_FMS_TUNE_2" PeriodicProcessingStart="true" Offset="60000000"/>
+      <PartitionWindow Duration="1000000" PartitionNameRef="FIDO_R4" PeriodicProcessingStart="true" Offset="67000000"/>
+      <PartitionWindow Duration="1500000" PartitionNameRef="FSM_R4" PeriodicProcessingStart="true" Offset="68000000"/>
+      <PartitionWindow Duration="6000000" PartitionNameRef="IMA_DM_R4" PeriodicProcessingStart="true" Offset="69500000"/>
+      <PartitionWindow Duration="5000000" PartitionNameRef="PAA_R4Instance" PeriodicProcessingStart="true" Offset="75500000"/>
+      <PartitionWindow Duration="4000000" PartitionNameRef="VIRTUALCONTROLAPP_R" PeriodicProcessingStart="true" Offset="80500000"/>
+      <PartitionWindow Duration="15500000" PartitionNameRef="SPARE" PeriodicProcessingStart="true" Offset="84500000"/>
+      <PartitionWindow Duration="10000000" PartitionNameRef="APP_FMS_NAV_2" PeriodicProcessingStart="true" Offset="100000000"/>
+      <PartitionWindow Duration="7000000" PartitionNameRef="APP_FMS_TUNE_2" PeriodicProcessingStart="true" Offset="110000000"/>
+      <PartitionWindow Duration="1000000" PartitionNameRef="FIDO_R4" PeriodicProcessingStart="true" Offset="117000000"/>
+      <PartitionWindow Duration="1500000" PartitionNameRef="FSM_R4" PeriodicProcessingStart="true" Offset="118000000"/>
+      <PartitionWindow Duration="6000000" PartitionNameRef="IMA_DM_R4" PeriodicProcessingStart="true" Offset="119500000"/>
+      <PartitionWindow Duration="5000000" PartitionNameRef="PAA_R4Instance" PeriodicProcessingStart="true" Offset="125500000"/>
+      <PartitionWindow Duration="4000000" PartitionNameRef="VIRTUALCONTROLAPP_R" PeriodicProcessingStart="true" Offset="130500000"/>
+      <PartitionWindow Duration="7750000" PartitionNameRef="SM_I2C_R4" PeriodicProcessingStart="true" Offset="134500000"/>
+      <PartitionWindow Duration="7750000" PartitionNameRef="SPARE" PeriodicProcessingStart="true" Offset="142250000"/>
+      <PartitionWindow Duration="10000000" PartitionNameRef="APP_FMS_NAV_2" PeriodicProcessingStart="true" Offset="150000000"/>
+      <PartitionWindow Duration="7000000" PartitionNameRef="APP_FMS_TUNE_2" PeriodicProcessingStart="true" Offset="160000000"/>
+      <PartitionWindow Duration="1000000" PartitionNameRef="FIDO_R4" PeriodicProcessingStart="true" Offset="167000000"/>
+      <PartitionWindow Duration="1500000" PartitionNameRef="FSM_R4" PeriodicProcessingStart="true" Offset="168000000"/>
+      <PartitionWindow Duration="6000000" PartitionNameRef="IMA_DM_R4" PeriodicProcessingStart="true" Offset="169500000"/>
+      <PartitionWindow Duration="5000000" PartitionNameRef="PAA_R4Instance" PeriodicProcessingStart="true" Offset="175500000"/>
+      <PartitionWindow Duration="4000000" PartitionNameRef="VIRTUALCONTROLAPP_R" PeriodicProcessingStart="true" Offset="180500000"/>
+      <PartitionWindow Duration="15500000" PartitionNameRef="SPARE" PeriodicProcessingStart="true" Offset="184500000"/>
+      <PartitionWindow Duration="10000000" PartitionNameRef="APP_FMS_NAV_2" PeriodicProcessingStart="true" Offset="200000000"/>
+      <PartitionWindow Duration="7000000" PartitionNameRef="APP_FMS_TUNE_2" PeriodicProcessingStart="true" Offset="210000000"/>
+      <PartitionWindow Duration="1000000" PartitionNameRef="FIDO_R4" PeriodicProcessingStart="true" Offset="217000000"/>
+      <PartitionWindow Duration="1500000" PartitionNameRef="FSM_R4" PeriodicProcessingStart="true" Offset="218000000"/>
+      <PartitionWindow Duration="6000000" PartitionNameRef="IMA_DM_R4" PeriodicProcessingStart="true" Offset="219500000"/>
+      <PartitionWindow Duration="5000000" PartitionNameRef="PAA_R4Instance" PeriodicProcessingStart="true" Offset="225500000"/>
+      <PartitionWindow Duration="4000000" PartitionNameRef="VIRTUALCONTROLAPP_R" PeriodicProcessingStart="true" Offset="230500000"/>
+      <PartitionWindow Duration="15500000" PartitionNameRef="SPARE" PeriodicProcessingStart="true" Offset="234500000"/>
+    </Schedule>
+  </Schedules>
+  <Connections>
+    <Channel Id="13458">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30006"/>
+      <Destination PartitionNameRef="AOT_4" PortNameRef="DISTRIBUTED_AOT_RX_1"/>
+    </Channel>
+    <Channel Id="12604">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30009"/>
+      <Destination PartitionNameRef="AOT_4" PortNameRef="LOCAL_AOT_RX_1"/>
+    </Channel>
+    <Channel Id="25415">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30012"/>
+      <Destination PartitionNameRef="AOT_4" PortNameRef="DISTRIBUTED_AOT_RX_2"/>
+    </Channel>
+    <Channel Id="39577">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30013"/>
+      <Destination PartitionNameRef="AOT_4" PortNameRef="LOCAL_AOT_RX_2"/>
+    </Channel>
+    <Channel Id="12975">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30016"/>
+      <Destination PartitionNameRef="AOT_4" PortNameRef="DISTRIBUTED_AOT_RX_3"/>
+    </Channel>
+    <Channel Id="30180">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30017"/>
+      <Destination PartitionNameRef="AOT_4" PortNameRef="LOCAL_AOT_RX_3"/>
+    </Channel>
+    <Channel Id="31617">
+      <Source PartitionNameRef="AOT_4" PortNameRef="DISTRIBUTED_AOT_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30013"/>
+    </Channel>
+    <Channel Id="19443">
+      <Source PartitionNameRef="AOT_4" PortNameRef="STATUS_AOT_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30014"/>
+    </Channel>
+    <Channel Id="49629">
+      <Source PartitionNameRef="AOT_4" PortNameRef="LOCAL_AOT_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30015"/>
+    </Channel>
+    <Channel Id="3545">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30072"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_SP_FMS_CORE_2_FMBA"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_SP_FMS_CORE_1_FMBA"/>
+    </Channel>
+    <Channel Id="33733">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30184"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="FMBA_TIME_DATE_RX"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_QP_FMS_NAV_1_TO_PIT_FMBA"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_QP_FMS_NAV_1_TO_DMI_FMBA"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_QP_FMS_NAV_2_TO_DMI_FMBA"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_QP_FMS_NAV_2_TO_PIT_FMBA"/>
+    </Channel>
+    <Channel Id="44022">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30191"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_RM_NAV_FMBA"/>
+    </Channel>
+    <Channel Id="40620">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30209"/>
+      <Destination PartitionNameRef="APP_FMS_TUNE_2" PortNameRef="A653_IN_RM_TUNE_FMBA"/>
+    </Channel>
+    <Channel Id="26065">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30228"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_SP_FMS_CORE_1"/>
+    </Channel>
+    <Channel Id="32620">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30336"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_SP_FMS_CORE_2"/>
+    </Channel>
+    <Channel Id="3219">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30357"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_CROSSLOAD_FMS_NAV"/>
+    </Channel>
+    <Channel Id="44241">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30359"/>
+      <Destination PartitionNameRef="APP_FMS_TUNE_2" PortNameRef="A653_IN_CORE_STATE_Onside"/>
+    </Channel>
+    <Channel Id="13178">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30383"/>
+      <Destination PartitionNameRef="APP_FMS_TUNE_2" PortNameRef="A653_IN_FMS_STATUS"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_FMS_STATUS"/>
+    </Channel>
+    <Channel Id="12153">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30392"/>
+      <Destination PartitionNameRef="APP_FMS_TUNE_2" PortNameRef="A653_IN_CROSSLOAD_FMS_TUNE"/>
+    </Channel>
+    <Channel Id="6539">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30397"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_POSITION_UPDATE_Onside"/>
+    </Channel>
+    <Channel Id="34530">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30507"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_QP_FMS_NAV_1_TO_PIT"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="FMS_L_TIME_DATE_RX"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_QP_FMS_NAV_1_TO_DMI"/>
+    </Channel>
+    <Channel Id="20377">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30516"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_RM_NAV_Xside"/>
+    </Channel>
+    <Channel Id="3350">
+      <Source PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_OUT_NAV_OUTPUT"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30249"/>
+    </Channel>
+    <Channel Id="28168">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30519"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_QP_FMS_NAV_2_TO_DMI"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="FMS_R_TIME_DATE_RX"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_QP_FMS_NAV_2_TO_PIT"/>
+    </Channel>
+    <Channel Id="15060">
+      <Source PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_OUT_CROSSLOAD_BLOCK_NAV"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30250"/>
+    </Channel>
+    <Channel Id="36439">
+      <Source PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_OUT_NAV_STATE"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30251"/>
+    </Channel>
+    <Channel Id="21322">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30524"/>
+      <Destination PartitionNameRef="APP_FMS_TUNE_2" PortNameRef="A653_IN_NAV_STATE"/>
+    </Channel>
+    <Channel Id="18830">
+      <Source PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_OUT_RM_NAV"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30252"/>
+    </Channel>
+    <Channel Id="17451">
+      <Source PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_OUT_FMS_MESSAGES_NAV"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30253"/>
+    </Channel>
+    <Channel Id="23158">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30541"/>
+      <Destination PartitionNameRef="APP_FMS_TUNE_2" PortNameRef="A653_IN_RM_TUNE_Xside"/>
+    </Channel>
+    <Channel Id="33777">
+      <Source PartitionNameRef="APP_FMS_TUNE_2" PortNameRef="A653_OUT_TUNING_OUTPUT_2"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30260"/>
+    </Channel>
+    <Channel Id="32245">
+      <Source PartitionNameRef="APP_FMS_TUNE_2" PortNameRef="A653_OUT_TUNING_OUTPUT_1"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30261"/>
+    </Channel>
+    <Channel Id="48886">
+      <Source PartitionNameRef="APP_FMS_TUNE_2" PortNameRef="A653_OUT_CROSSLOAD_BLOCK_TUNE"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30262"/>
+    </Channel>
+    <Channel Id="17353">
+      <Source PartitionNameRef="APP_FMS_TUNE_2" PortNameRef="A653_OUT_TUNING_STATE"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30263"/>
+    </Channel>
+    <Channel Id="45252">
+      <Source PartitionNameRef="APP_FMS_TUNE_2" PortNameRef="A653_OUT_FMS_MESSAGES_TUNE"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30264"/>
+    </Channel>
+    <Channel Id="27329">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30550"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_TUNING_STATE_Onside"/>
+    </Channel>
+    <Channel Id="21061">
+      <Source PartitionNameRef="APP_FMS_TUNE_2" PortNameRef="A653_OUT_RM_TUNE"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30265"/>
+    </Channel>
+    <Channel Id="9024">
+      <Source PartitionNameRef="DLC_R4" PortNameRef="DLP_TO_DLS_STATUS_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30311"/>
+    </Channel>
+    <Channel Id="20164">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30612"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="DLP_TO_DLS_STATUS_RX"/>
+    </Channel>
+    <Channel Id="46054">
+      <Source PartitionNameRef="DLC_R4" PortNameRef="DLP_STATUS_CLIENT_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30312"/>
+    </Channel>
+    <Channel Id="22684">
+      <Source PartitionNameRef="DLC_R4" PortNameRef="DLP_MANAGED_SERVER_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30313"/>
+    </Channel>
+    <Channel Id="13016">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30664"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_FDAS_1"/>
+    </Channel>
+    <Channel Id="16176">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30669"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_SP_FDAS1_TO_PIT"/>
+    </Channel>
+    <Channel Id="23197">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30675"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_SP_FDAS1_ALERT"/>
+    </Channel>
+    <Channel Id="20801">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30703"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_FDAS_3"/>
+    </Channel>
+    <Channel Id="4644">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30706"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_SP_FDAS3_TO_PIT"/>
+    </Channel>
+    <Channel Id="13325">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30712"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_SP_FDAS3_ALERT"/>
+    </Channel>
+    <Channel Id="29995">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30738"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_FDAS_2"/>
+    </Channel>
+    <Channel Id="40911">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30743"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_SP_FDAS2_TO_PIT"/>
+    </Channel>
+    <Channel Id="24254">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30749"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_SP_FDAS2_ALERT"/>
+    </Channel>
+    <Channel Id="7754">
+      <Source PartitionNameRef="FIDO_R4" PortNameRef="FIDO_03_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30432"/>
+    </Channel>
+    <Channel Id="49035">
+      <Source PartitionNameRef="FIDO_R4" PortNameRef="FIDO_02_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30433"/>
+    </Channel>
+    <Channel Id="25987">
+      <Source PartitionNameRef="FIDO_R4" PortNameRef="FIDO_01_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30434"/>
+    </Channel>
+    <Channel Id="35746">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30815"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="HM_1_IBIT_REQUEST_RX"/>
+    </Channel>
+    <Channel Id="7827">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30862"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="HM_2_IBIT_REQUEST_RX"/>
+    </Channel>
+    <Channel Id="46472">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30890"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_DMI_PeerA"/>
+    </Channel>
+    <Channel Id="14210">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30893"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_DMI_PeerA_Personality"/>
+    </Channel>
+    <Channel Id="25644">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30895"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_DMI_A_Rev_TO_DMI"/>
+    </Channel>
+    <Channel Id="32824">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30905"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_DMI_PeerB"/>
+    </Channel>
+    <Channel Id="6014">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30908"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_DMI_PeerB_Personality"/>
+    </Channel>
+    <Channel Id="4379">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30910"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_DMI_B_Rev_TO_DMI"/>
+    </Channel>
+    <Channel Id="40325">
+      <Source PartitionNameRef="IMA_DM_R4" PortNameRef="OP_SP_RCP"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30481"/>
+    </Channel>
+    <Channel Id="36856">
+      <Source PartitionNameRef="IMA_DM_R4" PortNameRef="OP_SP_MCAST_XTALK"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30482"/>
+    </Channel>
+    <Channel Id="32651">
+      <Source PartitionNameRef="IMA_DM_R4" PortNameRef="OP_SP_MCAST_DU_STATUS"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30483"/>
+    </Channel>
+    <Channel Id="19585">
+      <Source PartitionNameRef="IMA_DM_R4" PortNameRef="OP_SP_DCP"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30484"/>
+    </Channel>
+    <Channel Id="45888">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30921"/>
+      <Destination PartitionNameRef="PAA_R4Instance" PortNameRef="piDIS_DM_R4"/>
+    </Channel>
+    <Channel Id="25093">
+      <Source PartitionNameRef="IMA_DM_R4" PortNameRef="OP_SP_IDU_Reversion"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30485"/>
+    </Channel>
+    <Channel Id="10751">
+      <Source PartitionNameRef="IMA_DM_R4" PortNameRef="DMI_OMS_Resp"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30486"/>
+    </Channel>
+    <Channel Id="5282">
+      <Source PartitionNameRef="IMA_DM_R4" PortNameRef="OP_QP_IDU_RIB_A661_BLOCK"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30487"/>
+    </Channel>
+    <Channel Id="20888">
+      <Source PartitionNameRef="IMA_DM_R4" PortNameRef="OP_QP_IDU_ROB_A661_BLOCK"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30488"/>
+    </Channel>
+    <Channel Id="30735">
+      <Source PartitionNameRef="IMA_DM_R4" PortNameRef="OP_QP_IDU_LIB_A661_BLOCK"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30489"/>
+    </Channel>
+    <Channel Id="47107">
+      <Source PartitionNameRef="IMA_DM_R4" PortNameRef="OP_QP_IDU_LOB_A661_BLOCK"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30490"/>
+    </Channel>
+    <Channel Id="42504">
+      <Source PartitionNameRef="IMA_DM_R4" PortNameRef="OP_QP_IDU_C_A661_BLOCK"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30491"/>
+    </Channel>
+    <Channel Id="18025">
+      <Source PartitionNameRef="IMA_DM_R4" PortNameRef="DMI_OMS_Stat"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30492"/>
+    </Channel>
+    <Channel Id="34224">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30968"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_1_OFFSET1_A_RX"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_1_OFFSET1_B_RX"/>
+    </Channel>
+    <Channel Id="15448">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30969"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_1_OFFSET2_B_RX"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_1_OFFSET2_A_RX"/>
+    </Channel>
+    <Channel Id="40038">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30971"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_1_TIMESTAMP_B_RX"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_1_TIMESTAMP_A_RX"/>
+    </Channel>
+    <Channel Id="12209">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30972"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_1_REQUEST_A_RX"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_1_REQUEST_B_RX"/>
+    </Channel>
+    <Channel Id="37317">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30973"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_2_OFFSET2_A_RX"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_2_OFFSET2_B_RX"/>
+    </Channel>
+    <Channel Id="4102">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30974"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_2_TIMESTAMP_B_RX"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_2_TIMESTAMP_A_RX"/>
+    </Channel>
+    <Channel Id="15791">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30975"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_2_OFFSET1_B_RX"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_2_OFFSET1_A_RX"/>
+    </Channel>
+    <Channel Id="11838">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30977"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_2_REQUEST_B_RX"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_2_REQUEST_A_RX"/>
+    </Channel>
+    <Channel Id="36816">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30978"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_3_OFFSET2_B_RX"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_3_OFFSET2_A_RX"/>
+    </Channel>
+    <Channel Id="2849">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30979"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_3_OFFSET1_B_RX"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_3_OFFSET1_A_RX"/>
+    </Channel>
+    <Channel Id="7791">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30981"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_3_TIMESTAMP_B_RX"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_3_TIMESTAMP_A_RX"/>
+    </Channel>
+    <Channel Id="11709">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_30982"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_3_REQUEST_B_RX"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="TM_3_REQUEST_A_RX"/>
+    </Channel>
+    <Channel Id="11651">
+      <Source PartitionNameRef="PAA_R4Instance" PortNameRef="A653_OUT_PAA_4_Status_AHMU"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30601"/>
+    </Channel>
+    <Channel Id="35668">
+      <Source PartitionNameRef="PAA_R4Instance" PortNameRef="poHFS_AHMU_2_5Hz"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30602"/>
+    </Channel>
+    <Channel Id="22223">
+      <Source PartitionNameRef="PAA_R4Instance" PortNameRef="poHFS_AHMU_20Hz"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30603"/>
+    </Channel>
+    <Channel Id="2468">
+      <Source PartitionNameRef="PAA_R4Instance" PortNameRef="poHFS_AHMU_10Hz"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30604"/>
+    </Channel>
+    <Channel Id="24283">
+      <Source PartitionNameRef="PAA_R4Instance" PortNameRef="poHFS_AHMU_1_25Hz"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30605"/>
+    </Channel>
+    <Channel Id="22309">
+      <Source PartitionNameRef="PAA_R4Instance" PortNameRef="poHFS_AHMU_0_625Hz"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30606"/>
+    </Channel>
+    <Channel Id="6304">
+      <Source PartitionNameRef="PAA_R4Instance" PortNameRef="poHFS_AHMU_5Hz"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30607"/>
+    </Channel>
+    <Channel Id="20372">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31077"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="DISTRIBUTED_MANIFEST_L1_RX"/>
+    </Channel>
+    <Channel Id="6752">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31085"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_CCR_CTR_TIME_DATE_L1"/>
+    </Channel>
+    <Channel Id="37258">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31087"/>
+      <Destination PartitionNameRef="AOT_4" PortNameRef="AF_AND_SN_RX_1"/>
+    </Channel>
+    <Channel Id="44902">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31096"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="OFFSIDE_1_VOTED_MANIFEST_RX"/>
+    </Channel>
+    <Channel Id="43247">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31108"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="DISTRIBUTED_MANIFEST_L4_RX"/>
+    </Channel>
+    <Channel Id="14556">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31117"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_CCR_CTR_TIME_DATE_L4"/>
+    </Channel>
+    <Channel Id="20651">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31118"/>
+      <Destination PartitionNameRef="AOT_4" PortNameRef="AF_AND_SN_RX_2"/>
+    </Channel>
+    <Channel Id="18751">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31126"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="OFFSIDE_2_VOTED_MANIFEST_RX"/>
+    </Channel>
+    <Channel Id="25321">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31137"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="DISTRIBUTED_MANIFEST_R1_RX"/>
+    </Channel>
+    <Channel Id="21238">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31138"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="IMA_STATE_1_RX"/>
+    </Channel>
+    <Channel Id="19309">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31145"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="SM_APR_1_MONITOR_RX"/>
+    </Channel>
+    <Channel Id="26501">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31147"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="SM_APR_CTR_TIME_DATE_RX"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_CCR_CTR_TIME_DATE_R1"/>
+    </Channel>
+    <Channel Id="47914">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31148"/>
+      <Destination PartitionNameRef="AOT_4" PortNameRef="AF_AND_SN_RX_3"/>
+    </Channel>
+    <Channel Id="49684">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31150"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="CPM_1_TEMPERATURE_RX"/>
+    </Channel>
+    <Channel Id="17054">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31151"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="CPM_1_LOCAL_MANIFEST_RX"/>
+    </Channel>
+    <Channel Id="42810">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31156"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="ONSIDE_VOTED_MANIFEST_RX"/>
+    </Channel>
+    <Channel Id="20732">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31157"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="PMF_1_POWER_WARN_RX"/>
+    </Channel>
+    <Channel Id="16869">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31161"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="SM_APR_CONFIG_RPT_RX"/>
+    </Channel>
+    <Channel Id="32051">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="DLS_TO_DLP_CONTROL_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30700"/>
+    </Channel>
+    <Channel Id="24054">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="DISTRIBUTED_MANIFEST_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30701"/>
+    </Channel>
+    <Channel Id="47863">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="IMA_STATE_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30702"/>
+    </Channel>
+    <Channel Id="10904">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31166"/>
+      <Destination PartitionNameRef="DLC_R4" PortNameRef="DLS_TO_DLP_CONTROL_RX"/>
+    </Channel>
+    <Channel Id="30954">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31167"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="DISTRIBUTED_MANIFEST_R4_RX"/>
+    </Channel>
+    <Channel Id="46205">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31168"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="IMA_STATE_2_RX"/>
+    </Channel>
+    <Channel Id="41316">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="TS_1_RESPONSE_B_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30703"/>
+    </Channel>
+    <Channel Id="14947">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="TS_2_RESPONSE_A_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30704"/>
+    </Channel>
+    <Channel Id="39174">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="CPM_MONITOR_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30705"/>
+    </Channel>
+    <Channel Id="17800">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="CPM_CONFIG_RPT_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30706"/>
+    </Channel>
+    <Channel Id="23283">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="CMMF_MONITOR_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30707"/>
+    </Channel>
+    <Channel Id="13681">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="SM_APR_PERIODIC_MONITOR_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30708"/>
+    </Channel>
+    <Channel Id="13653">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="SM_APR_CTR_TIME_DATE_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30709"/>
+    </Channel>
+    <Channel Id="6889">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31176"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="SM_APR_2_MONITOR_RX"/>
+    </Channel>
+    <Channel Id="4777">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31177"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_CCR_CTR_TIME_DATE_R4"/>
+    </Channel>
+    <Channel Id="45051">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="IMA_PLATFORM_AIRFRAME_SN_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30710"/>
+    </Channel>
+    <Channel Id="22244">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31178"/>
+      <Destination PartitionNameRef="AOT_4" PortNameRef="AF_AND_SN_RX_4"/>
+    </Channel>
+    <Channel Id="23911">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="TS_3_RESPONSE_A_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30711"/>
+    </Channel>
+    <Channel Id="17881">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="SM_CPM_TEMP_STATUS_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30712"/>
+    </Channel>
+    <Channel Id="46321">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="CMMFC_LOCAL_MANIFEST_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30713"/>
+    </Channel>
+    <Channel Id="20040">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31180"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="CPM_4_TEMPERATURE_RX"/>
+    </Channel>
+    <Channel Id="45899">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31181"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="CPM_4_LOCAL_MANIFEST_RX"/>
+    </Channel>
+    <Channel Id="33372">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="TS_3_RESPONSE_B_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30714"/>
+    </Channel>
+    <Channel Id="24188">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="TS_2_RESPONSE_B_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30715"/>
+    </Channel>
+    <Channel Id="11056">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="TS_1_RESPONSE_A_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30716"/>
+    </Channel>
+    <Channel Id="36304">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="ONSIDE_VOTED_MANIFEST_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30717"/>
+    </Channel>
+    <Channel Id="23077">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="OFFSIDE_VOTED_MANIFEST_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30718"/>
+    </Channel>
+    <Channel Id="34076">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="SM_APR_WIDE_POWER_WARN_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30719"/>
+    </Channel>
+    <Channel Id="33021">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="APR_REDUNDANCY_RPT_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30720"/>
+    </Channel>
+    <Channel Id="41594">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31187"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="PMF_2_POWER_WARN_RX"/>
+    </Channel>
+    <Channel Id="29614">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31188"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="APR_REDUNDANCY_REPORT_RX"/>
+      <Destination PartitionNameRef="AOT_4" PortNameRef="APR_REDUNDANCY_RPT_RX"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="APR_REDUNDANCY_REPORT_RX"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_CCR_REDUNDANCY_RPT"/>
+      <Destination PartitionNameRef="APP_FMS_TUNE_2" PortNameRef="A653_IN_CCR_REDUNDANCY_RPT"/>
+    </Channel>
+    <Channel Id="16099">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="SM_ES_MIB_RESPONSE_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30721"/>
+    </Channel>
+    <Channel Id="16602">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="SM_ECHO_RESPONSE_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30722"/>
+    </Channel>
+    <Channel Id="32731">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="SM_APR_CONFIG_RPT_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30723"/>
+    </Channel>
+    <Channel Id="17843">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="SM_LOOPBACK_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30724"/>
+    </Channel>
+    <Channel Id="37867">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31193"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="SM_LOOPBACK_RX"/>
+    </Channel>
+    <Channel Id="17489">
+      <Source PartitionNameRef="SM_I2C_R4" PortNameRef="CPM_IBIT_RESPONSE_TX"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30725"/>
+    </Channel>
+    <Channel Id="31909">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31279"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="CPM_2_LOCAL_MANIFEST_RX"/>
+    </Channel>
+    <Channel Id="4866">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31280"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="CPM_2_TEMPERATURE_RX"/>
+    </Channel>
+    <Channel Id="4427">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31298"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="CPM_3_TEMPERATURE_RX"/>
+    </Channel>
+    <Channel Id="4687">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31299"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="CPM_3_LOCAL_MANIFEST_RX"/>
+    </Channel>
+    <Channel Id="49649">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31317"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="CPM_5_TEMPERATURE_RX"/>
+    </Channel>
+    <Channel Id="45330">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31318"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="CPM_5_LOCAL_MANIFEST_RX"/>
+    </Channel>
+    <Channel Id="24862">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31336"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="CPM_6_TEMPERATURE_RX"/>
+    </Channel>
+    <Channel Id="12952">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31337"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="CPM_6_LOCAL_MANIFEST_RX"/>
+    </Channel>
+    <Channel Id="14025">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31395"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_SP_VCP_PEER_XTALK"/>
+    </Channel>
+    <Channel Id="17619">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31398"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_SP_PIT_PEER_XTALK"/>
+    </Channel>
+    <Channel Id="38105">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31409"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_QP_VCP_REVERSION"/>
+    </Channel>
+    <Channel Id="37088">
+      <Source PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="OP_SP_VCP_PEER_XTALK"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30903"/>
+    </Channel>
+    <Channel Id="3599">
+      <Source PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="OP_SP_PIT_TO_FDAS"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30904"/>
+    </Channel>
+    <Channel Id="32507">
+      <Source PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="OP_SP_PIT_PEER_XTALK"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30905"/>
+    </Channel>
+    <Channel Id="42095">
+      <Source PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="OP_QP_IDU_C_A661_BLOCK"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30906"/>
+    </Channel>
+    <Channel Id="18313">
+      <Source PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="OP_QP_IDU_RIB_A661_BLOCK"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30907"/>
+    </Channel>
+    <Channel Id="31900">
+      <Source PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="OP_QP_IDU_ROB_A661_BLOCK"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30908"/>
+    </Channel>
+    <Channel Id="8098">
+      <Source PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="OP_QP_IDU_LOB_A661_BLOCK"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30909"/>
+    </Channel>
+    <Channel Id="37082">
+      <Source PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="OP_QP_PilotInputs_VCP"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30910"/>
+    </Channel>
+    <Channel Id="24592">
+      <Source PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="OP_QP_VCP_REVERSION"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30911"/>
+    </Channel>
+    <Channel Id="2954">
+      <Source PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="OP_QP_IDU_LIB_A661_BLOCK"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30912"/>
+    </Channel>
+    <Channel Id="42294">
+      <Source PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="OP_QP_PIT_OMS_Stat"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30913"/>
+    </Channel>
+    <Channel Id="27181">
+      <Source PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="OP_QP_VCP_OMS_Stat"/>
+      <Destination PartitionNameRef="a664_driver" PortNameRef="pseudoport_tx_30914"/>
+    </Channel>
+    <Channel Id="23043">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31485"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="NSM_Temperature_Status_RX_A"/>
+    </Channel>
+    <Channel Id="2798">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31501"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="NSM_Temperature_Status_RX_B"/>
+    </Channel>
+    <Channel Id="43910">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31845"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_SP_OHMS_Aircraft_Status"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="OMS_1_FLIGHT_INFO_SET_RX"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_OHMS_Aircraft_Status"/>
+      <Destination PartitionNameRef="FIDO_R4" PortNameRef="OMS_1_FLIGHT_INFO_SET_RX"/>
+    </Channel>
+    <Channel Id="7241">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31863"/>
+      <Destination PartitionNameRef="PAA_R4Instance" PortNameRef="A653_IN_AHMU_Status_PAA_4"/>
+    </Channel>
+    <Channel Id="26704">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31886"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="DMI_OHMS_Cmd"/>
+    </Channel>
+    <Channel Id="35348">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31912"/>
+      <Destination PartitionNameRef="DLC_R4" PortNameRef="DLP_MANAGED_SERVER_RX"/>
+    </Channel>
+    <Channel Id="16647">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_31922"/>
+      <Destination PartitionNameRef="DLC_R4" PortNameRef="DLP_STATUS_CLIENT_RX"/>
+    </Channel>
+    <Channel Id="16408">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32091"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="FADEC_L_CHA_ENGINE_STATUS_RX"/>
+    </Channel>
+    <Channel Id="2360">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32121"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="FADEC_L_CHB_ENGINE_STATUS_RX"/>
+    </Channel>
+    <Channel Id="3629">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32155"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="FADEC_R_CHA_ENGINE_STATUS_RX"/>
+    </Channel>
+    <Channel Id="12567">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32168"/>
+      <Destination PartitionNameRef="PAA_R4Instance" PortNameRef="piFADEC_RChB_FADEC_FCSFMS"/>
+    </Channel>
+    <Channel Id="36760">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32174"/>
+      <Destination PartitionNameRef="PAA_R4Instance" PortNameRef="piFADEC_RChB_FADEC_Status"/>
+    </Channel>
+    <Channel Id="27196">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32176"/>
+      <Destination PartitionNameRef="PAA_R4Instance" PortNameRef="piFADEC_RChB_FADEC_Trend"/>
+    </Channel>
+    <Channel Id="38562">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32178"/>
+      <Destination PartitionNameRef="PAA_R4Instance" PortNameRef="piFADEC_RChB_FADEC_A429"/>
+    </Channel>
+    <Channel Id="39189">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32180"/>
+      <Destination PartitionNameRef="PAA_R4Instance" PortNameRef="piACARS_Trigger_Status_RCHB"/>
+    </Channel>
+    <Channel Id="48866">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32182"/>
+      <Destination PartitionNameRef="PAA_R4Instance" PortNameRef="piFADEC_RChB_FADEC_EICAS"/>
+    </Channel>
+    <Channel Id="26317">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32186"/>
+      <Destination PartitionNameRef="PAA_R4Instance" PortNameRef="piFADEC_RChB_FADEC_Discrete"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="FADEC_R_CHB_ENGINE_STATUS_RX"/>
+    </Channel>
+    <Channel Id="35990">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32188"/>
+      <Destination PartitionNameRef="PAA_R4Instance" PortNameRef="piFADEC_RChB_FADEC_TrendFDR"/>
+    </Channel>
+    <Channel Id="22865">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32240"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_ADS_1"/>
+    </Channel>
+    <Channel Id="7428">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32248"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_QP_FCM_1_ADA20"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_QP_FCM_1_ADA20_TO_DMI"/>
+    </Channel>
+    <Channel Id="22157">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32283"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_VIRS_1a"/>
+    </Channel>
+    <Channel Id="16545">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32309"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_QP_FCM_1_AF20"/>
+    </Channel>
+    <Channel Id="6181">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32333"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_VIRS_1b"/>
+    </Channel>
+    <Channel Id="41174">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32370"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_ADS_2"/>
+    </Channel>
+    <Channel Id="44515">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32378"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_QP_FCM_2_ADA20_TO_DMI"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_QP_FCM_2_ADA20"/>
+    </Channel>
+    <Channel Id="5817">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32410"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_VIRS_2a"/>
+    </Channel>
+    <Channel Id="14435">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32436"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_VIRS_2b"/>
+    </Channel>
+    <Channel Id="20555">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32455"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_QP_FCM_2_AF20"/>
+    </Channel>
+    <Channel Id="13539">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32476"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_ADS_3"/>
+    </Channel>
+    <Channel Id="34698">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32484"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_QP_FCM_3_ADA20"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_QP_FCM_3_ADA20_TO_DMI"/>
+    </Channel>
+    <Channel Id="10024">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32535"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_VIRS_3a"/>
+    </Channel>
+    <Channel Id="18082">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32561"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_VIRS_3b"/>
+    </Channel>
+    <Channel Id="43363">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32580"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_QP_FCM_3_AF20"/>
+    </Channel>
+    <Channel Id="31114">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32617"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_DMH_IDU_C"/>
+    </Channel>
+    <Channel Id="3735">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32625"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_C_EI_Rev_TO_DMI"/>
+    </Channel>
+    <Channel Id="30232">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32632"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_C_PFD_Rev_TO_DMI"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IDU_C_SYNC_MSG_TO_VCP"/>
+    </Channel>
+    <Channel Id="23070">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32638"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IDU_C_NAV_SOURCE_TO_VCP"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_C_HSI_Rev_TO_DMI"/>
+    </Channel>
+    <Channel Id="47114">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32640"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_C_CLK_Rev_TO_DMI"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_ND_IDU_C"/>
+    </Channel>
+    <Channel Id="19617">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32643"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IDU_C_ND_NAV_SOURCE_TO_VCP"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_C_ND_Rev_TO_DMI"/>
+    </Channel>
+    <Channel Id="19345">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32672"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_QP_IDU_C_A661_BLOCK"/>
+    </Channel>
+    <Channel Id="14041">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32679"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_QP_IDU_C_A661_BLOCK"/>
+    </Channel>
+    <Channel Id="31631">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32700"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_DMH_IDU_LIB"/>
+    </Channel>
+    <Channel Id="31278">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32706"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_LIB_EI_Rev_TO_DMI"/>
+    </Channel>
+    <Channel Id="29038">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32709"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IDU_LI_SYNC_MSG_TO_VCP"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_LIB_PFD_Rev_TO_DMI"/>
+    </Channel>
+    <Channel Id="22682">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32721"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IDU_LI_NAV_SOURCE_TO_VCP"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_LIB_HSI_Rev_TO_DMI"/>
+    </Channel>
+    <Channel Id="18965">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32723"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_LIB_CLK_Rev_TO_DMI"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_ND_IDU_LIB"/>
+    </Channel>
+    <Channel Id="2128">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32726"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_LIB_ND_Rev_TO_DMI"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IDU_LI_ND_NAV_SOURCE_TO_VCP"/>
+    </Channel>
+    <Channel Id="8951">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32768"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_QP_IDU_LIB_A661_BLOCK"/>
+    </Channel>
+    <Channel Id="12398">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32780"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_QP_IDU_LIB_A661_BLOCK"/>
+    </Channel>
+    <Channel Id="10253">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32807"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_DMH_IDU_LOB_"/>
+    </Channel>
+    <Channel Id="28390">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32812"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_LOB_EI_Rev_TO_DMI"/>
+    </Channel>
+    <Channel Id="30018">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32817"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_LOB_PFD_Rev_TO_DMI"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IDU_LO_SYNC_MSG_TO_VCP"/>
+    </Channel>
+    <Channel Id="49095">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32831"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_ND_IDU_LOB"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_LOB_CLK_Rev_TO_DMI"/>
+    </Channel>
+    <Channel Id="24276">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32833"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_LOB_HSI_Rev_TO_DMI"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IDU_LO_NAV_SOURCE_TO_VCP"/>
+    </Channel>
+    <Channel Id="16105">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32836"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_LOB_ND_Rev_TO_DMI"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IDU_LO_ND_NAV_SOURCE_TO_VCP"/>
+    </Channel>
+    <Channel Id="34824">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32869"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_QP_IDU_LOB_A661_BLOCK"/>
+    </Channel>
+    <Channel Id="40788">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32882"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_QP_IDU_LOB_A661_BLOCK"/>
+    </Channel>
+    <Channel Id="43748">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32909"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_DMH_IDU_RIB"/>
+    </Channel>
+    <Channel Id="12222">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32914"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_RIB_EI_Rev_TO_DMI"/>
+    </Channel>
+    <Channel Id="27201">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32919"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IDU_RI_SYNC_MSG_TO_VCP"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_RIB_PFD_Rev_TO_DMI"/>
+    </Channel>
+    <Channel Id="26485">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32931"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_ND_IDU_RIB"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_RIB_CLK_Rev_TO_DMI"/>
+    </Channel>
+    <Channel Id="42274">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32933"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IDU_RI_NAV_SOURCE_TO_VCP"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_RIB_HSI_Rev_TO_DMI"/>
+    </Channel>
+    <Channel Id="22228">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32936"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IDU_RI_ND_NAV_SOURCE_TO_VCP"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_RIB_ND_Rev_TO_DMI"/>
+    </Channel>
+    <Channel Id="22691">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32977"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_QP_IDU_RIB_A661_BLOCK"/>
+    </Channel>
+    <Channel Id="32805">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_32989"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_QP_IDU_RIB_A661_BLOCK"/>
+    </Channel>
+    <Channel Id="13732">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_33017"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_DMH_IDU_ROB"/>
+    </Channel>
+    <Channel Id="6685">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_33021"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_ROB_EI_Rev_TO_DMI"/>
+    </Channel>
+    <Channel Id="45045">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_33028"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_ROB_PFD_Rev_TO_DMI"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IDU_RO_SYNC_MSG_TO_VCP"/>
+    </Channel>
+    <Channel Id="46276">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_33040"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_ROB_HSI_Rev_TO_DMI"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IDU_RO_NAV_SOURCE_TO_VCP"/>
+    </Channel>
+    <Channel Id="13663">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_33042"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_ND_IDU_ROB"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_ROB_CLK_Rev_TO_DMI"/>
+    </Channel>
+    <Channel Id="12029">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_33045"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IDU_RO_ND_NAV_SOURCE_TO_VCP"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_SP_IDU_ROB_ND_Rev_TO_DMI"/>
+    </Channel>
+    <Channel Id="30891">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_33077"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_QP_IDU_ROB_A661_BLOCK"/>
+    </Channel>
+    <Channel Id="4276">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_33092"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_QP_IDU_ROB_A661_BLOCK"/>
+    </Channel>
+    <Channel Id="41018">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_33116"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="SM_ICMP_REQUEST_RX"/>
+    </Channel>
+    <Channel Id="36552">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_33160"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="SM_MIB_REQUEST_RX"/>
+    </Channel>
+    <Channel Id="46907">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_33188"/>
+      <Destination PartitionNameRef="FIDO_R4" PortNameRef="FIDO_1_RX"/>
+    </Channel>
+    <Channel Id="39060">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_33200"/>
+      <Destination PartitionNameRef="FIDO_R4" PortNameRef="FIDO_2_RX"/>
+    </Channel>
+    <Channel Id="16190">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34303"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="RDCU_1_SERIAL_NUMBER_RX"/>
+    </Channel>
+    <Channel Id="31964">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34309"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_QP_RGW01_DMI_R01"/>
+    </Channel>
+    <Channel Id="33310">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34316"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="RDCU_1_AIRFRAME_RX"/>
+    </Channel>
+    <Channel Id="14648">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34346"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_QP_RGW02_DMI_R02"/>
+    </Channel>
+    <Channel Id="19364">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34365"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="RDCU_2_SERIAL_NUMBER_RX"/>
+    </Channel>
+    <Channel Id="39018">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34366"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="RDCU_2_AIRFRAME_RX"/>
+    </Channel>
+    <Channel Id="26362">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34367"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="COCKPIT_MAINT_SWITCH_2_RX"/>
+    </Channel>
+    <Channel Id="7100">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34404"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_QP_LGCU2_TX1_DMI"/>
+    </Channel>
+    <Channel Id="22937">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34412"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_QP_LGCU2_TX1_PIT"/>
+    </Channel>
+    <Channel Id="43204">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34435"/>
+      <Destination PartitionNameRef="APP_FMS_TUNE_2" PortNameRef="A653_IN_ILS_GLS_1"/>
+    </Channel>
+    <Channel Id="49034">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34438"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_GNSS_1"/>
+    </Channel>
+    <Channel Id="3059">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34447"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="COCKPIT_MAINT_SWITCH_1_RX"/>
+    </Channel>
+    <Channel Id="38920">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34686"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="AMS_2_STATUS_RX"/>
+    </Channel>
+    <Channel Id="9577">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34688"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="BCMU_CH1_PARKING_BREAK_RX"/>
+    </Channel>
+    <Channel Id="24883">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34817"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="FUEL_CHB_L273_STATUS_RX"/>
+    </Channel>
+    <Channel Id="17178">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34819"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="FUEL_CHA_L273_STATUS_RX"/>
+    </Channel>
+    <Channel Id="2880">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34826"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="BCMU_CH2_PARKING_BREAK_RX"/>
+    </Channel>
+    <Channel Id="26314">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34827"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="AMS_1_STATUS_RX"/>
+    </Channel>
+    <Channel Id="37613">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34960"/>
+      <Destination PartitionNameRef="IMA_DM_R4" PortNameRef="IP_QP_LGCU1_TX1_DMI"/>
+    </Channel>
+    <Channel Id="16392">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34969"/>
+      <Destination PartitionNameRef="VIRTUALCONTROLAPP_R" PortNameRef="IP_QP_LGCU1_TX1_PIT"/>
+    </Channel>
+    <Channel Id="22202">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34984"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_GNSS_IRS"/>
+    </Channel>
+    <Channel Id="42674">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34989"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_IRS_High_3"/>
+    </Channel>
+    <Channel Id="27730">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_34991"/>
+      <Destination PartitionNameRef="APP_FMS_TUNE_2" PortNameRef="A653_IN_ILS_GLS_2"/>
+    </Channel>
+    <Channel Id="23768">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_35090"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_IRS_High_2"/>
+    </Channel>
+    <Channel Id="20069">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_35091"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_IRS_2"/>
+    </Channel>
+    <Channel Id="8539">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_35094"/>
+      <Destination PartitionNameRef="APP_FMS_TUNE_2" PortNameRef="A653_IN_ADF_VOR_1"/>
+    </Channel>
+    <Channel Id="4109">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_35124"/>
+      <Destination PartitionNameRef="APP_FMS_TUNE_2" PortNameRef="A653_IN_DME_1"/>
+    </Channel>
+    <Channel Id="44976">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_35178"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_IRS_High_1"/>
+    </Channel>
+    <Channel Id="27775">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_35180"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_IRS_1"/>
+    </Channel>
+    <Channel Id="37805">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_35182"/>
+      <Destination PartitionNameRef="APP_FMS_TUNE_2" PortNameRef="A653_IN_ADF_VOR_2"/>
+    </Channel>
+    <Channel Id="44212">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_35220"/>
+      <Destination PartitionNameRef="APP_FMS_TUNE_2" PortNameRef="A653_IN_DME_2"/>
+    </Channel>
+    <Channel Id="40201">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_35253"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="RDCU_3_SERIAL_NUMBER_RX"/>
+    </Channel>
+    <Channel Id="16619">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_35254"/>
+      <Destination PartitionNameRef="SM_I2C_R4" PortNameRef="RDCU_3_AIRFRAME_RX"/>
+    </Channel>
+    <Channel Id="30398">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_35315"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_RA_2"/>
+    </Channel>
+    <Channel Id="2131">
+      <Source PartitionNameRef="a664_driver" PortNameRef="pseudoport_rx_35351"/>
+      <Destination PartitionNameRef="APP_FMS_NAV_2" PortNameRef="A653_IN_RA_1"/>
+    </Channel>
+  </Connections>
+  <HealthMonitor>
+    <SystemErrors>
+      <SystemError Description="DEADLINE_MISSED" ErrorIdentifier="0"/>
+      <SystemError Description="APPLICATION_ERROR" ErrorIdentifier="1"/>
+      <SystemError Description="NUMERIC_ERROR" ErrorIdentifier="2"/>
+      <SystemError Description="ILLEGAL_REQUEST" ErrorIdentifier="3"/>
+      <SystemError Description="STACK_OVERFLOW" ErrorIdentifier="4"/>
+      <SystemError Description="MEMORY_VIOLATION" ErrorIdentifier="5"/>
+      <SystemError Description="HARDWARE_FAULT" ErrorIdentifier="6"/>
+      <SystemError Description="POWER_FAIL" ErrorIdentifier="7"/>
+      <SystemError Description="KERNEL" ErrorIdentifier="8"/>
+      <SystemError Description="CONFIG_ERROR" ErrorIdentifier="9"/>
+      <SystemError Description="INIT_ERROR" ErrorIdentifier="10"/>
+      <SystemError Description="PARTITION_OVERFLOW" ErrorIdentifier="11"/>
+      <SystemError Description="PARTITION_MODE_SET" ErrorIdentifier="12"/>
+      <SystemError Description="APEX_INTERNAL_ERROR" ErrorIdentifier="13"/>
+      <SystemError Description="HM_INTERNAL_ERROR" ErrorIdentifier="14"/>
+      <SystemError Description="PORT_INTERNAL_ERROR" ErrorIdentifier="15"/>
+      <SystemError Description="LOST_TICKS" ErrorIdentifier="16"/>
+      <SystemError Description="OTHER" ErrorIdentifier="17"/>
+      <SystemError Description="MSG" ErrorIdentifier="18"/>
+      <SystemError Description="HM_ERROR" ErrorIdentifier="19"/>
+      <SystemError Description="HMQ_OVERFLOW" ErrorIdentifier="20"/>
+      <SystemError Description="DATA_LOSS" ErrorIdentifier="21"/>
+      <SystemError Description="HM_DEADLINE_MISSED" ErrorIdentifier="22"/>
+      <SystemError Description="DEFAULT" ErrorIdentifier="23"/>
+      <SystemError Description="UNKNOWN" ErrorIdentifier="24"/>
+    </SystemErrors>
+    <HMTable>
+      <CoreHMTableList>
+        <CoreHMTable Name="core1" Description="HME_DEADLINE_MISSED" StateIdentifier="1">
+          <ErrorAction ModuleRecoveryAction="IGNORE" ErrorIdentifierRef="11"/>
+          <ErrorAction ModuleRecoveryAction="IGNORE" ErrorIdentifierRef="11"/>
+        </CoreHMTable>
+      </CoreHMTableList>
+      <MultiPartitionHMTableList>
+        <MultiPartitionHMTable TableIdentifier="1" TableName="mt1">
+          <ErrorAction ErrorIdentifierRef="11" ErrorLevel="MODULE" ModuleRecoveryAction="IGNORE"/>
+          <ErrorAction ErrorIdentifierRef="11" ErrorLevel="MODULE" ModuleRecoveryAction="IGNORE"/>
+        </MultiPartitionHMTable>
+      </MultiPartitionHMTableList>
+      <PartitionHMTableList>
+        <PartitionHMTable MultiPartitionHMTableNameRef="mt1" TableIdentifier="111" TableName="pt1">
+          <ErrorAction ErrorIdentifierRef="11" PartitionRecoveryAction="IGNORE" ErrorLevel="PARTITION"/>
+          <ErrorAction ErrorIdentifierRef="11" PartitionRecoveryAction="IGNORE" ErrorLevel="PARTITION"/>
+          <PartitionRef Id="28"/>
+          <PartitionRef Id="40"/>
+          <PartitionRef Id="104"/>
+          <PartitionRef Id="64"/>
+          <PartitionRef Id="69"/>
+          <PartitionRef Id="53"/>
+          <PartitionRef Id="19"/>
+          <PartitionRef Id="29"/>
+          <PartitionRef Id="2"/>
+          <PartitionRef Id="105"/>
+        </PartitionHMTable>
+      </PartitionHMTableList>
+    </HMTable>
+    <HMTask>
+      <CoreHMTaskList>
+        <CoreHMTask Callback="" Name="coretask" attributeMask="0x00000001" errorHandlerQueueThreshold="126" eventFilterMask="0xFFFFFFFF" logEntriesThreshold="98" maxErrorHandlerQueueDepth="128" maxLogEntries="100" maxQueueDepth="34" queueThreshold="32" stackSize="16384">
+          <Core cpuId="0"/>
+        </CoreHMTask>
+      </CoreHMTaskList>
+      <PartitionHMTaskList>
+        <PartitionHMTask Callback="" Name="pp1" attributeMask="0x00000001" errorHandlerQueueThreshold="126" eventFilterMask="0xFFFFFFFF" logEntriesThreshold="98" maxErrorHandlerQueueDepth="128" maxLogEntries="100" maxQueueDepth="34" queueThreshold="32" stackSize="16384">
+          <PartitionRef Id="28"/>
+          <PartitionRef Id="40"/>
+          <PartitionRef Id="104"/>
+          <PartitionRef Id="64"/>
+          <PartitionRef Id="69"/>
+          <PartitionRef Id="53"/>
+          <PartitionRef Id="19"/>
+          <PartitionRef Id="29"/>
+          <PartitionRef Id="2"/>
+          <PartitionRef Id="105"/>
+        </PartitionHMTask>
+      </PartitionHMTaskList>
+    </HMTask>
+  </HealthMonitor>
+  <Payloads>
+    <CoreOSPayload/>
+    <SharedLibraryPayload NameRef="pos"/>
+    <ConfigRecordPayload NameRef="configRecord"/>
+    <PartitionPayload NameRef="SM_I2C_R4"/>
+    <PartitionPayload NameRef="AOT_4"/>
+    <PartitionPayload NameRef="IMA_DM_R4"/>
+    <PartitionPayload NameRef="APP_FMS_TUNE_2"/>
+    <PartitionPayload NameRef="APP_FMS_NAV_2"/>
+    <PartitionPayload NameRef="FSM_R4"/>
+    <PartitionPayload NameRef="FIDO_R4"/>
+    <PartitionPayload NameRef="VIRTUALCONTROLAPP_R"/>
+    <PartitionPayload NameRef="PAA_R4Instance"/>
+    <PartitionPayload NameRef="DLC_R4"/>
+  </Payloads>
+</Module>

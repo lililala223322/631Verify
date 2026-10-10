@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="">
+  <MemorySize MemorySizeBss="0x300000" MemorySizeData="0x50000" MemorySizePersistentData="0x0" MemorySizeRoData="0x80000" MemorySizeText="0x280000" MemorySizePersistentBss="0x4000"/>
+  <Ports>
+   <QueuingPort Name="A653_IN_NAV_STATE1" Direction="DESTINATION" Attribute="NULL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="7" ProtocolType="2"/>
+    
+    <QueuingPort Name="A653_IN_NAV_STATE" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="7" ProtocolType="2"/>
+    <QueuingPort Name="A653_OUT_GUIDANCE_STATE" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="A653_IN_ADA_ADA20_2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="284" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_ADS_SP20_2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="164" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_OUT_RM_GUIDE" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="100" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="A653_IN_ADS_AF20_3" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="124" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_ADS_AF20_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="124" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_ADS_AF20_2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="124" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_OUT_FMS_MESSAGES_GUIDE" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="300" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="A653_OUT_CROSSLOAD_BLOCK_GUID" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8172" MaxNbMessage="4" ProtocolType="1"/>
+    <QueuingPort Name="A653_IN_ADA_ADA20_3" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="284" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_ADS_SP20_3" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="164" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_ADS_SP20_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="164" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_ADA_ADA20_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="284" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_CROSSLOAD_FMS_GUID" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8172" MaxNbMessage="9" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_LATERAL_COMMANDS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_FMS_STATUS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="512" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_RM_Guide_FMBA" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="100" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_RM_Guide_Xside" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="100" MaxNbMessage="3" ProtocolType="2"/>
+    <SamplingPort Name="A653_IN_ADS_SP80_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="100000000"/>
+    <SamplingPort Name="A653_IN_LGS_A" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1150000000"/>
+    <SamplingPort Name="A653_IN_ADS_SP80_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="100000000"/>
+    <SamplingPort Name="A653_IN_LGS_B" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1150000000"/>
+    <SamplingPort Name="A653_IN_CCR_REDUNDANCY_RPT" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="500000000"/>
+    <SamplingPort Name="A653_OUT_GUIDANCE_OUTPUT_FCS" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="72" RefreshRate="100000000"/>
+    <SamplingPort Name="A653_OUT_GUIDANCE_OUTPUT" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="68" RefreshRate="100000000"/>
+    <SamplingPort Name="A653_IN_ADS_SP80_3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="100000000"/>
+  </Ports>
+</ApplicationDescription>

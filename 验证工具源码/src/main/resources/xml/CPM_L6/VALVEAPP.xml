@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="">
+  <MemorySize MemorySizeBss="0x4000" MemorySizeData="0x4000" MemorySizePersistentData="0x0" MemorySizeRoData="0x4000" MemorySizeText="0xc000" MemorySizePersistentBss="0x0"/>
+  <Ports>
+    <SamplingPort Name="pi_A653S_ON_Gnd_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1000000000"/>
+    <SamplingPort Name="pi_A653S_APR_Redundancy_Report" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="1000000000"/>
+    <SamplingPort Name="po_A653S_VLV_Command_CAN" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="100000000"/>
+    <SamplingPort Name="pi_A653S_ON_Gnd_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1000000000"/>
+    <SamplingPort Name="po_A653S_RPDU_VLV_PC" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="200000000"/>
+    <SamplingPort Name="pi_A653S_WWS_Health_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="1920000000"/>
+    <SamplingPort Name="pi_A653S_VLV_Proposal" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="480000000"/>
+  </Ports>
+</ApplicationDescription>

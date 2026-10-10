@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0x9F49F311">
+  <MemorySize MemorySizeBss="0x91000" MemorySizeData="0x4000" MemorySizePersistentData="0x1000" MemorySizeRoData="0x4000" MemorySizeText="0xa000" MemorySizePersistentBss="0x1000"/>
+  <Ports>
+    <QueuingPort Name="FIDO_01_TX" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="160" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="FIDO_1_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="128" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="FIDO_02_TX" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="160" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="FIDO_2_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="128" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="FIDO_03_TX" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="2" ProtocolType="1"/>
+    <SamplingPort Name="OMS_1_FLIGHT_INFO_SET_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="68" RefreshRate="2000000000"/>
+  </Ports>
+</ApplicationDescription>

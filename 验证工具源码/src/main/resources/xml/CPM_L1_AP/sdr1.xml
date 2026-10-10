@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SharedDataDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.actri.avic/ConfigRecord ../../XSD/Application.xsd"  
+CachePolicy="DEFAULT" DataType="VIRTUAL" Size="0x00010000" VirtualAddress="0"/>

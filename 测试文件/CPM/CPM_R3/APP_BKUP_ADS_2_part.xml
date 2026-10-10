@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<PartitionDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0xBF2C62E0">
+  <SharedDataRegion Name="BACKUP_ADS_DB_CLASS" Size="4194304" AccessRights="READ_ONLY"/>
+  <Application NameRef="APP_BKUP_ADS_2"/>
+  <SharedLibraryRegion NameRef="pos"/>
+  <Settings RequiredMemorySize="14680064" setModuleSchedule="false" allocDisable="true"/>
+</PartitionDescription>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<PartitionDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0x0CA89199">
+  <Application NameRef="WWAPP"/>
+  <SharedLibraryRegion NameRef="pos"/>
+  <Settings RequiredMemorySize="10391552" setModuleSchedule="false" allocDisable="true"/>
+</PartitionDescription>

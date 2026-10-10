@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<PartitionDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0xA81CA207">
+  <SharedDataRegion Name="FMS_FOT_DB" Size="65536" AccessRights="READ_ONLY"/>
+  <SharedDataRegion Name="FMS_COT_DB" Size="65536" AccessRights="READ_ONLY"/>
+  <SharedDataRegion Name="FMS_IO_CONFIG_CORE_DB" Size="204800" AccessRights="READ_ONLY"/>
+  <SharedDataRegion Name="FMS_MVT_DB" Size="65536" AccessRights="READ_ONLY"/>
+  <SharedDataRegion Name="FMS_PDB_DB" Size="12582912" AccessRights="READ_ONLY"/>
+  <SharedDataRegion Name="FMS_NDB_DB" Size="18874368" AccessRights="READ_ONLY"/>
+  <SharedDataRegion Name="FMS_SDR_CORE_DB" Size="51183616" AccessRights="READ_WRITE"/>
+  <Application NameRef="APP_FMS_CORE_2"/>
+  <SharedLibraryRegion NameRef="pos"/>
+  <Settings RequiredMemorySize="59772928" setModuleSchedule="false" allocDisable="true"/>
+</PartitionDescription>

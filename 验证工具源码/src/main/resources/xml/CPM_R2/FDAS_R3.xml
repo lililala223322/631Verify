@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="">
+  <MemorySize MemorySizeBss="0x800000" MemorySizeData="0x800000" MemorySizePersistentData="0x200000" MemorySizeRoData="0x200000" MemorySizeText="0x200000" MemorySizePersistentBss="0x200000"/>
+  <Ports>
+    <QueuingPort Name="IP_QP_FMS_DATALINK1_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="12" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="OP_QP_IDU_RIB_A661_BLOCK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="IP_QP_FMS_DATALINK2_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="12" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_RGW09_TO_FDAS_R03" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="24" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_ECL_STATUS_DATA_R" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="12" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="OP_QP_IDU_ROB_A661_BLOCK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="IP_QP_FCM_3_03_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="364" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_ISS_136_TO_FDAS_L" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="28" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_FCM_1_01ADA20_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="284" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_IDU_C_A661_BLOCK" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="7" ProtocolType="2"/>
+    <QueuingPort Name="OP_QP_IDU_C_A661_BLOCK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="IP_QP_FCM_2_03_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="364" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="OP_QP_IDU_LOB_A661_BLOCK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="IP_QP_ISS_125_TO_FDAS_L" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="20" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_ISS_109_TO_FDAS_R" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="28" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_ISS_104_TO_FDAS_R" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="20" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_RGW02_FDAS_R06" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="40" MaxNbMessage="10" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_FCM_2_01ADA20_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="284" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_ECL_STATUS_DATA_L" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="12" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_RGW06_TO_FDAS_R02" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="24" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_FCM_3_01ADA20_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="284" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_IDU_ROB_A661_BLOCK" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="7" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_RGW05_TO_FDAS_R01" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="24" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="OP_SP_MCAST_ALERTS" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1008" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="FDAS_OHMS_Cmd" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="12" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_FCM_1_03_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="364" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_IDU_LIB_A661_BLOCK" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="7" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_RGW10_TO_FDAS_R04" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="24" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="FDAS_OMS_Stat" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="28" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="FDAS_OMS_Resp" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="128" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="IP_QP_AOC_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="16" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_IDU_LOB_A661_BLOCK" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="7" ProtocolType="2"/>
+    <QueuingPort Name="OP_QP_IDU_LIB_A661_BLOCK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="IP_QP_RGW01_FDAS_R05" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="40" MaxNbMessage="10" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_IDU_RIB_A661_BLOCK" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="7" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_ISS_R_270_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="20" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_FCM_2_04AF20_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="124" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_FCM_2_02_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="364" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_FCM_1_04AF20_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="124" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_FCM_3_04AF20_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="124" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_FCM_3_02_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="364" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_FCM_1_02_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="364" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_ATC_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="12" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="IP_SP_BCM_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="12" MaxNbMessage="5" ProtocolType="2"/>
+    <SamplingPort Name="IP_SP_RGW16_FDAS_R19" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_SYN_MENU_L_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_AOT1_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="512" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_1A_LB_100_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_EEC_LA_M2_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="132" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_1A_RG_100_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_HFQ_EEC_R_CHB_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_LI_3_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_RO_1_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_1A_RB_100_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="148" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_Reversion_MSG_IDU_LOB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="256" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_1B_LB_100_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_Reversion_MSG_IDU_C" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="256" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RGW11_FDAS_R03" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="64" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_1B_LG_100_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_LO_2_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_ROB_EI_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_ISS_103_TO_FDAS_R" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_2A_RB_100_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="148" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_RI_2_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_EEC_R_CHB_MSG3_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_LO_1_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_C_3_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="OP_SP_CPA_LAMP" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="96" RefreshRate="50000000"/>
+    <SamplingPort Name="IP_SP_SYN_MENU_R_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_EEC_LB_M2_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="132" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_HFQ_EEC_L_CHA_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_FROM_DMI_1_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="100000000"/>
+    <SamplingPort Name="OP_SP_COMMNAV_AURAL" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="50000000"/>
+    <SamplingPort Name="IP_SP_RGW02_FDAS_R07" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_2B_RB_100_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="148" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_2B_RG_100_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="100000000"/>
+    <SamplingPort Name="IDU_LI_FAULT_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_ISS_108_TO_FDAS_R" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="100" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_HM_L1_IMAPLAT_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="24" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_1B_SG_2_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="148" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_R_AFT_PS_tatus_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="40" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_EEC_RB_M2_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="132" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_ISS_129_TO_FDAS_L" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="100" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_1B_RG_100_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_QP_FMS_NAV_2_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="80" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_EEC_L_CHB_MSG3_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_C_EI_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RGW05_FDAS_R21" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="60" RefreshRate="100000000"/>
+    <SamplingPort Name="OP_SP_MWC_CMDS" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="50000000"/>
+    <SamplingPort Name="APR_REDUNDANCY_REPORT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_FMS_CR2_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_LRA_R_ALTTD_2_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RGW08_FDAS_R23" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_FMS_CORE_2_OMS_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="109" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_LOB_EI_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_HM_R1_IMAPLAT_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="24" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_2A_RG_100_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_FDAS_PEERB_XTALK" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_1B_RB_100_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="148" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_RO_2_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_1A_LG_100_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_Maint_Switch_A_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_EEC_L_CHA_MSG3_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_LO_3_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IDU_LO_FAULT_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_2A_LG_100_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDULI_PFD_TCAS_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="180" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_1B_LDP_100" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="32" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_SYN_PAGE_L_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IDU_C_FAULT_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_EEC_R_CHA_MSG3_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_ISSPRO_L_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_ISS_124_TO_FDAS_L" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_SYN_PAGE_R_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_FMS_CR1_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RGW05_FDAS_R10" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="180" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_FPSC_B_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="40" RefreshRate="100000000"/>
+    <SamplingPort Name="OP_SP_MCAST_ISS_DATA" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="32" RefreshRate="50000000"/>
+    <SamplingPort Name="IP_SP_AOT3_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="512" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDURO_PFD_TCAS_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="180" RefreshRate="100000000"/>
+    <SamplingPort Name="OP_SP_FDAS_INFO" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="50000000"/>
+    <SamplingPort Name="IP_SP_RGW01_FDAS_R06" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="72" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_EEC_L_CHA_MSG_EICAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="216" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_EEC_L_CHB_MSG_EICAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="216" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_QP_FMS_NAV_1_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="80" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_1A_LDP_100" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="32" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_FDAS_PEERA_XTALK" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_2A_RAS_100_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_1A_SG_2_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="148" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RGW10_FDAS_R02" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="24" RefreshRate="100000000"/>
+    <SamplingPort Name="IDU_RO_FAULT_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_PIT_2_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_RO_3_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_ATS_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="OP_SP_FDAS_FRS_BUFFER" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="24" RefreshRate="50000000"/>
+    <SamplingPort Name="OP_SP_A825_Lamps" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="50000000"/>
+    <SamplingPort Name="IP_SP_RPDU2A_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="636" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RGW08_FDAS_R13" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_AFTEAFR_500" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="40" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_HFQ_EEC_R_CHA_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU2B_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="636" RefreshRate="100000000"/>
+    <SamplingPort Name="OP_SP_XTALK" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="50000000"/>
+    <SamplingPort Name="IP_SP_RGW09_FDAS_R14" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_2A_LB_100_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_2B_SG_2_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="148" RefreshRate="100000000"/>
+    <SamplingPort Name="IDU_RI_FAULT_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="OP_SP_FDAS_COS_TO_OMS" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="2000000000"/>
+    <SamplingPort Name="IP_SP_IDU_LI_1_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_AOT4_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="512" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_PIT_1_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_EEC_R_CHA_MSG_EICAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="216" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_RIB_EI_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RGW09_FDAS_R24" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_INFO_R_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_APUDC_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_Reversion_MSG_IDU_ROB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="256" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_OHMS_Aircraft_Status" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="68" RefreshRate="2000000000"/>
+    <SamplingPort Name="IP_SP_Maint_Switch_B_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_FWDEAFR_500" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="40" RefreshRate="100000000"/>
+    <SamplingPort Name="OP_SP_MCAST_GENERAL" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="24" RefreshRate="50000000"/>
+    <SamplingPort Name="IP_SP_IDU_C_1_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_2B_LB_100_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_C_2_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_FROM_DMI_2_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_FROM_DMI_3_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_LI_2_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RGW14_FDAS_R17" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="40" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RGW15_FDAS_R18" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="40" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RGW06_FDAS_R22" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="32" RefreshRate="100000000"/>
+    <SamplingPort Name="OP_SP_IAS_CMDS" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="50000000"/>
+    <SamplingPort Name="OP_SP_FDAS_TO_PIT" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="50000000"/>
+    <SamplingPort Name="IP_SP_EEC_R_CHB_MSG_EICAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="216" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_INFO_L_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_2B_RAS_100_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_RI_3_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_ISSPRO_R_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_RI_1_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RGW03_FDAS_R08" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_FMS_CORE_1_OMS_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="109" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RSVR2_LO_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDU_LIB_EI_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDULO_PFD_TCAS_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="180" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU1A_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="732" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RGW03_FDAS_R16" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_CNS_MENU_R_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_2A_RDP_100" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="32" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU1B_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="732" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RGW15_FDAS_R04" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_2A_SG_2_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="148" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_EEC_RA_M2_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="132" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_Reversion_MSG_IDU_LIB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="256" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_2B_LG_100_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RPDU_UP_2B_RDP_100" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="32" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_IDURI_PFD_TCAS_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="180" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RGW04_FDAS_R09" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="68" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_AOT2_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="512" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RGW04_FDAS_R20" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RGW10_FDAS_R15" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="196" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_Reversion_MSG_IDU_RIB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="256" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_HFQ_EEC_L_CHB_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_CNS_MENU_L_TO_FDAS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RGW06_FDAS_R11" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="392" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_RGW07_FDAS_R12" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="300" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_QP_FMS_NAV_2_TO_FDAS_FMBA" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="80" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_FMS_CR1_TO_FDAS_FMBA" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_FMS_CR2_TO_FDAS_FMBA" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_QP_FMS_NAV_1_TO_FDAS_FMBA" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="80" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_INFO_L_ACK_PRESSED" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_INFO_R_ACK_PRESSED" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="OP_SP_FDAS_EEC_ACTIVE" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="50000000"/>
+  </Ports>
+</ApplicationDescription>

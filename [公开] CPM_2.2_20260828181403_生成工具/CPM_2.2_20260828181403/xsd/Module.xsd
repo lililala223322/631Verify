@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<xs:schema xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.actri.avic/ConfigRecord" xmlns:vp="http://www.actri.avic/XMLSchema/VP/1.0" targetNamespace="http://www.actri.avic/ConfigRecord" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="TypeLib.xsd"/>
+	<xs:include schemaLocation="CoreOS.xsd"/>
+	<xs:include schemaLocation="Application.xsd"/>
+	<xs:include schemaLocation="Partition.xsd"/>
+	<xs:import namespace="http://www.w3.org/2001/XInclude" schemaLocation="XInclude.xsd"/>
+	<xs:element name="Module" type="ModuleType"/>
+	<xs:complexType name="ModuleType">
+		<xs:sequence>
+			<xs:element name="CoreOS" type="CoreOSType"/>
+			<xs:element name="Applications" type="ApplicationsType"/>
+			<xs:element name="SharedDataRegions" type="SharedDataRegionsType"/>
+			<xs:element name="SharedLibraryRegions" type="SharedLibraryRegionsType"/>
+			<xs:element name="Partitions" type="PartitionsType"/>
+			<xs:element name="Schedules" type="SchedulesType"/>
+			<xs:element name="Connections" type="ConnectionsType"/>
+			<xs:element name="LogBookList" type="LogBookListType" minOccurs="0"/>
+			<xs:element name="HealthMonitor" type="HealthMonitorType"/>
+			<xs:element name="Payloads" type="PayloadsType"/>
+		</xs:sequence>
+		<xs:attribute name="Id" type="IdentifierValueType" use="optional"/>
+		<xs:attribute name="CRC32" type="HexValueType" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="ApplicationsType">
+		<xs:sequence>
+			<xs:element name="Application" maxOccurs="255">
+				<xs:complexType>
+					<xs:choice>
+						<xs:element ref="ApplicationDescription"/>
+						<xs:element ref="xi:include" minOccurs="0"/>
+					</xs:choice>
+					<xs:attribute name="Name" type="NameType" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PartitionType" mixed="true">
+		<xs:complexContent mixed="true">
+			<xs:extension base="A653_PartitionBaseType">
+				<xs:choice>
+					<xs:element ref="PartitionDescription"/>
+					<xs:element ref="xi:include"/>
+				</xs:choice>
+				<xs:attribute name="Type" type="partType" use="optional"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="PseudoPartitionType" mixed="true">
+		<xs:complexContent mixed="true">
+			<xs:extension base="A653_PartitionBaseType">
+				<xs:choice>
+					<xs:element ref="PseudoPartitionDescription"/>
+					<xs:element ref="xi:include"/>
+				</xs:choice>
+				<xs:attribute name="Type" type="PartitionDomainType"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ChannelSourcePortType">
+		<xs:attribute name="PartitionNameRef" type="xs:string" use="required"/>
+		<xs:attribute name="PortNameRef" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="ChannelDestinationPortType">
+		<xs:attribute name="PartitionNameRef" type="xs:string" use="required"/>
+		<xs:attribute name="PortNameRef" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="ChannelType">
+		<xs:sequence>
+			<xs:element name="Source" type="ChannelSourcePortType"/>
+			<xs:element name="Destination" type="ChannelDestinationPortType" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="Id" type="IdentifierValueType" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="HM_TableExtensionsType">
+		<xs:sequence>
+			<xs:element name="TrustedPartition" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="NameRef" type="xs:string" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="maxQueueDepth" type="DecOrHexValueType" use="optional"/>
+		<xs:attribute name="queueThreshold" type="DecOrHexValueType" use="optional"/>
+		<xs:attribute name="stackSize" type="DecOrHexValueType" use="optional"/>
+		<xs:attribute name="maxLogEntries" type="DecOrHexValueType" use="optional"/>
+		<xs:attribute name="logEntriesThreshold" type="DecOrHexValueType" use="optional"/>
+		<xs:attribute name="attributeMask" type="DecOrHexValueType" use="optional"/>
+		<xs:attribute name="notificationHandler" type="xs:string" use="optional"/>
+		<xs:attribute name="notifMaxQueueDepth" type="DecOrHexValueType" use="optional"/>
+		<xs:attribute name="eventFilterMask" type="DecOrHexValueType" use="optional"/>
+		<xs:attribute name="maxErrorHandlerQueueDepth" type="DecOrHexValueType" use="optional"/>
+		<xs:attribute name="errorHandlerQueueThreshold" type="DecOrHexValueType" use="optional"/>
+		<xs:anyAttribute namespace="##any"/>
+	</xs:complexType>
+	<xs:complexType name="HealthMonitorType">
+		<xs:sequence>
+			<xs:element name="SystemErrors" type="SystemErrorsType"/>
+			<xs:element name="CoreHmStatelist" type="CoreHmStatelistType"/>
+			<xs:element name="HMTable" type="HMTableType"/>
+			<xs:element name="HMTask" type="HMTaskType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SystemErrorsType" mixed="true">
+		<xs:sequence>
+			<xs:element name="SystemError" type="A653_ErrorIdentifierType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CoreHmStatelistType" mixed="true">
+		<xs:sequence>
+			<xs:element name="CoreHmState" type="CoreHmStatesType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CoreHmStatesType">
+		<xs:annotation>
+			<xs:documentation>hm state types</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="StateIdentifier" type="IdentifierValueType" use="required">
+			<xs:annotation>
+				<xs:documentation>Unique error identifier.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Description" type="xs:string" use="required">
+			<xs:annotation>
+				<xs:documentation>Description of the error.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="HMTableType" mixed="true">
+		<xs:sequence>
+			<xs:element name="CoreHMTableList">
+				<xs:complexType mixed="true">
+					<xs:sequence>
+						<xs:element name="CoreHMTable" type="CoreHMTableType" maxOccurs="16"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="MultiPartitionHMTableList">
+				<xs:complexType mixed="true">
+					<xs:sequence>
+						<xs:element name="MultiPartitionHMTable" type="MultiPartitionHMTableType" maxOccurs="255"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="PartitionHMTableList">
+				<xs:complexType mixed="true">
+					<xs:sequence>
+						<xs:element name="PartitionHMTable" type="PartitionHMTableType" maxOccurs="255"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CoreHMTableType">
+		<xs:complexContent>
+			<xs:extension base="A653_ModuleHMTableType">
+				<xs:sequence>
+					<xs:element name="Core" minOccurs="0" maxOccurs="16">
+						<xs:complexType>
+							<xs:attribute name="cpuId" type="IdentifierValueType" use="required"/>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+				<xs:attribute name="Name" type="NameType" use="required"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="MultiPartitionHMTableType">
+		<xs:complexContent>
+			<xs:extension base="A653_MultiPartitionHMTableType"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="PartitionHMTableType">
+		<xs:complexContent>
+			<xs:extension base="A653_PartitionHMTableType">
+				<xs:sequence>
+					<xs:element name="PartitionRef" maxOccurs="255">
+						<xs:complexType mixed="true">
+							<xs:attribute name="Id" type="DecOrHexValueType" use="required"/>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="HMTaskType">
+		<xs:sequence>
+			<xs:element name="CoreHMTaskList">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="CoreHMTask" minOccurs="1" maxOccurs="16">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="Core" minOccurs="0" maxOccurs="16">
+										<xs:complexType>
+											<xs:attribute name="cpuId" type="IdentifierValueType" use="required"/>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+								<xs:attribute name="Name" type="xs:string" use="required"/>
+								<xs:attribute name="Callback" type="CallbackNameType" use="optional"/>
+								<xs:attribute name="maxQueueDepth" type="DecOrHexValueType" use="optional"/>
+								<xs:attribute name="queueThreshold" type="DecOrHexValueType" use="optional"/>
+								<xs:attribute name="stackSize" type="DecOrHexValueType" use="optional"/>
+								<xs:attribute name="maxLogEntries" type="DecOrHexValueType" use="optional"/>
+								<xs:attribute name="logEntriesThreshold" type="DecOrHexValueType" use="optional"/>
+								<xs:attribute name="attributeMask" type="DecOrHexValueType" use="optional"/>
+								<xs:attribute name="eventFilterMask" type="DecOrHexValueType" use="optional"/>
+								<xs:attribute name="maxErrorHandlerQueueDepth" type="DecOrHexValueType" use="optional"/>
+								<xs:attribute name="errorHandlerQueueThreshold" type="DecOrHexValueType" use="optional"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="PartitionHMTaskList">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="PartitionHMTask" maxOccurs="255">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="PartitionRef" maxOccurs="255">
+										<xs:complexType>
+											<xs:attribute name="Id" type="DecOrHexValueType" use="required"/>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+								<xs:attribute name="Name" type="xs:string" use="required"/>
+								<xs:attribute name="Callback" type="CallbackNameType" use="optional"/>
+								<xs:attribute name="maxQueueDepth" type="DecOrHexValueType" use="optional"/>
+								<xs:attribute name="queueThreshold" type="DecOrHexValueType" use="optional"/>
+								<xs:attribute name="stackSize" type="DecOrHexValueType" use="optional"/>
+								<xs:attribute name="maxLogEntries" type="DecOrHexValueType" use="optional"/>
+								<xs:attribute name="logEntriesThreshold" type="DecOrHexValueType" use="optional"/>
+								<xs:attribute name="attributeMask" type="DecOrHexValueType" use="optional"/>
+								<xs:attribute name="eventFilterMask" type="DecOrHexValueType" use="optional"/>
+								<xs:attribute name="maxErrorHandlerQueueDepth" type="DecOrHexValueType" use="optional"/>
+								<xs:attribute name="errorHandlerQueueThreshold" type="DecOrHexValueType" use="optional"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CoreOSType">
+		<xs:choice>
+			<xs:element ref="CoreOSDescription"/>
+			<xs:element ref="xi:include"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="PartitionsType">
+		<xs:sequence>
+			<xs:element name="Partition" type="PartitionType" maxOccurs="255"/>
+			<xs:element name="PseudoPartition" type="PseudoPartitionType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="BmpScheduleType">
+		<xs:sequence>
+			<xs:element name="Core" type="CoreType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SchedulesType" mixed="true">
+		<xs:choice>
+			<xs:element name="BmpSchedule" type="BmpScheduleType"/>
+			<xs:element name="Schedule" type="ScheduleType" maxOccurs="256"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="CoreType">
+		<xs:sequence>
+			<xs:element name="Schedule" type="ScheduleType" minOccurs="1" maxOccurs="256"/>
+		</xs:sequence>
+		<xs:attribute name="cpuId" type="IdentifierValueType" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="ScheduleType" mixed="true">
+		<xs:complexContent mixed="true">
+			<xs:extension base="A653P2_ModuleScheduleType">
+				<xs:sequence>
+					<xs:element name="PartitionWindow" type="A653_PartitionTimeWindowType" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ConnectionsType">
+		<xs:sequence>
+			<xs:element name="Channel" type="ChannelType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SharedLibraryRegionsType">
+		<xs:sequence>
+			<xs:element name="SharedLibrary" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:choice>
+						<xs:element ref="SharedLibraryDescription"/>
+						<xs:element ref="xi:include" minOccurs="0"/>
+					</xs:choice>
+					<xs:attribute name="Name" type="NameType" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="SharedDataRegionsType">
+		<xs:sequence>
+			<xs:element name="SharedData" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:choice>
+						<xs:element ref="SharedDataDescription"/>
+						<xs:element ref="SharedIODescription"/>
+						<xs:element ref="xi:include" minOccurs="0"/>
+					</xs:choice>
+					<xs:attribute name="Name" type="NameType" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PayloadsType">
+		<xs:sequence>
+			<xs:element name="CoreOSPayload">
+				<xs:annotation>
+					<xs:appinfo/>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:attribute name="Base_Address" type="DecOrHexValueType" use="optional"/>
+					<xs:attribute name="NameRef" type="xs:string" use="optional"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SharedLibraryPayload" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:appinfo/>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:attribute name="NameRef" type="xs:string" use="required"/>
+					<xs:attribute name="Base_Address" type="DecOrHexValueType" use="optional"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ConfigRecordPayload" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:appinfo/>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:attribute name="NameRef" type="xs:string" use="required"/>
+					<xs:attribute name="Base_Address" type="DecOrHexValueType" use="optional"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SharedDataPayload" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:appinfo/>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:attribute name="NameRef" type="xs:string" use="required"/>
+					<xs:attribute name="Base_Address" type="DecOrHexValueType" use="optional"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="PartitionPayload" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="NameRef" type="xs:string" use="required"/>
+					<xs:attribute name="Base_Address" type="DecOrHexValueType" use="optional"/>
+					<xs:attribute name="Online" type="booleanType" use="optional"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="PayloadType" type="PayloadTypeValue" use="optional"/>
+		<xs:attribute name="FileType" type="FileTypeValue" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="LogBookListType">
+		<xs:sequence>
+			<xs:element name="LogBook" type="LogBookType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LogBookType" mixed="true">
+		<xs:complexContent mixed="true">
+			<xs:extension base="A653P2_PartitionLogbookType">
+				<xs:attribute name="serialNumber" type="IdentifierValueType" use="required"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="SystemStateType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="HM_UNKNOWN_STATUS"/>
+			<xs:enumeration value="HM_MODULE_INIT_STATUS"/>
+			<xs:enumeration value="HM_MODULE_HM_STATUS"/>
+			<xs:enumeration value="HM_SYS_FUNC_STATUS"/>
+			<xs:enumeration value="HM_PARTITION_SWITCH_STATUS"/>
+			<xs:enumeration value="HM_PARTITION_INIT_STATUS"/>
+			<xs:enumeration value="HM_PARTITION_HM_STATUS"/>
+			<xs:enumeration value="HM_SYSCALL_STATUS"/>
+			<xs:enumeration value="HM_PROCESS_EXEC_STATUS"/>
+			<xs:enumeration value="HM_PROCESS_MGMT_STATUS"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ErrorIdentifierType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="HME_DEADLINE_MISSED"/>
+			<xs:enumeration value="HME_APPLICATION_ERROR"/>
+			<xs:enumeration value="HME_NUMERIC_ERROR"/>
+			<xs:enumeration value="HME_ILLEGAL_REQUEST"/>
+			<xs:enumeration value="HME_STACK_OVERFLOW"/>
+			<xs:enumeration value="HME_MEMORY_VIOLATION"/>
+			<xs:enumeration value="HME_HARDWARE_FAULT"/>
+			<xs:enumeration value="HME_POWER_FAIL"/>
+			<xs:enumeration value="HME_KERNEL"/>
+			<xs:enumeration value="HME_CONFIG_ERROR"/>
+			<xs:enumeration value="HME_INIT_ERROR"/>
+			<xs:enumeration value="HME_PARTITION_OVERFLOW"/>
+			<xs:enumeration value="HME_PARTITION_MODE_SET"/>
+			<xs:enumeration value="HME_APEX_INTERNAL_ERROR"/>
+			<xs:enumeration value="HME_HM_INTERNAL_ERROR"/>
+			<xs:enumeration value="HME_PORT_INTERNAL_ERROR"/>
+			<xs:enumeration value="HME_LOST_TICKS"/>
+			<xs:enumeration value="HME_OTHER"/>
+			<xs:enumeration value="HM_MSG"/>
+			<xs:enumeration value="HME_HM_ERROR"/>
+			<xs:enumeration value="HME_HMQ_OVERFLOW"/>
+			<xs:enumeration value="HME_DATA_LOSS"/>
+			<xs:enumeration value="HME_HM_DEADLINE_MISSED"/>
+			<xs:enumeration value="HME_DEFAULT"/>
+			<xs:enumeration value="HME_UNKNOWN"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ErrorLevelType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="HM_INVALID_LEVEL"/>
+			<xs:enumeration value="HM_PROCESS_LEVEL"/>
+			<xs:enumeration value="HM_PARTITION_LEVEL"/>
+			<xs:enumeration value="HM_MULTIPARTITION_LEVEL"/>
+			<xs:enumeration value="HM_MODULE_LEVEL"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

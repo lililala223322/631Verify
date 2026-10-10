@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="">
+  <MemorySize MemorySizeBss="0x4000" MemorySizeData="0x4000" MemorySizePersistentData="0x1000" MemorySizeRoData="0x4000" MemorySizeText="0xe000" MemorySizePersistentBss="0x1000"/>
+  <Ports/>
+</ApplicationDescription>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<xs:schema xmlns:vp="http://www.actri.avic/XMLSchema/VP/1.0" xmlns="http://www.actri.avic/ConfigRecord" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.actri.avic/ConfigRecord" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="TypeLib.xsd"/>
+	<xs:element name="ApplicationDescription" type="ApplicationType"/>
+	<xs:element name="SharedDataDescription" type="SharedDataRegionType"/>
+	<xs:element name="SharedIODescription" type="SharedIORegionType"/>
+	<xs:element name="SharedLibraryDescription" type="SharedLibraryType"/>
+	<xs:complexType name="ApplicationType">
+		<xs:sequence>
+			<xs:element name="MemorySize">
+				<xs:complexType>
+					<xs:attribute name="MemorySizeBss" type="DecOrHexValueType" use="required"/>
+					<xs:attribute name="MemorySizeText" type="DecOrHexValueType" use="required"/>
+					<xs:attribute name="MemorySizeData" type="DecOrHexValueType" use="required"/>
+					<xs:attribute name="MemorySizeRoData" type="DecOrHexValueType" use="required"/>
+					<xs:attribute name="MemorySizePersistentData" type="DecOrHexValueType" use="optional"/>
+					<xs:attribute name="MemorySizePersistentBss" type="DecOrHexValueType" use="optional"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Ports" type="PortsTypeApp"/>
+		</xs:sequence>
+		<xs:attribute name="CRC32" type="HexValueType" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="SharedLibraryType">
+		<xs:sequence>
+			<xs:element name="MemorySize">
+				<xs:annotation>
+					<xs:appinfo/>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:attribute name="MemorySizeBss" type="DecOrHexValueType" use="required"/>
+					<xs:attribute name="MemorySizeText" type="DecOrHexValueType" use="required"/>
+					<xs:attribute name="MemorySizeData" type="DecOrHexValueType" use="required"/>
+					<xs:attribute name="MemorySizeRoData" type="DecOrHexValueType" use="required"/>
+					<xs:attribute name="MemorySizePersistentData" type="DecOrHexValueType" use="optional"/>
+					<xs:attribute name="MemorySizePersistentBss" type="DecOrHexValueType" use="optional"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="SystemSharedLibrary" type="booleanType" use="required"/>
+		<xs:attribute name="VirtualAddress" type="DecOrHexValueType" use="required"/>
+		<xs:attribute name="CRC32" type="HexValueType" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="SharedDataRegionType">
+		<xs:attribute name="Size" type="DecOrHexValueType" use="required"/>
+		<xs:attribute name="DataType" type="ShardDataRegionType" use="optional"/>
+		<xs:attribute name="VirtualAddress" type="DecOrHexValueType" use="optional"/>
+		<xs:attribute name="CachePolicy" type="CachePolicyType" use="optional"/>
+		<xs:attribute name="SystemAccess" type="UserAccessRightsType" use="optional"/>
+		<xs:attribute name="CRC32" type="HexValueType" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="SharedIORegionType">
+		<xs:annotation>
+			<xs:documentation>AE653 specific extension to create Shared I/O region configuration.</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="VirtualAddress" type="DecOrHexValueType" use="optional"/>
+		<xs:attribute name="CachePolicy" type="CachePolicyType" use="optional"/>
+		<xs:attribute name="SystemAccess" type="UserAccessRightsType" use="optional"/>
+	</xs:complexType>
+</xs:schema>

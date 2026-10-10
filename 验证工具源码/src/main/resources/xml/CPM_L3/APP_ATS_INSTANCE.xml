@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="">
+  <MemorySize MemorySizeBss="0x6000" MemorySizeData="0x3000" MemorySizePersistentData="0x80000" MemorySizeRoData="0x23000" MemorySizeText="0x1b0000" MemorySizePersistentBss="0x80000"/>
+  <Ports>
+    <QueuingPort Name="A653QUE_O_ATS_DU3" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="A653QUE_I_ATS_DU3" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653QUE_O_ATS_CMF_FILE_BOP" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="520" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="A653QUE_I_ATS_DU2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653QUE_I_ATS_DU5" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653QUE_O_ATS_DU5" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="A653QUE_I_ATS_CMF_FILE" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="908" MaxNbMessage="10" ProtocolType="2"/>
+    <QueuingPort Name="A653QUE_O_ATS_DU2" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="2" ProtocolType="1"/>
+    <SamplingPort Name="A653SAMP_O_ATS_STATUS" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1000000000"/>
+    <SamplingPort Name="A653SAMP_I_LANDING_GEAR_STATUS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1200000000"/>
+    <SamplingPort Name="A653SAMP_I_Printer_Status" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1200000000"/>
+    <SamplingPort Name="A653SAMP_I_DOORs_STATUS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1200000000"/>
+    <SamplingPort Name="A653SAMP_I_FMS_CORE_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="1200000000"/>
+    <SamplingPort Name="A653SAMP_I_IMA_AOT" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="512" RefreshRate="1200000000"/>
+    <SamplingPort Name="A653SAMP_I_FMS_NAV_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="80" RefreshRate="1200000000"/>
+    <SamplingPort Name="A653SAMP_I_CMF_STATUS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1200000000"/>
+    <SamplingPort Name="A653SAMP_I_FMS_CORE_1_MSG_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="1200000000"/>
+    <SamplingPort Name="A653SAMP_I_FMS_CORE_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="1200000000"/>
+    <SamplingPort Name="A653SAMP_I_FMS_NAV_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="80" RefreshRate="1200000000"/>
+    <SamplingPort Name="A653SAMP_Parking_Brake_State" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1200000000"/>
+    <SamplingPort Name="A653SAMP_I_FMS_CORE_2_MSG_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="1200000000"/>
+    <SamplingPort Name="A653SAMP_I_FMS_CORE_3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="1200000000"/>
+    <SamplingPort Name="A653SAMP_I_FMS_CORE_3_MSG_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="1200000000"/>
+    <SamplingPort Name="A653SAMP_I_FMS_NAV_3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="80" RefreshRate="1200000000"/>
+  </Ports>
+</ApplicationDescription>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<PartitionDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0xDF8C00D8">
+  <SharedDataRegion Name="HM_CONFIG" Size="4194304" AccessRights="READ_WRITE"/>
+  <Application NameRef="HM_R1"/>
+  <SharedLibraryRegion NameRef="pos"/>
+  <Settings RequiredMemorySize="6938624" setModuleSchedule="true" allocDisable="true"/>
+</PartitionDescription>

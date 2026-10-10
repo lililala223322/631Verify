@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="">
+  <MemorySize MemorySizeBss="0x400000" MemorySizeData="0x80000" MemorySizePersistentData="0x10000" MemorySizeRoData="0x10000" MemorySizeText="0x100000" MemorySizePersistentBss="0x10000"/>
+  <Ports>
+    <QueuingPort Name="IP_QP_IDU_LOB_A661_BLOCK" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="OP_QP_IDU_ROB_A661_BLOCK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="IP_QP_FCM_3_TO_SYN_2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="164" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="SYN_MENU_OMS_Stat" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="28" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="OP_QP_IDU_LIB_A661_BLOCK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="IP_QP_FCM_3_TO_SYN" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="364" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_IDU_RIB_A661_BLOCK" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="OP_QP_IDU_C_A661_BLOCK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="OP_QP_IDU_RIB_A661_BLOCK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="IP_QP_IDU_LIB_A661_BLOCK" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="SYN_MENU_OHMS_Cmd" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="12" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="OP_QP_IDU_LOB_A661_BLOCK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="IP_QP_FCM_1_TO_SYN" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="364" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_IDU_ROB_A661_BLOCK" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_FCM_1_TO_SYN_2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="164" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_FCM_2_TO_SYN_2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="164" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_FCM_2_TO_SYN" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="364" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="IP_QP_IDU_C_A661_BLOCK" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1024" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="SYN_MENU_OMS_Resp" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="128" MaxNbMessage="2" ProtocolType="1"/>
+    <SamplingPort Name="IP_SP_EEC_L_CHB_Discrete" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="200000000"/>
+    <SamplingPort Name="IP_QP_FMS_NAV_1_TO_SYN_MENU" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="80" RefreshRate="200000000"/>
+    <SamplingPort Name="IP_QP_LGCU1_TX1_SYN_MENU" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="200000000"/>
+    <SamplingPort Name="IP_SP_FMS_CORE2_429_MIX_MSG" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="200000000"/>
+    <SamplingPort Name="IP_QP_LGCU2_TX1_SYN_MENU" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="200000000"/>
+    <SamplingPort Name="IP_SP_FDAS_3_GENERAL" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="24" RefreshRate="200000000"/>
+    <SamplingPort Name="IP_QP_FMS_NAV_2_TO_SYN_MENU" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="80" RefreshRate="200000000"/>
+    <SamplingPort Name="IP_SP_OHMS_Aircraft_Status" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="68" RefreshRate="2000000000"/>
+    <SamplingPort Name="IP_SP_EEC_L_CHA_Discrete" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="200000000"/>
+    <SamplingPort Name="IP_SP_FROM_DMI_1_TO_SYN_MENU" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="200000000"/>
+    <SamplingPort Name="IP_SP_EEC_R_CHA_Discrete" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="200000000"/>
+    <SamplingPort Name="IP_SP_EEC_R_CHB_FCSFMS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="132" RefreshRate="200000000"/>
+    <SamplingPort Name="IP_SP_EEC_L_CHA_FCSFMS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="132" RefreshRate="200000000"/>
+    <SamplingPort Name="IP_SP_EEC_L_CHB_FCSFMS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="132" RefreshRate="200000000"/>
+    <SamplingPort Name="IP_SP_FROM_DMI_3_TO_SYN_MENU" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="200000000"/>
+    <SamplingPort Name="OP_SP_SYN_MENU_PEER_XTALK" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="124" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_EEC_R_CHB_Discrete" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="200000000"/>
+    <SamplingPort Name="OP_SP_SYN_MENU_STATUS" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IP_SP_SYN_MENU_PEER_XTALK" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="124" RefreshRate="200000000"/>
+    <SamplingPort Name="IP_SP_FROM_DMI_2_TO_SYN_MENU" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="200000000"/>
+    <SamplingPort Name="IP_SP_EEC_R_CHA_FCSFMS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="132" RefreshRate="200000000"/>
+    <SamplingPort Name="IP_SP_FMS_CORE1_429_MIX_MSG" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="200000000"/>
+    <SamplingPort Name="APR_REDUNDANCY_REPORT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="200000000"/>
+    <SamplingPort Name="IP_SP_FDAS_2_GENERAL" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="24" RefreshRate="200000000"/>
+    <SamplingPort Name="IP_SP_FDAS_1_GENERAL" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="24" RefreshRate="200000000"/>
+  </Ports>
+</ApplicationDescription>

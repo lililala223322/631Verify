@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<PartitionDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0x7063749E">
+  <SharedDataRegion Name="FIDODB" Size="10485760" AccessRights="READ_WRITE"/>
+  <SharedDataRegion Name="FIDO_AGENT" Size="8388608" AccessRights="READ_WRITE"/>
+  <Application NameRef="FIDO_L3"/>
+  <SharedLibraryRegion NameRef="pos"/>
+  <Settings RequiredMemorySize="1613824" setModuleSchedule="true" allocDisable="true"/>
+</PartitionDescription>

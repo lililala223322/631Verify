@@ -1,0 +1,12 @@
+# Local dependency and tool caches
+.tools/
+
+# Generated build and verification output
+**/.build-check/
+**/target/
+**/dist/
+**/build.log
+**/*.log
+
+# GitHub rejects individual files larger than 100 MB
+离线交付/*.zip

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0x3F00D931">
+  <MemorySize MemorySizeBss="0x1800000" MemorySizeData="0x50000" MemorySizePersistentData="0x0" MemorySizeRoData="0xa0000" MemorySizeText="0x800000" MemorySizePersistentBss="0x4000"/>
+  <Ports>
+    <QueuingPort Name="A653_OUT_CROSSLOAD_BLOCK_DATA" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8172" MaxNbMessage="4" ProtocolType="1"/>
+    <QueuingPort Name="A653_OUT_DL_OUTPUT_APERIODIC" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="12" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="A653_OUT_FMS_MESSAGES_DL" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="300" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="A653_OUT_RM_DATALINK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4000" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="A653_OUT_DATALINK_PRINTER" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="120" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="A653_IN_CMU_GEN_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="908" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_FLIGHT_PLAN_Onside" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8180" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_FMS_STATUS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="512" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_CROSSLOAD_FMS_DATA" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8172" MaxNbMessage="9" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_CORE_STATE_Onside" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_NAV_STATE" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="7" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_RM_DATALINK_Xside" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4000" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="A653_OUT_DATALINK_OUTPUT" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="125" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="A653_IN_CMU_GEN_2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="908" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="A653_OUT_DATALINK_UPDATES" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8180" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="A653_IN_PRINTER_GIPC" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="908" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653_OUT_ATC_FILE" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8180" MaxNbMessage="10" ProtocolType="1"/>
+    <QueuingPort Name="A653_IN_ATC_FILE" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8172" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_RM_DATALINK_FMBA" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4000" MaxNbMessage="4" ProtocolType="2"/>
+    <SamplingPort Name="A653_IN_PRINTER_GIPC_STATUS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="750000000"/>
+    <SamplingPort Name="A653_IN_CMU_GEN_Status" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="450000000"/>
+    <SamplingPort Name="A653_IN_CCR_REDUNDANCY_RPT" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="500000000"/>
+    <SamplingPort Name="A653_IN_LGS_B" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1150000000"/>
+    <SamplingPort Name="A653_IN_ATC_Status" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="450000000"/>
+  </Ports>
+</ApplicationDescription>

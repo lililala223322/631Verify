@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0xE40A0941">
+  <MemorySize MemorySizeBss="0x100000" MemorySizeData="0x180000" MemorySizePersistentData="0x0" MemorySizeRoData="0x80000" MemorySizeText="0x66e000" MemorySizePersistentBss="0x0"/>
+  <Ports>
+    <QueuingPort Name="FCS_ADA_Info_Rx_FCM_3" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="FCS_ADA_Info_Rx_FCM_2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653QUE_O_AOC_DU3" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="5" ProtocolType="1"/>
+    <QueuingPort Name="FCS_AF20_Info_Rx" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="156" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="FCS_SP20_Info_Rx" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="196" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653QUE_I_DU2_AOC" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1056" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="FCS_PF20_Info_Rx" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="396" MaxNbMessage="23" ProtocolType="2"/>
+    <QueuingPort Name="A653QUE_I_DU3_AOC" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1056" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653QUE_O_AOC_DU5" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="5" ProtocolType="1"/>
+    <QueuingPort Name="A653QUE_I_DU5_AOC" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1056" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653QUE_O_AOC_CMF_FILE_BOP" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="520" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="A653QUE_O_AOC_DU2" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="5" ProtocolType="1"/>
+    <QueuingPort Name="FCS_ADA_Info_Rx" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653QUE_I_AOC_CMF_FILE" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="500" MaxNbMessage="10" ProtocolType="2"/>
+    <SamplingPort Name="LRA_Info_Rx_L" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="1000000000"/>
+    <SamplingPort Name="LRA_Info_Rx_R" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="1000000000"/>
+    <SamplingPort Name="FMS_Flight_Info_Rx_B" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="200" RefreshRate="1000000000"/>
+    <SamplingPort Name="FMS_CORE_Info_Rx_B" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="1000000000"/>
+    <SamplingPort Name="FMS_Guidance_Info_Rx_B" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="100" RefreshRate="1000000000"/>
+    <SamplingPort Name="AOT_Distributed_Message_Rx" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="544" RefreshRate="2000000000"/>
+    <SamplingPort Name="A653SAM_I_AOC_CMF_FILE" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="1000000000"/>
+    <SamplingPort Name="FMS_CORE_Info_Rx_A" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="1000000000"/>
+    <SamplingPort Name="AOC_I_Printer_Status" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="1000000000"/>
+    <SamplingPort Name="FCS_SP80_Info_Rx" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="300000000"/>
+    <SamplingPort Name="A653SAMP_O_AOC_STATUS" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="1000000000"/>
+    <SamplingPort Name="FMS_NAV_Info_Rx_A" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="1000000000"/>
+    <SamplingPort Name="Landing_Gear_Status_Rx" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="48" RefreshRate="1000000000"/>
+    <SamplingPort Name="Engine_Left_Status_Rx" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="88" RefreshRate="1000000000"/>
+    <SamplingPort Name="FMS_Flight_Info_Rx_A" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="200" RefreshRate="1000000000"/>
+    <SamplingPort Name="HF_NAV_Rx" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="50000000"/>
+    <SamplingPort Name="Engine_Right_Status_Rx" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="88" RefreshRate="1000000000"/>
+    <SamplingPort Name="FMS_Flight_Ap_Info_Rx_A" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="1000000000"/>
+    <SamplingPort Name="FMS_Guidance_Info_Rx_A" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="100" RefreshRate="1000000000"/>
+    <SamplingPort Name="FMS_NAV_Info_Rx_B" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="1000000000"/>
+    <SamplingPort Name="FMS_Flight_Ap_Info_Rx_B" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="1000000000"/>
+    <SamplingPort Name="FMS_CORE_Info_Rx_C" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="1000000000"/>
+    <SamplingPort Name="FMS_Flight_Info_Rx_C" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="200" RefreshRate="1000000000"/>
+    <SamplingPort Name="FMS_Flight_Ap_Info_Rx_C" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="76" RefreshRate="1000000000"/>
+    <SamplingPort Name="FMS_Guidance_Info_Rx_C" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="100" RefreshRate="1000000000"/>
+    <SamplingPort Name="FMS_NAV_Info_Rx_C" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="1000000000"/>
+    <SamplingPort Name="EEC_L_CHA_FCSFMS_Info_Rx" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="1000000000"/>
+    <SamplingPort Name="EEC_R_CHA_FCSFMS_Info_Rx" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="1000000000"/>
+    <SamplingPort Name="EEC_L_CHB_FCSFMS_Info_Rx" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="1000000000"/>
+    <SamplingPort Name="EEC_R_CHB_FCSFMS_Info_Rx" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="1000000000"/>
+    <SamplingPort Name="A653SAMP_O_AOC_OHMS_STAT" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="2000000000"/>
+    <SamplingPort Name="APR_REDUNDANCY_REPORT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="500000000"/>
+    <SamplingPort Name="Fuel_Info_Rx" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="1000000000"/>
+    <SamplingPort Name="Parking_Brake_Status_Rx" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="1000000000"/>
+    <SamplingPort Name="DOORS_STATUS_CHB_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="1000000000"/>
+    <SamplingPort Name="HLS_Info_Rx_FSECU_2_CMD" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="48" RefreshRate="1000000000"/>
+    <SamplingPort Name="HLS_Info_Rx_FSECU_1_MON" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="48" RefreshRate="1000000000"/>
+    <SamplingPort Name="DOORS_STATUS_CHA_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="1000000000"/>
+    <SamplingPort Name="APU_Status_Rx" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="68" RefreshRate="1000000000"/>
+    <SamplingPort Name="HLS_Info_Rx_FSECU_2_MON" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="48" RefreshRate="1000000000"/>
+    <SamplingPort Name="HLS_Info_Rx" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="1000000000"/>
+  </Ports>
+</ApplicationDescription>

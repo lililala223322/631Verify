@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<PartitionDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0x34587497">
+  <SharedDataRegion Name="DISPLAYSYSTEM_CONFIG_DB" Size="524288" AccessRights="READ_ONLY"/>
+  <Application NameRef="INFOAPP_R"/>
+  <SharedLibraryRegion NameRef="pos"/>
+  <Settings RequiredMemorySize="31457280" setModuleSchedule="false" allocDisable="true"/>
+</PartitionDescription>

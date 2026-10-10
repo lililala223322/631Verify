@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<PartitionDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0x66DBA31A">
+  <SharedDataRegion Name="FMBA_IO_CONFIG_NAV_DB" Size="102400" AccessRights="READ_ONLY"/>
+  <SharedDataRegion Name="FMBA_SDR_NAV_DB" Size="15728640" AccessRights="READ_WRITE"/>
+  <Application NameRef="APP_FMBA_NAV"/>
+  <SharedLibraryRegion NameRef="pos"/>
+  <Settings RequiredMemorySize="15728640" setModuleSchedule="false" allocDisable="true"/>
+</PartitionDescription>

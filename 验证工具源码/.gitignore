@@ -1,0 +1,14 @@
+target/
+.codex_backup/
+.idea/
+
+*.class
+*.jar
+*.war
+.DS_Store
+Thumbs.db
+_xml_req_run/
+/target/
+/dist/
+/.build-check/
+/build.log

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="">
+  <MemorySize MemorySizeBss="0x100000" MemorySizeData="0x10000" MemorySizePersistentData="0x1000" MemorySizeRoData="0x20000" MemorySizeText="0x42000" MemorySizePersistentBss="0x1000"/>
+  <Ports>
+    <SamplingPort Name="DISTRIBUTED_AOT_TX" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="512" RefreshRate="1000000000"/>
+    <SamplingPort Name="AF_AND_SN_RX_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="4000000000"/>
+    <SamplingPort Name="DISTRIBUTED_AOT_RX_3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="512" RefreshRate="4000000000"/>
+    <SamplingPort Name="LOCAL_AOT_RX_3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="512" RefreshRate="1000000000"/>
+    <SamplingPort Name="DISTRIBUTED_AOT_RX_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="512" RefreshRate="4000000000"/>
+    <SamplingPort Name="DISTRIBUTED_AOT_RX_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="512" RefreshRate="4000000000"/>
+    <SamplingPort Name="LOCAL_AOT_TX" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="512" RefreshRate="250000000"/>
+    <SamplingPort Name="AF_AND_SN_RX_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="4000000000"/>
+    <SamplingPort Name="STATUS_AOT_TX" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="32" RefreshRate="1000000000"/>
+    <SamplingPort Name="APR_REDUNDANCY_RPT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="20" RefreshRate="1000000000"/>
+    <SamplingPort Name="LOCAL_AOT_RX_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="512" RefreshRate="1000000000"/>
+    <SamplingPort Name="LOCAL_AOT_RX_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="512" RefreshRate="1000000000"/>
+    <SamplingPort Name="AF_AND_SN_RX_3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="4000000000"/>
+    <SamplingPort Name="AF_AND_SN_RX_4" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="4000000000"/>
+  </Ports>
+</ApplicationDescription>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0x58E850D1">
+  <MemorySize MemorySizeBss="0x1c00000" MemorySizeData="0xd0000" MemorySizePersistentData="0x10000" MemorySizeRoData="0xb0000" MemorySizeText="0xa91000" MemorySizePersistentBss="0x14000"/>
+  <Ports>
+    <QueuingPort Name="A653_OUT_ATC_CMF_FILE" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="520" MaxNbMessage="5" ProtocolType="1"/>
+    <QueuingPort Name="A653_IN_FMS3_ATC_FILE" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8212" MaxNbMessage="10" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_FMS2_ATC_FILE" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8212" MaxNbMessage="10" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_FMS1_ATC_FILE" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8212" MaxNbMessage="10" ProtocolType="2"/>
+    <QueuingPort Name="A653_OUT_ATC_FMS3_FILE" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8172" MaxNbMessage="5" ProtocolType="1"/>
+    <QueuingPort Name="A653_IN_A661_BLOCK_DU2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1056" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_A661_BLOCK_DU1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1056" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_A661_BLOCK_DU5" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1056" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_A661_BLOCK_DU3" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1056" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_A661_BLOCK_DU4" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1056" MaxNbMessage="5" ProtocolType="2"/>
+    <QueuingPort Name="A653_OUT_ATC_FMS1_FILE" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8172" MaxNbMessage="5" ProtocolType="1"/>
+    <QueuingPort Name="A653_OUT_ATC_FMS2_FILE" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8172" MaxNbMessage="5" ProtocolType="1"/>
+    <QueuingPort Name="A653_IN_A702A_Traj_Intent_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8212" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_Input_From_FCM1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_Altitude_From_FCM2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="196" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_Altitude_From_FCM1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="196" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_Altitude_From_FCM3" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="196" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_A702A_Traj_Intent_2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8212" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_A702A_Traj_Intent_3" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8212" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_OUT_A661_BLOCK_DU1" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="4" ProtocolType="1"/>
+    <QueuingPort Name="A653_OUT_A661_BLOCK_DU5" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="4" ProtocolType="1"/>
+    <QueuingPort Name="A653_OUT_A661_BLOCK_DU4" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="4" ProtocolType="1"/>
+    <QueuingPort Name="A653_OUT_A661_BLOCK_DU2" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="4" ProtocolType="1"/>
+    <QueuingPort Name="A653_OUT_A661_BLOCK_DU3" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="4" ProtocolType="1"/>
+    <QueuingPort Name="A653_IN_CMF_ATC_FILE" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="500" MaxNbMessage="10" ProtocolType="2"/>
+    <SamplingPort Name="A653_OUT_ATC_STATUS" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1000000000"/>
+    <SamplingPort Name="A653_IN_IMA_AOT" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="544" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_CPA_CPDLC_R" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="450000000"/>
+    <SamplingPort Name="A653_IN_FMS2_NAV_STATE" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_CMF_STATUS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="450000000"/>
+    <SamplingPort Name="A653_IN_CPA_CPDLC_L" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="450000000"/>
+    <SamplingPort Name="A653_IN_FMS1_GUIDANCE_STATE" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="100" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_FMS1_CORE_STATE" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="200" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_FMS1_NAV_STATE" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_FMS3_NAV_STATE" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_Aircraft_Addr" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="124" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_ATS_STATUS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="450000000"/>
+    <SamplingPort Name="A653_IN_CSA_STATUS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="450000000"/>
+    <SamplingPort Name="A653_IN_AOC_STATUS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="48" RefreshRate="450000000"/>
+    <SamplingPort Name="A653_Printer_Status" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_Inertial_Vertical_Speed" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_Landing_Gear_Status" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_FMS2_CORE_STATE" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="200" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_FMS2_GUIDANCE_STATE" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="100" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_FMS3_GUIDANCE_STATE" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="100" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_FMS3_CORE_STATE" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="200" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_FMS3_DATALINK_STATUS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="1000000000"/>
+    <SamplingPort Name="A653_IN_FMS2_DATALINK_STATUS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="1000000000"/>
+    <SamplingPort Name="A653_IN_FMS1_DATALINK_STATUS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="1000000000"/>
+    <SamplingPort Name="A653_IN_DMI2_ATC" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_DMI3_ATC" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_DMI1_ATC" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_BARO_SETTING_MODE_IDU2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="136" RefreshRate="250000000"/>
+    <SamplingPort Name="A653_IN_BARO_SETTING_MODE_IDU3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="136" RefreshRate="250000000"/>
+    <SamplingPort Name="A653_IN_BARO_SETTING_MODE_IDU5" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="136" RefreshRate="250000000"/>
+    <SamplingPort Name="A653_IN_FMS1_CORE_DISPLAY" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="68" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_FMS2_CORE_DISPLAY" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="68" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_FMS3_CORE_DISPLAY" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="68" RefreshRate="200000000"/>
+    <SamplingPort Name="APR_REDUNDANCY_REPORT_RX" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="500000000"/>
+    <SamplingPort Name="A653SAMP_O_ATC_OHMS_STAT" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="2000000000"/>
+    <SamplingPort Name="A653_IN_PARKING_BRAKE_STATUS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="1000000000"/>
+    <SamplingPort Name="A653_IN_DOORS_STATUS_CHB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="1000000000"/>
+    <SamplingPort Name="A653_IN_Fuel" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_DOORS_STATUS_CHA" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="1000000000"/>
+  </Ports>
+</ApplicationDescription>

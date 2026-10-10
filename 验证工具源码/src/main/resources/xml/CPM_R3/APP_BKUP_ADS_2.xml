@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="">
+  <MemorySize MemorySizeBss="0x500000" MemorySizeData="0x200000" MemorySizePersistentData="0x10000" MemorySizeRoData="0x10000" MemorySizeText="0x100000" MemorySizePersistentBss="0x10000"/>
+  <Ports>
+    <SamplingPort Name="IN_04_Port_SP80_FCM_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="12500000"/>
+    <SamplingPort Name="IN_01_Port_ADS_FCM_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="284" RefreshRate="50000000"/>
+    <SamplingPort Name="IN_02_Port_ADS_FCM_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="284" RefreshRate="50000000"/>
+    <SamplingPort Name="IN_03_Port_ADS_FCM_3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="284" RefreshRate="50000000"/>
+    <SamplingPort Name="IN_15_Port_EEC_DS2_R_CHA" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="132" RefreshRate="250000000"/>
+    <SamplingPort Name="IN_16_Port_EEC_DS2_R_CHB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="132" RefreshRate="250000000"/>
+    <SamplingPort Name="IN_22_Port_EEC_DS6_L_CHB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="216" RefreshRate="250000000"/>
+    <SamplingPort Name="IN_20_Port_EEC_DS3_R_CHB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="250000000"/>
+    <SamplingPort Name="IN_19_Port_EEC_DS3_R_CHA" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="250000000"/>
+    <SamplingPort Name="IN_18_Port_EEC_DS3_L_CHB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="250000000"/>
+    <SamplingPort Name="IN_14_Port_EEC_DS2_L_CHB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="132" RefreshRate="250000000"/>
+    <SamplingPort Name="IN_17_Port_EEC_DS3_L_CHA" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="250000000"/>
+    <SamplingPort Name="IN_21_Port_EEC_DS6_L_CHA" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="216" RefreshRate="250000000"/>
+    <SamplingPort Name="IN_38_Port_AMS_IASC_1B" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IN_39_Port_AMS_IASC_2A" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IN_40_Port_AMS_IASC_2B" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IN_37_Port_AMS_IASC_1A" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+    <SamplingPort Name="IN_32_Port_EEC_Trend_R_CHB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="452" RefreshRate="250000000"/>
+    <SamplingPort Name="IN_33_Port_FMS_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="168" RefreshRate="200000000"/>
+    <SamplingPort Name="IN_36_Port_FMS_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="200000000"/>
+    <SamplingPort Name="IN_34_Port_FMS_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="168" RefreshRate="200000000"/>
+    <SamplingPort Name="IN_35_Port_FMS_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="200000000"/>
+    <SamplingPort Name="IN_52_Port_RADIO_ALTIMETER_R" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="25000000"/>
+    <SamplingPort Name="IN_51_Port_RADIO_ALTIMETER_L" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="25000000"/>
+    <SamplingPort Name="IN_53_Port_FUEL_LRM_A" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1000000000"/>
+    <SamplingPort Name="IN_54_Port_FUEL_LRM_B" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1000000000"/>
+    <SamplingPort Name="IN_50_Port_GLU_R" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1000000000"/>
+    <SamplingPort Name="IN_13_Port_EEC_DS2_L_CHA" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="132" RefreshRate="250000000"/>
+    <SamplingPort Name="IN_06_Port_SP80_FCM_3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="12500000"/>
+    <SamplingPort Name="IN_11_Port_PF20_FCM_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="364" RefreshRate="50000000"/>
+    <SamplingPort Name="IN_12_Port_PF20_FCM_3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="364" RefreshRate="50000000"/>
+    <SamplingPort Name="IN_08_Port_SP20_FCM_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="50000000"/>
+    <SamplingPort Name="IN_10_Port_PF20_FCM_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="364" RefreshRate="50000000"/>
+    <SamplingPort Name="IN_05_Port_SP80_FCM_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="84" RefreshRate="12500000"/>
+    <SamplingPort Name="IN_07_Port_SP20_FCM_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="50000000"/>
+    <SamplingPort Name="IN_09_Port_SP20_FCM_3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="50000000"/>
+    <SamplingPort Name="IN_28_Port_EEC_TrendFDR_R_CHB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="304" RefreshRate="250000000"/>
+    <SamplingPort Name="IN_25_Port_EEC_TrendFDR_L_CHA" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="304" RefreshRate="250000000"/>
+    <SamplingPort Name="IN_27_Port_EEC_TrendFDR_R_CHA" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="304" RefreshRate="250000000"/>
+    <SamplingPort Name="IN_26_Port_EEC_TrendFDR_L_CHB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="304" RefreshRate="250000000"/>
+    <SamplingPort Name="IN_29_Port_EEC_Trend_L_CHA" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="452" RefreshRate="250000000"/>
+    <SamplingPort Name="IN_31_Port_EEC_Trend_R_CHA" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="452" RefreshRate="250000000"/>
+    <SamplingPort Name="IN_30_Port_EEC_Trend_L_CHB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="452" RefreshRate="250000000"/>
+    <SamplingPort Name="IN_23_Port_EEC_DS6_R_CHA" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="216" RefreshRate="250000000"/>
+    <SamplingPort Name="IN_24_Port_EEC_DS6_R_CHB" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="216" RefreshRate="250000000"/>
+    <SamplingPort Name="IN_45_Port_IRU_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="10000000"/>
+    <SamplingPort Name="IN_46_Port_IRU_3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="10000000"/>
+    <SamplingPort Name="IN_48_Port_GLU_R" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1000000000"/>
+    <SamplingPort Name="IN_49_Port_GLU_L" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1000000000"/>
+    <SamplingPort Name="IN_41_Port_IRU_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="10000000"/>
+    <SamplingPort Name="IN_42_Port_IRU_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="10000000"/>
+    <SamplingPort Name="IN_43_Port_IRU_3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="10000000"/>
+    <SamplingPort Name="IN_47_Port_GLU_L" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1000000000"/>
+    <SamplingPort Name="IN_44_Port_IRU_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="10000000"/>
+  </Ports>
+</ApplicationDescription>

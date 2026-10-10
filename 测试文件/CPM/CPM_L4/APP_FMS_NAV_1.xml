@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0x873657CE">
+  <MemorySize MemorySizeBss="0x580000" MemorySizeData="0x80000" MemorySizePersistentData="0x0" MemorySizeRoData="0x100000" MemorySizeText="0x280000" MemorySizePersistentBss="0x0"/>
+  <Ports>
+    <QueuingPort Name="A653_IN_VIRS_2b" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="196" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_TUNING_STATE_Onside" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1492" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_POSITION_UPDATE_Onside" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1056" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_CROSSLOAD_FMS_NAV" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8204" MaxNbMessage="9" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_ADS_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_FMS_STATUS" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="544" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_VIRS_1b" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="196" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_ADS_2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_VIRS_3b" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="196" MaxNbMessage="4" ProtocolType="2"/>
+    <QueuingPort Name="A653_OUT_FMS_MESSAGES_NAV" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="300" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="A653_OUT_RM_NAV" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="500" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="A653_OUT_CROSSLOAD_BLOCK_NAV" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8172" MaxNbMessage="4" ProtocolType="1"/>
+    <QueuingPort Name="A653_IN_RM_NAV_Xside" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="532" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_OUT_NAV_STATE" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="2048" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="A653_IN_ADS_3" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="316" MaxNbMessage="6" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_RM_NAV_FMBA" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="532" MaxNbMessage="3" ProtocolType="2"/>
+    <SamplingPort Name="A653_IN_RA_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_RA_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="44" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_VIRS_1a" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="250000000"/>
+    <SamplingPort Name="A653_IN_IRS_High_3" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="64" RefreshRate="180000000"/>
+    <SamplingPort Name="A653_IN_IRS_High_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="64" RefreshRate="180000000"/>
+    <SamplingPort Name="A653_IN_GNSS_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="112" RefreshRate="1100000000"/>
+    <SamplingPort Name="A653_IN_IRS_2" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="148" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_VIRS_2a" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="250000000"/>
+    <SamplingPort Name="A653_IN_GNSS_IRS" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="224" RefreshRate="215000000"/>
+    <SamplingPort Name="A653_IN_VIRS_3a" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="116" RefreshRate="250000000"/>
+    <SamplingPort Name="A653_IN_IRS_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="148" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_IRS_High_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="64" RefreshRate="180000000"/>
+    <SamplingPort Name="A653_OUT_NAV_OUTPUT" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="80" RefreshRate="200000000"/>
+    <SamplingPort Name="A653_IN_APR_CTR_TIME_DATE_L1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="1100000000"/>
+    <SamplingPort Name="A653_IN_APR_CTR_TIME_DATE_R4" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="1100000000"/>
+    <SamplingPort Name="A653_IN_APR_REDUNDANCY_RPT" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="500000000"/>
+    <SamplingPort Name="A653_IN_APR_CTR_TIME_DATE_L4" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="1100000000"/>
+    <SamplingPort Name="A653_IN_APR_CTR_TIME_DATE_R1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="56" RefreshRate="1100000000"/>
+  </Ports>
+</ApplicationDescription>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="">
+  <MemorySize MemorySizeBss="0x3c000" MemorySizeData="0x8000" MemorySizePersistentData="0x1000" MemorySizeRoData="0x4e000" MemorySizeText="0x5a000" MemorySizePersistentBss="0x1000"/>
+  <Ports>
+    <QueuingPort Name="poHFS_AHMU_20Hz" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="A653_OUT_PAA_2_Status_AHMU" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4090" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="poHFS_AHMU_1_25Hz" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="poHFS_AHMU_2_5Hz" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="poHFS_AHMU_10Hz" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="poHFS_AHMU_0_625Hz" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="poHFS_AHMU_5Hz" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4088" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="A653_IN_AHMU_Status_PAA_2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4090" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU25_BITE_DATA_PORT_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="64" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU23_BITE_DATA_PORT_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="72" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU81_BITE_DATA_PORT_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="68" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU51_BITE_DATA_PORT" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="72" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU23_BITE_DATA_PORT" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="72" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU25_BITE_DATA_PORT" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="64" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU81_BITE_DATA_PORT" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="68" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piLDP_SSU_BITE_DATA_PORT_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="36" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU11_BITE_DATA_PORT_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="92" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU51_BITE_DATA_PORT_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="72" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piLDP_SSU_BITE_DATA_PORT" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="36" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU11_BITE_DATA_PORT" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="92" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU21_BITE_DATA_PORT" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="68" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU21_BITE_DATA_PORT_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="68" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU22_BITE_DATA_PORT_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="64" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRICBP_BITE_DATA_PORT_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="16" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piLICBP_BITE_DATA_PORT_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="16" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU22_BITE_DATA_PORT" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="64" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piLICBP_BITE_DATA_PORT" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="16" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRICBP_BITE_DATA_PORT" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="16" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRDP_SSU_BITE_DATA_PORT_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="36" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU12_BITE_DATA_PORT_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="88" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU26_BITE_DATA_PORT_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="64" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU82_BITE_DATA_PORT_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="68" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRDP_SSU_BITE_DATA_PORT" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="36" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU26_BITE_DATA_PORT" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="64" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU12_BITE_DATA_PORT" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="88" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU82_BITE_DATA_PORT" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="68" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU24_BITE_DATA_PORT_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="64" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU52_BITE_DATA_PORT_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="76" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU52_BITE_DATA_PORT" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="76" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="piRPDU24_BITE_DATA_PORT" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="64" MaxNbMessage="2" ProtocolType="2"/>
+    <SamplingPort Name="piEPS_1A_R_BPCU_Indication" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="148" RefreshRate="200000000"/>
+    <SamplingPort Name="piDIS_DMI_IDU_C" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="100000000"/>
+    <SamplingPort Name="piEPS_1A_R_GCU_Indication" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="200000000"/>
+    <SamplingPort Name="piDIS_Reversion_IDU_C" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="256" RefreshRate="100000000"/>
+    <SamplingPort Name="piDIS_FCS_IDU_C" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="64" RefreshRate="200000000"/>
+    <SamplingPort Name="piEPS_1A_L_BPCU_Indication" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="200000000"/>
+    <SamplingPort Name="piEPS_1A_L_GCU_Indication" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="200000000"/>
+    <SamplingPort Name="piEPS_2A_R_GCU_Indication" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="200000000"/>
+    <SamplingPort Name="piEPS_2A_RAT_Status_Data" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="200000000"/>
+    <SamplingPort Name="piEPS_1A_SGCU_Data" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="148" RefreshRate="200000000"/>
+    <SamplingPort Name="piEPS_2A_SGCU_Data" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="148" RefreshRate="200000000"/>
+    <SamplingPort Name="piEPS_2A_R_BPCU_Indication" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="148" RefreshRate="200000000"/>
+    <SamplingPort Name="piEPS_2A_L_BPCU_Indication" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="200000000"/>
+    <SamplingPort Name="piEPS_2A_L_GCU_Indication" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="200000000"/>
+    <SamplingPort Name="pipo429_TxB_1000" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="96" RefreshRate="1000000000"/>
+    <SamplingPort Name="pipo429_TxA_1000" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="96" RefreshRate="1000000000"/>
+    <SamplingPort Name="pipo429_EMPC_1000" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="16" RefreshRate="1000000000"/>
+    <SamplingPort Name="pipo429_EMPC_200" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="200000000"/>
+    <SamplingPort Name="piEMPC_OMS_Cnfg" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="908" RefreshRate="88000000"/>
+    <SamplingPort Name="piTx_RGCU_EPS_Data_100ms_A664" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="100000000"/>
+    <SamplingPort Name="piTx_SGCU_CAN_Data_2_A664" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="148" RefreshRate="100000000"/>
+    <SamplingPort Name="piTx_RBPCU_EPS_Data_100ms_A664" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="148" RefreshRate="100000000"/>
+    <SamplingPort Name="piTx_LBPCU_EPS_Data_100ms_A664" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="164" RefreshRate="100000000"/>
+    <SamplingPort Name="piTx_LGCU_EPS_Data_100ms_A664" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="52" RefreshRate="100000000"/>
+    <SamplingPort Name="piTx_SGCU_CAN_Data_2_A664_1" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="148" RefreshRate="100000000"/>
+    <SamplingPort Name="piTx_RAT_Status_100ms_A664" Direction="DESTINATION" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="100000000"/>
+  </Ports>
+</ApplicationDescription>

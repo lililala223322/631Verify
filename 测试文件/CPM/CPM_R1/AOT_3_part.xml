@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<PartitionDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0xE4751ABD">
+  <SharedDataRegion Name="APP_AOT_DB1" Size="4096" AccessRights="READ_ONLY"/>
+  <SharedDataRegion Name="APP_AOT_DB2" Size="4096" AccessRights="READ_ONLY"/>
+  <SharedDataRegion Name="APP_AOT_DB3" Size="4096" AccessRights="READ_ONLY"/>
+  <SharedDataRegion Name="APP_AOT_DB4" Size="4096" AccessRights="READ_ONLY"/>
+  <SharedDataRegion Name="APP_AOT_DB5" Size="4096" AccessRights="READ_ONLY"/>
+  <SharedDataRegion Name="APP_AOT_DB6" Size="4096" AccessRights="READ_ONLY"/>
+  <Application NameRef="AOT_3"/>
+  <SharedLibraryRegion NameRef="pos"/>
+  <Settings RequiredMemorySize="3145728" setModuleSchedule="false" allocDisable="true"/>
+</PartitionDescription>

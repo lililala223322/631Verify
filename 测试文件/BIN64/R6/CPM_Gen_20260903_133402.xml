@@ -1,0 +1,134 @@
+<LoggerService>
+	<Annotation>
+		<Tool>操作系统ARINC653配置生成工具</Tool>
+		<CopyRight>版权所属中国航空工业集团公司西安航空计算技术研究所</CopyRight>
+		<CreatedBy>Admin</CreatedBy>
+		<Created>2026-09-03 13:34:02</Created>
+		<AssemblyVersion>AX</AssemblyVersion>
+		<Errors>0</Errors>
+		<Warnings>2</Warnings>
+	</Annotation>
+	<Process>
+		<Message id="0" type="Info" text="版权所属中国航空工业集团公司西安航空计算技术研究所" time="2026-09-03 13:34:02"/>
+		<Message id="1" type="Info" text="CPM_Gen Version:AX" time="2026-09-03 13:34:02"/>
+		<Message id="2" type="Info" text="程序启动，进度为 0%；" time="2026-09-03 13:34:02"/>
+		<Message id="3" type="Info" text="阶段1：开始XML文件的读取与校验" time="2026-09-03 13:34:02"/>
+		<Message id="4" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/CPM_R6_Module.xml ..." time="2026-09-03 13:34:02"/>
+		<Message id="5" type="Info" text="读取配置文件CPM_R6_Module.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="6" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/coreOS.xml ..." time="2026-09-03 13:34:02"/>
+		<Message id="7" type="Info" text="读取配置文件coreOS.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="8" type="Info" text="解析xml文件C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/coreOS.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="9" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/DLC_R6.xml ..." time="2026-09-03 13:34:02"/>
+		<Message id="10" type="Info" text="读取配置文件DLC_R6.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="11" type="Info" text="解析xml文件C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/DLC_R6.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="12" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/FDAS_L3.xml ..." time="2026-09-03 13:34:02"/>
+		<Message id="13" type="Info" text="读取配置文件FDAS_L3.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="14" type="Info" text="解析xml文件C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/FDAS_L3.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="15" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/FSM_R6.xml ..." time="2026-09-03 13:34:02"/>
+		<Message id="16" type="Info" text="读取配置文件FSM_R6.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="17" type="Info" text="解析xml文件C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/FSM_R6.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="18" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/PAA_R6Instance.xml ..." time="2026-09-03 13:34:02"/>
+		<Message id="19" type="Info" text="读取配置文件PAA_R6Instance.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="20" type="Info" text="解析xml文件C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/PAA_R6Instance.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="21" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/DATAAPP_R.xml ..." time="2026-09-03 13:34:02"/>
+		<Message id="22" type="Info" text="读取配置文件DATAAPP_R.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="23" type="Info" text="解析xml文件C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/DATAAPP_R.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="24" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/INFOAPP_R.xml ..." time="2026-09-03 13:34:02"/>
+		<Message id="25" type="Info" text="读取配置文件INFOAPP_R.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="26" type="Info" text="解析xml文件C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/INFOAPP_R.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="27" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/FIDO_R6.xml ..." time="2026-09-03 13:34:02"/>
+		<Message id="28" type="Info" text="读取配置文件FIDO_R6.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="29" type="Info" text="解析xml文件C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/FIDO_R6.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="30" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/SM_NOI2C_R6.xml ..." time="2026-09-03 13:34:02"/>
+		<Message id="31" type="Info" text="读取配置文件SM_NOI2C_R6.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="32" type="Info" text="解析xml文件C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/SM_NOI2C_R6.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="33" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/pos.xml ..." time="2026-09-03 13:34:02"/>
+		<Message id="34" type="Info" text="读取配置文件pos.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="35" type="Info" text="解析xml文件C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/pos.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="36" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/DLC_R6_part.xml ..." time="2026-09-03 13:34:02"/>
+		<Message id="37" type="Info" text="读取配置文件DLC_R6_part.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="38" type="Info" text="解析xml文件C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/DLC_R6_part.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="39" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/FDAS_L3_part.xml ..." time="2026-09-03 13:34:02"/>
+		<Message id="40" type="Info" text="读取配置文件FDAS_L3_part.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="41" type="Info" text="解析xml文件C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/FDAS_L3_part.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="42" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/FSM_R6_part.xml ..." time="2026-09-03 13:34:02"/>
+		<Message id="43" type="Info" text="读取配置文件FSM_R6_part.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="44" type="Info" text="解析xml文件C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/FSM_R6_part.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="45" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/PAA_R6Instance_part.xml ..." time="2026-09-03 13:34:02"/>
+		<Message id="46" type="Info" text="读取配置文件PAA_R6Instance_part.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="47" type="Info" text="解析xml文件C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/PAA_R6Instance_part.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="48" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/DATAAPP_R_part.xml ..." time="2026-09-03 13:34:02"/>
+		<Message id="49" type="Info" text="读取配置文件DATAAPP_R_part.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="50" type="Info" text="解析xml文件C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/DATAAPP_R_part.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="51" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/INFOAPP_R_part.xml ..." time="2026-09-03 13:34:02"/>
+		<Message id="52" type="Info" text="读取配置文件INFOAPP_R_part.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="53" type="Info" text="解析xml文件C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/INFOAPP_R_part.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="54" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/FIDO_R6_part.xml ..." time="2026-09-03 13:34:02"/>
+		<Message id="55" type="Info" text="读取配置文件FIDO_R6_part.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="56" type="Info" text="解析xml文件C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/FIDO_R6_part.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="57" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/SM_NOI2C_R6_part.xml ..." time="2026-09-03 13:34:02"/>
+		<Message id="58" type="Info" text="读取配置文件SM_NOI2C_R6_part.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="59" type="Info" text="解析xml文件C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/SM_NOI2C_R6_part.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="60" type="Info" text="解析xml文件C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/CPM_R6_Module.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="61" type="Info" text="XML文件读取完成" time="2026-09-03 13:34:02"/>
+		<Message id="62" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xiazai/2.2/CPM_2.2_20260828181403/xsd/Module.xsd ..." time="2026-09-03 13:34:02"/>
+		<Message id="63" type="Info" text="读取XSD文件C:/Users/sunjingchang/Desktop/huangxiaoke/xiazai/2.2/CPM_2.2_20260828181403/xsd/Module.xsd完成!" time="2026-09-03 13:34:02"/>
+		<Message id="64" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xiazai/2.2/CPM_2.2_20260828181403/xsd/TypeLib.xsd ..." time="2026-09-03 13:34:02"/>
+		<Message id="65" type="Info" text="读取XSD文件C:/Users/sunjingchang/Desktop/huangxiaoke/xiazai/2.2/CPM_2.2_20260828181403/xsd/TypeLib.xsd完成!" time="2026-09-03 13:34:02"/>
+		<Message id="66" type="Info" text="解析XSD文件C:/Users/sunjingchang/Desktop/huangxiaoke/xiazai/2.2/CPM_2.2_20260828181403/xsd/TypeLib.xsd成功。" time="2026-09-03 13:34:02"/>
+		<Message id="67" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xiazai/2.2/CPM_2.2_20260828181403/xsd/CoreOS.xsd ..." time="2026-09-03 13:34:02"/>
+		<Message id="68" type="Info" text="读取XSD文件C:/Users/sunjingchang/Desktop/huangxiaoke/xiazai/2.2/CPM_2.2_20260828181403/xsd/CoreOS.xsd完成!" time="2026-09-03 13:34:02"/>
+		<Message id="69" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xiazai/2.2/CPM_2.2_20260828181403/xsd/TypeLib.xsd ..." time="2026-09-03 13:34:02"/>
+		<Message id="70" type="Info" text="解析XSD文件C:/Users/sunjingchang/Desktop/huangxiaoke/xiazai/2.2/CPM_2.2_20260828181403/xsd/CoreOS.xsd成功。" time="2026-09-03 13:34:02"/>
+		<Message id="71" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xiazai/2.2/CPM_2.2_20260828181403/xsd/Application.xsd ..." time="2026-09-03 13:34:02"/>
+		<Message id="72" type="Info" text="读取XSD文件C:/Users/sunjingchang/Desktop/huangxiaoke/xiazai/2.2/CPM_2.2_20260828181403/xsd/Application.xsd完成!" time="2026-09-03 13:34:02"/>
+		<Message id="73" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xiazai/2.2/CPM_2.2_20260828181403/xsd/TypeLib.xsd ..." time="2026-09-03 13:34:02"/>
+		<Message id="74" type="Info" text="解析XSD文件C:/Users/sunjingchang/Desktop/huangxiaoke/xiazai/2.2/CPM_2.2_20260828181403/xsd/Application.xsd成功。" time="2026-09-03 13:34:02"/>
+		<Message id="75" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xiazai/2.2/CPM_2.2_20260828181403/xsd/Partition.xsd ..." time="2026-09-03 13:34:02"/>
+		<Message id="76" type="Info" text="读取XSD文件C:/Users/sunjingchang/Desktop/huangxiaoke/xiazai/2.2/CPM_2.2_20260828181403/xsd/Partition.xsd完成!" time="2026-09-03 13:34:02"/>
+		<Message id="77" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xiazai/2.2/CPM_2.2_20260828181403/xsd/TypeLib.xsd ..." time="2026-09-03 13:34:02"/>
+		<Message id="78" type="Info" text="解析XSD文件C:/Users/sunjingchang/Desktop/huangxiaoke/xiazai/2.2/CPM_2.2_20260828181403/xsd/Partition.xsd成功。" time="2026-09-03 13:34:02"/>
+		<Message id="79" type="Info" text="Start Reading  C:/Users/sunjingchang/Desktop/huangxiaoke/xiazai/2.2/CPM_2.2_20260828181403/xsd/XInclude.xsd ..." time="2026-09-03 13:34:02"/>
+		<Message id="80" type="Info" text="读取XSD文件C:/Users/sunjingchang/Desktop/huangxiaoke/xiazai/2.2/CPM_2.2_20260828181403/xsd/XInclude.xsd完成!" time="2026-09-03 13:34:02"/>
+		<Message id="81" type="Info" text="解析XSD文件C:/Users/sunjingchang/Desktop/huangxiaoke/xiazai/2.2/CPM_2.2_20260828181403/xsd/XInclude.xsd成功。" time="2026-09-03 13:34:02"/>
+		<Message id="82" type="Info" text="解析XSD文件C:/Users/sunjingchang/Desktop/huangxiaoke/xiazai/2.2/CPM_2.2_20260828181403/xsd/Module.xsd成功。" time="2026-09-03 13:34:02"/>
+		<Message id="83" type="Info" text="读取校验XSD 文件完成!" time="2026-09-03 13:34:02"/>
+		<Message id="84" type="Info" text="XML文件的正确性校验通过!" time="2026-09-03 13:34:02"/>
+		<Message id="85" type="Info" text="XML文件 C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/CPM_R6_Module.xml 的CRC校验通过。" time="2026-09-03 13:34:02"/>
+		<Message id="86" type="Warning" code="2005" text="XML文件 C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/coreOS.xml的CRC属性缺失！" time="2026-09-03 13:34:02"/>
+		<Message id="87" type="Info" text="XML文件 C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/DLC_R6.xml 的CRC校验通过。" time="2026-09-03 13:34:02"/>
+		<Message id="88" type="Info" text="XML文件 C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/FDAS_L3.xml 的CRC校验通过。" time="2026-09-03 13:34:02"/>
+		<Message id="89" type="Info" text="XML文件 C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/FSM_R6.xml 的CRC校验通过。" time="2026-09-03 13:34:02"/>
+		<Message id="90" type="Info" text="XML文件 C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/PAA_R6Instance.xml 的CRC校验通过。" time="2026-09-03 13:34:02"/>
+		<Message id="91" type="Info" text="XML文件 C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/DATAAPP_R.xml 的CRC校验通过。" time="2026-09-03 13:34:02"/>
+		<Message id="92" type="Info" text="XML文件 C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/INFOAPP_R.xml 的CRC校验通过。" time="2026-09-03 13:34:02"/>
+		<Message id="93" type="Info" text="XML文件 C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/FIDO_R6.xml 的CRC校验通过。" time="2026-09-03 13:34:02"/>
+		<Message id="94" type="Info" text="XML文件 C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/SM_NOI2C_R6.xml 的CRC校验通过。" time="2026-09-03 13:34:02"/>
+		<Message id="95" type="Warning" code="2005" text="XML文件 C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/pos.xml的CRC属性缺失！" time="2026-09-03 13:34:02"/>
+		<Message id="96" type="Info" text="XML文件 C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/DLC_R6_part.xml 的CRC校验通过。" time="2026-09-03 13:34:02"/>
+		<Message id="97" type="Info" text="XML文件 C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/FDAS_L3_part.xml 的CRC校验通过。" time="2026-09-03 13:34:02"/>
+		<Message id="98" type="Info" text="XML文件 C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/FSM_R6_part.xml 的CRC校验通过。" time="2026-09-03 13:34:02"/>
+		<Message id="99" type="Info" text="XML文件 C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/PAA_R6Instance_part.xml 的CRC校验通过。" time="2026-09-03 13:34:02"/>
+		<Message id="100" type="Info" text="XML文件 C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/DATAAPP_R_part.xml 的CRC校验通过。" time="2026-09-03 13:34:02"/>
+		<Message id="101" type="Info" text="XML文件 C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/INFOAPP_R_part.xml 的CRC校验通过。" time="2026-09-03 13:34:02"/>
+		<Message id="102" type="Info" text="XML文件 C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/FIDO_R6_part.xml 的CRC校验通过。" time="2026-09-03 13:34:02"/>
+		<Message id="103" type="Info" text="XML文件 C:/Users/sunjingchang/Desktop/huangxiaoke/xml_from_onsite/AS3.0 CFG2.1/CPM/CPM_R6/SM_NOI2C_R6_part.xml 的CRC校验通过。" time="2026-09-03 13:34:02"/>
+		<Message id="104" type="Info" text="XML文件的读取与校验完成，进度为 20%；" time="2026-09-03 13:34:02"/>
+		<Message id="105" type="Info" text="阶段2：开始配置数据检查" time="2026-09-03 13:34:02"/>
+		<Message id="106" type="Info" text="Processing Shared Libraries..." time="2026-09-03 13:34:02"/>
+		<Message id="107" type="Info" text="Processing Shared Data Regions..." time="2026-09-03 13:34:02"/>
+		<Message id="108" type="Info" text="Processing Partitions..." time="2026-09-03 13:34:02"/>
+		<Message id="109" type="Info" text="Processing Flash..." time="2026-09-03 13:34:02"/>
+		<Message id="110" type="Info" text="配置检查完成，进度为 40%；" time="2026-09-03 13:34:02"/>
+		<Message id="111" type="Info" text="阶段3：开始可加载文件生成" time="2026-09-03 13:34:02"/>
+		<Message id="112" type="Info" text="正在生成CPM配置信息可加载文件cfgRd.bin..." time="2026-09-03 13:34:02"/>
+		<Message id="113" type="Info" text="生成二进制文件cfgRd.bin成功！" time="2026-09-03 13:34:02"/>
+		<Message id="114" type="Info" text="cfgRd.bin的输出路径为C:/Users/sunjingchang/Desktop/huangxiaoke/out/20260903_133354/R6。" time="2026-09-03 13:34:02"/>
+		<Message id="115" type="Info" text="正在生成CPM部署信息可加载文件payloadMap_rom.bin..." time="2026-09-03 13:34:02"/>
+		<Message id="116" type="Info" text="生成二进制文件payloadMap_rom.bin成功！" time="2026-09-03 13:34:02"/>
+		<Message id="117" type="Info" text="payloadMap_rom.bin的输出路径为C:/Users/sunjingchang/Desktop/huangxiaoke/out/20260903_133354/R6。" time="2026-09-03 13:34:02"/>
+		<Message id="118" type="Info" text="可加载文件生成成功，进度为 90%；" time="2026-09-03 13:34:02"/>
+		<Message id="119" type="Info" text="生成运行状态记录文件C:/Users/sunjingchang/Desktop/huangxiaoke/out/20260903_133354/R6/CPM_Gen_20260903_133402.xml成功。" time="2026-09-03 13:34:02"/>
+		<Message id="120" type="Info" text="程序结束，进度为 100%。" time="2026-09-03 13:34:02"/>
+	</Process>
+</LoggerService>

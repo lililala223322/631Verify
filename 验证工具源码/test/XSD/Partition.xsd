@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<xs:schema xmlns:vp="http://www.actri.avic/XMLSchema/VP/1.0" xmlns="http://www.actri.avic/ConfigRecord" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.actri.avic/ConfigRecord" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="TypeLib.xsd"/>
+	<xs:element name="PartitionDescription" type="PartitionDescriptionType">
+		
+	</xs:element>
+	<xs:element name="PseudoPartitionDescription" type="PseudoPartitionDescriptionType">
+		
+	</xs:element>
+	<xs:complexType name="PartitionDescriptionType">
+		<xs:sequence>
+			<xs:element name="Application" minOccurs="1" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="NameRef" type="NameType" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SharedDataRegion" type="A653_MemoryRegionType" minOccurs="0" maxOccurs="unbounded">
+
+			</xs:element>
+			<xs:element name="SharedLibraryRegion" minOccurs="1" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="NameRef" type="NameType" use="required"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Settings" minOccurs="1" maxOccurs="1">
+				<xs:complexType>
+					<xs:attribute name="RequiredMemorySize" type="UnsignedLongValueType" use="required"/>
+					<xs:attribute name="allocDisable" type="booleanType" use="optional"/>
+					<xs:attribute name="defaultAppName" type="xs:string" use="optional"/>
+					<xs:attribute name="appsIdleRelinquishEnabled" type="booleanType" use="optional"/>
+					<xs:attribute name="appsPriority" type="xs:integer" use="optional"/>
+					<xs:attribute name="fpExcEnable" type="booleanType" use="optional"/>
+					<xs:attribute name="isrStackSize" type="UnsignedIntValueType" use="optional"/>
+					<xs:attribute name="maxEventQStallDuration" type="DurationType" use="optional"/>
+					<xs:attribute name="maxGlobalFDs" type="SignedIntValueType" use="optional"/>
+					<xs:attribute name="numDrivers" type="DecOrHexValueType" use="optional"/>
+					<xs:attribute name="numFiles" type="DecOrHexValueType" use="optional"/>
+					<xs:attribute name="numLogMsgs" type="UnsignedIntValueType" use="optional"/>
+					<xs:attribute name="numStackGuardPages" type="UnsignedIntValueType" use="optional"/>
+					<xs:attribute name="numWorkerTasks" type="UnsignedIntValueType" use="optional"/>
+					<xs:attribute name="selSvrQSize" type="DecOrHexValueType" use="optional"/>
+					<xs:attribute name="syscallPermissions" type="DecOrHexValueType" use="optional"/>
+					<xs:attribute name="watchDogDuration" type="PartitionWindowDurationType" use="optional"/>
+					<xs:attribute name="systemPartition" type="booleanType" use="optional"/>
+					<xs:attribute name="scheduleChangeAction" type="PartitionLevelErrorRecoveryActionType" use="optional"/>
+					<xs:attribute name="initProcStackSize" type="UnsignedIntValueType" use="optional"/>
+					<xs:attribute name="setModuleSchedule" type="booleanType" use="optional"/>
+					<xs:attribute name="duration" type="UnsignedLongValueType" use="optional"/>
+					<xs:attribute name="period" type="UnsignedLongValueType" use="optional"/>
+					<xs:attribute name="partitionVirtualAddress" type="UnsignedLongValueType" use="optional">
+					</xs:attribute>
+					<xs:attribute name="partitionVirtualMemorySize" type="UnsignedLongValueType" use="optional">
+					</xs:attribute>
+					<xs:attribute name="user1" type="SignedIntValueType" use="optional"/>
+					<xs:attribute name="user2" type="SignedIntValueType" use="optional"/>
+					<xs:anyAttribute namespace="##any"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="CRC32" type="CRC32Type" use="optional"/>
+		<xs:attribute name="OutputCRC32" type="HexValueType" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="PseudoPartitionDescriptionType">
+		<xs:sequence>
+			<xs:element name="Ports" type="PortsTypePar">
+				
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

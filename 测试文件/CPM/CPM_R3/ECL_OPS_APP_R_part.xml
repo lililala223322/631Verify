@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<PartitionDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0x48871A12">
+  <SharedDataRegion Name="APP_ECL_DB" Size="3903488" AccessRights="READ_ONLY"/>
+  <Application NameRef="ECL_OPS_APP_R"/>
+  <SharedLibraryRegion NameRef="pos"/>
+  <Settings RequiredMemorySize="47185920" setModuleSchedule="false" allocDisable="true"/>
+</PartitionDescription>

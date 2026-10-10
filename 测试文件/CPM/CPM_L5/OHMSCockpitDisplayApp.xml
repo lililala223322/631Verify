@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0xC4FB71E4">
+  <MemorySize MemorySizeBss="0x2000000" MemorySizeData="0xa000" MemorySizePersistentData="0x0" MemorySizeRoData="0x100000" MemorySizeText="0x500000" MemorySizePersistentBss="0x0"/>
+  <Ports>
+    <QueuingPort Name="IP_QP_OHMS_A661_BLOCK_LIB" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8196" MaxNbMessage="10" ProtocolType="2"/>
+    <QueuingPort Name="OP_QP_OHMS_A661_BLOCK_RIB" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8180" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="IP_QP_OHMS_A661_BLOCK_RIB" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8196" MaxNbMessage="10" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_AHMU_Status_CDA" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4122" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="A653_OUT_CDA_Status_AHMU" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4090" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="A653_IN_TFTP_SESSION_2" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8212" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_IN_OHMS_TFTP_SESSION_CDA" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8212" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_OUT_TFTP_SESSION_OHMS_CDA" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="true" MaxMessageSize="8180" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="OP_QP_OHMS_A661_BLOCK_LIB" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8180" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="A653_OUT_TFTP_SESSION_2" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="true" MaxMessageSize="8180" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="IP_QP_OHMS_A661_BLOCK" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8196" MaxNbMessage="10" ProtocolType="2"/>
+    <QueuingPort Name="OP_QP_OHMS_A661_BLOCK" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8180" MaxNbMessage="1" ProtocolType="1"/>
+  </Ports>
+</ApplicationDescription>

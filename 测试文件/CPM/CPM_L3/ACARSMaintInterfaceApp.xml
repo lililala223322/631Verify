@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<ApplicationDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0xCA9C36D0">
+  <MemorySize MemorySizeBss="0x98000" MemorySizeData="0x8000" MemorySizePersistentData="0x1000" MemorySizeRoData="0x4e000" MemorySizeText="0x64000" MemorySizePersistentBss="0x1000"/>
+  <Ports>
+    <QueuingPort Name="A653_IN_OHMS_TFTP_SESSION_AMIF" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="8212" MaxNbMessage="3" ProtocolType="2"/>
+    <QueuingPort Name="A653_OUT_DL_OUTPUT_APERIODIC" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="1072" MaxNbMessage="3" ProtocolType="1"/>
+    <QueuingPort Name="A653_IN_AHMU_Status_AMIF" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4122" MaxNbMessage="2" ProtocolType="2"/>
+    <QueuingPort Name="A653_OUT_AMIF_Status_AHMU" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="4090" MaxNbMessage="2" ProtocolType="1"/>
+    <QueuingPort Name="A653_OUT_TFTP_SESSION_AMIF" Direction="SOURCE" Attribute="LOCAL_PORT" ExtendedPort="true" MaxMessageSize="8180" MaxNbMessage="1" ProtocolType="1"/>
+    <QueuingPort Name="A653_IN_DL_REQUEST_AMU_1" Direction="DESTINATION" Attribute="LOCAL_PORT" ExtendedPort="false" MaxMessageSize="500" MaxNbMessage="4" ProtocolType="2"/>
+    <SamplingPort Name="A653_OUT_DL_CMU" Direction="SOURCE" Attribute="LOCAL_PORT" MaxMessageSize="12" RefreshRate="1000000000"/>
+  </Ports>
+</ApplicationDescription>

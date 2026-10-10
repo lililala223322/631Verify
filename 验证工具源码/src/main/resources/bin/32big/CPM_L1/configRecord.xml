@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ConfigRecord xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.actri.avic/ConfigRecord ../.xsd/ConfigRecord.xsd">
+    <AC_DD_Extensions>
+	<domainInformation NameRef="os" DomainId="0" LinkagePath="." />
+	<sectionInformation Name=".text" Size="0x000b0000" PhysicalAddress="0x82000000" VirtualAddress="0x82000000" PayloadAddress="0x01032000" RamPayloadAddress="0x85000000" />
+	<sectionInformation Name=".rodata" Size="0x0018000" PhysicalAddress="0x820b0000" VirtualAddress="0x820b0000" PayloadAddress="0x10e2000" RamPayloadAddress="0x850b0000" />
+	<sectionInformation Name=".data" Size="0x00010000" PhysicalAddress="0x820c8000" VirtualAddress="0x820c8000" PayloadAddress="0x10fa000" RamPayloadAddress="0x850c8000" />
+	<sectionInformation Name=".bss" Size="0x00100000" PhysicalAddress="0x820d8000" VirtualAddress="0x820d8000" PayloadAddress="0x110a000" RamPayloadAddress="0x850d8000" />
+	<sectionInformation Name=".configRecord" Size="0x100000" PhysicalAddress="0x84000000" VirtualAddress="0x84000000" PayloadAddress="0x115a000" RamPayloadAddress="0x85128000" />
+    </AC_DD_Extensions>
+    <AC_DD_Extensions>
+	<domainInformation NameRef="pos" DomainId="1" LinkagePath="." />
+	<sectionInformation Name=".text" Size="0x00038000" PhysicalAddress="0x95F00000" VirtualAddress="0x60000000" PayloadAddress="0x110a000" RamPayloadAddress="0x850d8000" />
+	<sectionInformation Name=".rodata" Size="0x00008000" PhysicalAddress="0x95f38000" VirtualAddress="0x60038000" PayloadAddress="0x1142000" RamPayloadAddress="0x85110000" />
+	<sectionInformation Name=".data" Size="0x00008000" PhysicalAddress="0x95f40000" VirtualAddress="0x60040000" PayloadAddress="0x114a000" RamPayloadAddress="0x85118000" />
+	<sectionInformation Name=".pdata" Size="0x8000" PhysicalAddress="0x95f48000" VirtualAddress="0x60048000" PayloadAddress="0x1152000" RamPayloadAddress="0x85120000" />
+	<sectionInformation Name=".bss" Size="0x00060000" PhysicalAddress="0x95f50000" VirtualAddress="0x60050000" PayloadAddress="0x115a000" RamPayloadAddress="0x85128000" />
+    </AC_DD_Extensions>
+    <AC_DD_Extensions>
+	<domainInformation NameRef="PAA_L1Instance" DomainId="2" LinkagePath=".:pos" />
+	<sectionInformation Name=".text" Size="0x5a000" PhysicalAddress="0x34020000" VirtualAddress="0x70000000" PayloadAddress="0x1edf000" RamPayloadAddress="0x85228000" />
+	<sectionInformation Name=".rodata" Size="0x4e000" PhysicalAddress="0x3407a000" VirtualAddress="0x7005a000" PayloadAddress="0x1f39000" RamPayloadAddress="0x85282000" />
+	<sectionInformation Name=".data" Size="0x8000" PhysicalAddress="0x340c8000" VirtualAddress="0x700a8000" PayloadAddress="0x1f87000" RamPayloadAddress="0x852d0000" />
+	<sectionInformation Name=".pdata" Size="0x1000" PhysicalAddress="0x340d0000" VirtualAddress="0x700b0000" PayloadAddress="0x1f8f000" RamPayloadAddress="0x852d8000" />
+	<sectionInformation Name=".bss" Size="0x3c000" PhysicalAddress="0x340d1000" VirtualAddress="0x700b1000" PayloadAddress="0x1f90000" RamPayloadAddress="0x852d9000" />
+	<sectionInformation Name=".pbss" Size="0x1000" PhysicalAddress="0x3410d000" VirtualAddress="0x700ed000" PayloadAddress="0x1f90000" RamPayloadAddress="0x852d9000" />
+    </AC_DD_Extensions>
+    <AC_DD_Extensions>
+	<domainInformation NameRef="APP_ATC_INSTANCE" DomainId="3" LinkagePath=".:pos" />
+	<sectionInformation Name=".text" Size="0x500000" PhysicalAddress="0x34378000" VirtualAddress="0x70000000" PayloadAddress="0x159f000" RamPayloadAddress="0x852d9000" />
+	<sectionInformation Name=".rodata" Size="0xa0000" PhysicalAddress="0x34878000" VirtualAddress="0x70500000" PayloadAddress="0x1a9f000" RamPayloadAddress="0x857d9000" />
+	<sectionInformation Name=".data" Size="0x50000" PhysicalAddress="0x34918000" VirtualAddress="0x705a0000" PayloadAddress="0x1b3f000" RamPayloadAddress="0x85879000" />
+	<sectionInformation Name=".pdata" Size="0x0" PhysicalAddress="0x34968000" VirtualAddress="0x705f0000" PayloadAddress="0x1b8f000" RamPayloadAddress="0x858c9000" />
+	<sectionInformation Name=".bss" Size="0x1800000" PhysicalAddress="0x34968000" VirtualAddress="0x705f0000" PayloadAddress="0x1b8f000" RamPayloadAddress="0x858c9000" />
+	<sectionInformation Name=".pbss" Size="0x4000" PhysicalAddress="0x36168000" VirtualAddress="0x71df0000" PayloadAddress="0x1b8f000" RamPayloadAddress="0x858c9000" />
+    </AC_DD_Extensions>
+    <AC_DD_Extensions>
+	<domainInformation NameRef="FIDO_L1" DomainId="4" LinkagePath=".:pos" />
+	<sectionInformation Name=".text" Size="0xa000" PhysicalAddress="0x375f8000" VirtualAddress="0x70000000" PayloadAddress="0x2897000" RamPayloadAddress="0x858c9000" />
+	<sectionInformation Name=".rodata" Size="0x4000" PhysicalAddress="0x37602000" VirtualAddress="0x7000a000" PayloadAddress="0x28a1000" RamPayloadAddress="0x858d3000" />
+	<sectionInformation Name=".data" Size="0x4000" PhysicalAddress="0x37606000" VirtualAddress="0x7000e000" PayloadAddress="0x28a5000" RamPayloadAddress="0x858d7000" />
+	<sectionInformation Name=".pdata" Size="0x1000" PhysicalAddress="0x3760a000" VirtualAddress="0x70012000" PayloadAddress="0x28a9000" RamPayloadAddress="0x858db000" />
+	<sectionInformation Name=".bss" Size="0x91000" PhysicalAddress="0x3760b000" VirtualAddress="0x70013000" PayloadAddress="0x28aa000" RamPayloadAddress="0x858dc000" />
+	<sectionInformation Name=".pbss" Size="0x1000" PhysicalAddress="0x3769c000" VirtualAddress="0x700a4000" PayloadAddress="0x28aa000" RamPayloadAddress="0x858dc000" />
+    </AC_DD_Extensions>
+    <AC_DD_Extensions>
+	<domainInformation NameRef="AOT_1" DomainId="5" LinkagePath=".:pos" />
+	<sectionInformation Name=".text" Size="0x42000" PhysicalAddress="0x37795000" VirtualAddress="0x70000000" PayloadAddress="0x125a000" RamPayloadAddress="0x858dc000" />
+	<sectionInformation Name=".rodata" Size="0x20000" PhysicalAddress="0x377d7000" VirtualAddress="0x70042000" PayloadAddress="0x129c000" RamPayloadAddress="0x8591e000" />
+	<sectionInformation Name=".data" Size="0x10000" PhysicalAddress="0x377f7000" VirtualAddress="0x70062000" PayloadAddress="0x12bc000" RamPayloadAddress="0x8593e000" />
+	<sectionInformation Name=".pdata" Size="0x1000" PhysicalAddress="0x37807000" VirtualAddress="0x70072000" PayloadAddress="0x12cc000" RamPayloadAddress="0x8594e000" />
+	<sectionInformation Name=".bss" Size="0x100000" PhysicalAddress="0x37808000" VirtualAddress="0x70073000" PayloadAddress="0x12cd000" RamPayloadAddress="0x8594f000" />
+	<sectionInformation Name=".pbss" Size="0x1000" PhysicalAddress="0x37908000" VirtualAddress="0x70173000" PayloadAddress="0x12cd000" RamPayloadAddress="0x8594f000" />
+    </AC_DD_Extensions>
+    <AC_DD_Extensions>
+	<domainInformation NameRef="DLC_L1" DomainId="6" LinkagePath=".:pos" />
+	<sectionInformation Name=".text" Size="0x64000" PhysicalAddress="0x37a95000" VirtualAddress="0x70000000" PayloadAddress="0x12cd000" RamPayloadAddress="0x8594f000" />
+	<sectionInformation Name=".rodata" Size="0xd000" PhysicalAddress="0x37af9000" VirtualAddress="0x70064000" PayloadAddress="0x1331000" RamPayloadAddress="0x859b3000" />
+	<sectionInformation Name=".data" Size="0x3000" PhysicalAddress="0x37b06000" VirtualAddress="0x70071000" PayloadAddress="0x133e000" RamPayloadAddress="0x859c0000" />
+	<sectionInformation Name=".pdata" Size="0x1000" PhysicalAddress="0x37b09000" VirtualAddress="0x70074000" PayloadAddress="0x1341000" RamPayloadAddress="0x859c3000" />
+	<sectionInformation Name=".bss" Size="0x78000" PhysicalAddress="0x37b0a000" VirtualAddress="0x70075000" PayloadAddress="0x1342000" RamPayloadAddress="0x859c4000" />
+	<sectionInformation Name=".pbss" Size="0x1000" PhysicalAddress="0x37b82000" VirtualAddress="0x700ed000" PayloadAddress="0x1342000" RamPayloadAddress="0x859c4000" />
+    </AC_DD_Extensions>
+    <AC_DD_Extensions>
+	<domainInformation NameRef="APP_FMS_DATALINK_1" DomainId="7" LinkagePath=".:pos" />
+	<sectionInformation Name=".text" Size="0x800000" PhysicalAddress="0x37ca1000" VirtualAddress="0x70000000" PayloadAddress="0x1f90000" RamPayloadAddress="0x859c4000" />
+	<sectionInformation Name=".rodata" Size="0xa0000" PhysicalAddress="0x384a1000" VirtualAddress="0x70800000" PayloadAddress="0x2790000" RamPayloadAddress="0x861c4000" />
+	<sectionInformation Name=".data" Size="0x50000" PhysicalAddress="0x38541000" VirtualAddress="0x708a0000" PayloadAddress="0x2830000" RamPayloadAddress="0x86264000" />
+	<sectionInformation Name=".pdata" Size="0x0" PhysicalAddress="0x38591000" VirtualAddress="0x708f0000" PayloadAddress="0x2880000" RamPayloadAddress="0x862b4000" />
+	<sectionInformation Name=".bss" Size="0x1800000" PhysicalAddress="0x38591000" VirtualAddress="0x708f0000" PayloadAddress="0x2880000" RamPayloadAddress="0x862b4000" />
+	<sectionInformation Name=".pbss" Size="0x4000" PhysicalAddress="0x39d91000" VirtualAddress="0x720f0000" PayloadAddress="0x2880000" RamPayloadAddress="0x862b4000" />
+    </AC_DD_Extensions>
+    <AC_DD_Extensions>
+	<domainInformation NameRef="SM_I2C_L1" DomainId="8" LinkagePath=".:pos" />
+	<sectionInformation Name=".text" Size="0x122000" PhysicalAddress="0x3af3f000" VirtualAddress="0x70000000" PayloadAddress="0x1342000" RamPayloadAddress="0x862b4000" />
+	<sectionInformation Name=".rodata" Size="0x24000" PhysicalAddress="0x3b061000" VirtualAddress="0x70122000" PayloadAddress="0x1464000" RamPayloadAddress="0x863d6000" />
+	<sectionInformation Name=".data" Size="0x12000" PhysicalAddress="0x3b085000" VirtualAddress="0x70146000" PayloadAddress="0x1488000" RamPayloadAddress="0x863fa000" />
+	<sectionInformation Name=".pdata" Size="0x1000" PhysicalAddress="0x3b097000" VirtualAddress="0x70158000" PayloadAddress="0x149a000" RamPayloadAddress="0x8640c000" />
+	<sectionInformation Name=".bss" Size="0x380000" PhysicalAddress="0x3b098000" VirtualAddress="0x70159000" PayloadAddress="0x149b000" RamPayloadAddress="0x8640d000" />
+	<sectionInformation Name=".pbss" Size="0x1000" PhysicalAddress="0x3b418000" VirtualAddress="0x704d9000" PayloadAddress="0x149b000" RamPayloadAddress="0x8640d000" />
+    </AC_DD_Extensions>
+    <AC_DD_Extensions>
+	<domainInformation NameRef="APP_FMS_GUIDANCE_1" DomainId="9" LinkagePath=".:pos" />
+	<sectionInformation Name=".text" Size="0x280000" PhysicalAddress="0x3b73e000" VirtualAddress="0x70000000" PayloadAddress="0x1b8f000" RamPayloadAddress="0x8640d000" />
+	<sectionInformation Name=".rodata" Size="0x80000" PhysicalAddress="0x3b9be000" VirtualAddress="0x70280000" PayloadAddress="0x1e0f000" RamPayloadAddress="0x8668d000" />
+	<sectionInformation Name=".data" Size="0x50000" PhysicalAddress="0x3ba3e000" VirtualAddress="0x70300000" PayloadAddress="0x1e8f000" RamPayloadAddress="0x8670d000" />
+	<sectionInformation Name=".pdata" Size="0x0" PhysicalAddress="0x3ba8e000" VirtualAddress="0x70350000" PayloadAddress="0x1edf000" RamPayloadAddress="0x8675d000" />
+	<sectionInformation Name=".bss" Size="0x300000" PhysicalAddress="0x3ba8e000" VirtualAddress="0x70350000" PayloadAddress="0x1edf000" RamPayloadAddress="0x8675d000" />
+	<sectionInformation Name=".pbss" Size="0x4000" PhysicalAddress="0x3bd8e000" VirtualAddress="0x70650000" PayloadAddress="0x1edf000" RamPayloadAddress="0x8675d000" />
+    </AC_DD_Extensions>
+    <AC_DD_Extensions>
+	<domainInformation NameRef="FSM_L1" DomainId="10" LinkagePath=".:pos" />
+	<sectionInformation Name=".text" Size="0xe000" PhysicalAddress="0x3c2be000" VirtualAddress="0x70000000" PayloadAddress="0x2880000" RamPayloadAddress="0x8675d000" />
+	<sectionInformation Name=".rodata" Size="0x4000" PhysicalAddress="0x3c2cc000" VirtualAddress="0x7000e000" PayloadAddress="0x288e000" RamPayloadAddress="0x8676b000" />
+	<sectionInformation Name=".data" Size="0x4000" PhysicalAddress="0x3c2d0000" VirtualAddress="0x70012000" PayloadAddress="0x2892000" RamPayloadAddress="0x8676f000" />
+	<sectionInformation Name=".pdata" Size="0x1000" PhysicalAddress="0x3c2d4000" VirtualAddress="0x70016000" PayloadAddress="0x2896000" RamPayloadAddress="0x86773000" />
+	<sectionInformation Name=".bss" Size="0x4000" PhysicalAddress="0x3c2d5000" VirtualAddress="0x70017000" PayloadAddress="0x2897000" RamPayloadAddress="0x86774000" />
+	<sectionInformation Name=".pbss" Size="0x1000" PhysicalAddress="0x3c2d9000" VirtualAddress="0x7001b000" PayloadAddress="0x2897000" RamPayloadAddress="0x86774000" />
+    </AC_DD_Extensions>
+    <AC_DD_Extensions>
+	<domainInformation NameRef="HM_L1" DomainId="11" LinkagePath=".:pos" />
+	<sectionInformation Name=".text" Size="0x80000" PhysicalAddress="0x3c448000" VirtualAddress="0x70000000" PayloadAddress="0x14ee000" RamPayloadAddress="0x86774000" />
+	<sectionInformation Name=".rodata" Size="0x20000" PhysicalAddress="0x3c4c8000" VirtualAddress="0x70080000" PayloadAddress="0x156e000" RamPayloadAddress="0x867f4000" />
+	<sectionInformation Name=".data" Size="0x10000" PhysicalAddress="0x3c4e8000" VirtualAddress="0x700a0000" PayloadAddress="0x158e000" RamPayloadAddress="0x86814000" />
+	<sectionInformation Name=".pdata" Size="0x1000" PhysicalAddress="0x3c4f8000" VirtualAddress="0x700b0000" PayloadAddress="0x159e000" RamPayloadAddress="0x86824000" />
+	<sectionInformation Name=".bss" Size="0x200000" PhysicalAddress="0x3c4f9000" VirtualAddress="0x700b1000" PayloadAddress="0x159f000" RamPayloadAddress="0x86825000" />
+	<sectionInformation Name=".pbss" Size="0x1000" PhysicalAddress="0x3c6f9000" VirtualAddress="0x702b1000" PayloadAddress="0x159f000" RamPayloadAddress="0x86825000" />
+    </AC_DD_Extensions>
+    <AC_DD_Extensions>
+	<domainInformation NameRef="NTM_L1" DomainId="12" LinkagePath=".:pos" />
+	<sectionInformation Name=".text" Size="0x42000" PhysicalAddress="0x3cae6000" VirtualAddress="0x70000000" PayloadAddress="0x149b000" RamPayloadAddress="0x86825000" />
+	<sectionInformation Name=".rodata" Size="0xc000" PhysicalAddress="0x3cb28000" VirtualAddress="0x70042000" PayloadAddress="0x14dd000" RamPayloadAddress="0x86867000" />
+	<sectionInformation Name=".data" Size="0x4000" PhysicalAddress="0x3cb34000" VirtualAddress="0x7004e000" PayloadAddress="0x14e9000" RamPayloadAddress="0x86873000" />
+	<sectionInformation Name=".pdata" Size="0x1000" PhysicalAddress="0x3cb38000" VirtualAddress="0x70052000" PayloadAddress="0x14ed000" RamPayloadAddress="0x86877000" />
+	<sectionInformation Name=".bss" Size="0xc000" PhysicalAddress="0x3cb39000" VirtualAddress="0x70053000" PayloadAddress="0x14ee000" RamPayloadAddress="0x86878000" />
+	<sectionInformation Name=".pbss" Size="0x1000" PhysicalAddress="0x3cb45000" VirtualAddress="0x7005f000" PayloadAddress="0x14ee000" RamPayloadAddress="0x86878000" />
+    </AC_DD_Extensions>
+    <AC_MMU_Extensions>
+	<MmuInformation Name="kernelMemPool" PhysicalAddress="0x82000000" VirtualAddress="0x82000000" Size="0x2000000" />
+	<MmuInformation Name="kernelPgPool" PhysicalAddress="0x84100000" VirtualAddress="0x84100000" Size="0x400000" />
+	<MmuInformation Name="portPgPool" PhysicalAddress="0x84500000" VirtualAddress="0x84500000" Size="0x900000" />
+	<MmuInformation Name="hmlogPgPool" PhysicalAddress="0x84e00000" VirtualAddress="0x84e00000" Size="0x100000" />
+	<MmuInformation Name="ramPayloadPgPool" PhysicalAddress="0x85000000" VirtualAddress="0x85000000" Size="0xFB00000" />
+	<MmuInformation Name="SMC_MEM_1Pool" PhysicalAddress="0x0" VirtualAddress="0x0" Size="0x10000000" />
+	<MmuInformation Name="NVRAMPool" PhysicalAddress="0x20000000" VirtualAddress="0x20000000" Size="0x80000" />
+	<MmuInformation Name="REG_SPACEPool" PhysicalAddress="0x20100000" VirtualAddress="0x20100000" Size="0x200000" />
+	<MmuInformation Name="SRAM_MEMPool" PhysicalAddress="0x21000000" VirtualAddress="0x21000000" Size="0x80000" />
+	<MmuInformation Name="CORE_PLICPool" PhysicalAddress="0x28000000" VirtualAddress="0x28000000" Size="0x8000000" />
+	<MmuInformation Name="A664_BUFFERPool" PhysicalAddress="0x30000000" VirtualAddress="0x30000000" Size="0x4000000" />
+	<MmuInformation Name="SMC_MEM_2Pool" PhysicalAddress="0x10000000" VirtualAddress="0x10000000" Size="0x8000000" />
+	<MmuInformation Name="configRecordPool" PhysicalAddress="0x84000000" VirtualAddress="0x84000000" Size="0x100000" />
+	<MmuInformation Name="posPool" PhysicalAddress="0x95F00000" VirtualAddress="0" Size="0xb0000" />
+	<MmuInformation Name="sdr1Pool" PhysicalAddress="0x34000000" VirtualAddress="0" Size="0x00010000" />
+	<MmuInformation Name="sdr2Pool" PhysicalAddress="0x34010000" VirtualAddress="0" Size="0x00010000" />
+	<MmuInformation Name="PAA_L1InstancePool" PhysicalAddress="0x34020000" VirtualAddress="0" Size="3506176" />
+	<MmuInformation Name="APP_ATC_INSTANCEPool" PhysicalAddress="0x34378000" VirtualAddress="0" Size="52953088" />
+	<MmuInformation Name="FIDO_L1Pool" PhysicalAddress="0x375f8000" VirtualAddress="0" Size="1691648" />
+	<MmuInformation Name="AOT_1Pool" PhysicalAddress="0x37795000" VirtualAddress="0" Size="3145728" />
+	<MmuInformation Name="DLC_L1Pool" PhysicalAddress="0x37a95000" VirtualAddress="0" Size="2146304" />
+	<MmuInformation Name="APP_FMS_DATALINK_1Pool" PhysicalAddress="0x37ca1000" VirtualAddress="0" Size="53075968" />
+	<MmuInformation Name="SM_I2C_L1Pool" PhysicalAddress="0x3af3f000" VirtualAddress="0" Size="8384512" />
+	<MmuInformation Name="APP_FMS_GUIDANCE_1Pool" PhysicalAddress="0x3b73e000" VirtualAddress="0" Size="12058624" />
+	<MmuInformation Name="FSM_L1Pool" PhysicalAddress="0x3c2be000" VirtualAddress="0" Size="1613824" />
+	<MmuInformation Name="HM_L1Pool" PhysicalAddress="0x3c448000" VirtualAddress="0" Size="6938624" />
+	<MmuInformation Name="NTM_L1Pool" PhysicalAddress="0x3cae6000" VirtualAddress="0" Size="1572864" />
+    </AC_MMU_Extensions>
+</ConfigRecord>

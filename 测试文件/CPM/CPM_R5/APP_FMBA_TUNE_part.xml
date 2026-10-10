@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<PartitionDescription xmlns="http://www.actri.avic/ConfigRecord" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CRC32="0x253ACA23">
+  <SharedDataRegion Name="FMBA_IO_CONFIG_TUNE_DB" Size="102400" AccessRights="READ_ONLY"/>
+  <SharedDataRegion Name="FMBA_MVT_TUNE_DB" Size="65536" AccessRights="READ_ONLY"/>
+  <SharedDataRegion Name="FMBA_NDB_TUNE_DB" Size="18874368" AccessRights="READ_ONLY"/>
+  <SharedDataRegion Name="FMBA_SDR_TUNE_DB" Size="15728640" AccessRights="READ_WRITE"/>
+  <Application NameRef="APP_FMBA_TUNE"/>
+  <SharedLibraryRegion NameRef="pos"/>
+  <Settings RequiredMemorySize="19333120" setModuleSchedule="false" allocDisable="true"/>
+</PartitionDescription>
